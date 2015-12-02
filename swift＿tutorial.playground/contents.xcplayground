@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Closure '/>
+        <page name='Array'/>
+        <page name='Animation Test'/>
+        <page name='KVC &amp; KVO'/>
+        <page name='Running Script'/>
+        <page name='AlertviewController'/>
+        <page name='String'/>
+        <page name='AttributedString'/>
+        <page name='Date'/>
+        <page name='Enumerations'/>
+        <page name='UIView'/>
+    </pages>
+</playground>
