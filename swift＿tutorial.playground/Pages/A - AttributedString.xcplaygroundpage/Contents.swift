@@ -1,8 +1,6 @@
 
-import Foundation
 import UIKit
-
-
+import Foundation
 
 var myMutableString = NSMutableAttributedString()
 

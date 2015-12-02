@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='Closure '/>
-        <page name='Array'/>
-        <page name='Animation Test'/>
-        <page name='KVC &amp; KVO'/>
-        <page name='Running Script'/>
-        <page name='AlertviewController'/>
-        <page name='String'/>
-        <page name='AttributedString'/>
-        <page name='Date'/>
-        <page name='Enumerations'/>
-        <page name='UIView'/>
+        <page name='版規'/>
+        <page name='A - Array'/>
+        <page name='A - Animation Test'/>
+        <page name='A - AttributedString'/>
+        <page name='A - AlertviewController'/>
+        <page name='C - Closure '/>
+        <page name='D - Date'/>
+        <page name='E - Enumerations'/>
+        <page name='K - KVC &amp; KVO'/>
+        <page name='U - UIView'/>
+        <page name='R - Running Script'/>
+        <page name='S - String'/>
     </pages>
 </playground>
