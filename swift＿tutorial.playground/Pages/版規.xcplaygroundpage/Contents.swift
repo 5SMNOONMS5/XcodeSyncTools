@@ -17,6 +17,8 @@
  6. 請使用 //: ### 來區隔 Code 跟 解釋
 
  7. 每新開一個 Pages 請把最上方 Pervious 跟最下方 Next 刪除
+
+ 8. 上傳請使用 Rendered 模式，可到 Tab -> Editor -> Show Rendered Markup
 */
 
 
