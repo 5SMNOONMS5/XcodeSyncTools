@@ -22,7 +22,6 @@ class DataImporter {
         var players = ["John Doe"]
         return players
     }
-    
 }
 
 
