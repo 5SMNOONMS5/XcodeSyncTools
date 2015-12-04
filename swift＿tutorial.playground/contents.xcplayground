@@ -15,5 +15,6 @@
         <page name='U - UIAlertController2'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
+        <page name='U - UISwitch'/>
     </pages>
 </playground>
