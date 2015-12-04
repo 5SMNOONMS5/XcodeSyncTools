@@ -11,6 +11,7 @@
         <page name='E - Enumerations'/>
         <page name='K - KVC &amp; KVO'/>
         <page name='U - UIView'/>
+        <page name='U - UIAlertViewController'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
     </pages>
