@@ -28,9 +28,3 @@ class DataImporter {
 
 
 
-
-// the DataImporter instance for the importer property has not yet been created
-
-
-
-
