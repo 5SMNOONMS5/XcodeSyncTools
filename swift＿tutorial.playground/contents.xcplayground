@@ -13,5 +13,6 @@
         <page name='U - UIView'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
+        <page name='U - UISwitch'/>
     </pages>
 </playground>
