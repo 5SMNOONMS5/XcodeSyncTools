@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='raw'>
     <pages>
         <page name='版規'/>
         <page name='A - Array'/>
@@ -15,6 +15,16 @@
         <page name='U - UIAlertController1'/>
         <page name='U - UIAlertController2'/>
         <page name='U - UISegmentedControl'/>
+        <page name='U - UIDatePicker'/>
+        <page name='U - UIPickerView'/>
+        <page name='U - UIActivityViewControl'/>
+        <page name='U - UIAlertViewControl'/>
+        <page name='U - UILabel'/>
+        <page name='U - UIButton'/>
+        <page name='U - UIImage'/>
+        <page name='U - UIBarButtonItem'/>
+        <page name='U - UITextField'/>
+        <page name='U - UITableView(extension)'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
     </pages>
