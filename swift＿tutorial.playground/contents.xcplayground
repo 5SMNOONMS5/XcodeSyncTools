@@ -10,6 +10,7 @@
         <page name='D - Date'/>
         <page name='E - Enumerations'/>
         <page name='K - KVC &amp; KVO'/>
+        <page name='N - NSUserActivity'/>
         <page name='U - UIView'/>
         <page name='U - UISwitch'/>
         <page name='U - UIAlertController1'/>
@@ -24,8 +25,14 @@
         <page name='U - UIImage'/>
         <page name='U - UIBarButtonItem'/>
         <page name='U - UITextField'/>
-        <page name='U - UITableView(extension)'/>
-        <page name='R - Running Script'/>
+        <page name='U - UITableView'/>
+        <page name='U - UIScrollView'/>
+        <page name='U - UIWebView'/>
+        <page name='U - UIProgressView'/>
+        <page name='U - UILocalNotification'/>
         <page name='S - String'/>
+        <page name='S - SFSafariViewController'/>
+        <page name='R - Running Script'/>
+        <page name='W - WKWebView'/>
     </pages>
 </playground>
