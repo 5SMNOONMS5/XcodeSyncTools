@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 import Foundation
 import UIKit
@@ -30,7 +29,3 @@ class AlertViewController{
     }
 }
 
-
-
-
-//: [Next](@next)

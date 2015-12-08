@@ -1,5 +1,4 @@
 
-
 import Foundation.NSArray
 
 //: ###  You can create an empty array of a certain type using initializer syntax:

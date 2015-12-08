@@ -1,6 +1,6 @@
 
-import Foundation
 import UIKit
+import Foundation
 
 //Load HTML
 let imageView = UIImageView(image: UIImage(named: "1"))
@@ -8,6 +8,7 @@ let imageView = UIImageView(image: UIImage(named: "1"))
 class viewcontroller: UIViewController {
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
     //Load HTML

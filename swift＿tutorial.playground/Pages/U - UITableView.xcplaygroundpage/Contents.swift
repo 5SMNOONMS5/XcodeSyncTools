@@ -1,10 +1,14 @@
+
 import UIKit
 
 class VotingProject2 : UIViewController {
   
+  let myTableView = UITableView()
+    
   override func viewDidLoad() {
+    
     super.viewDidLoad()
-    let myTableView = UITableView()
+
     myTableView.delegate = self
     myTableView.dataSource = self
   }
@@ -23,7 +27,6 @@ extension VotingProject2:UITableViewDelegate{
   func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
     return 90
   }
-  
 }
 
 // MARK: - UITableViewDataSource
