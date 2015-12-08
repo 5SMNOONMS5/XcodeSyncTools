@@ -7,16 +7,14 @@ let imageView = UIImageView(image: UIImage(named: "1"))
 
 class viewcontroller: UIViewController {
   
-  
   var textField: UITextField!
+    
   var buttonShare : UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     createButton()
     createTextField()
-    
-    
   }
   
   func createTextField(){
@@ -31,7 +29,7 @@ class viewcontroller: UIViewController {
     buttonShare = UIButton(type: UIButtonType.System)
     buttonShare.frame = CGRect(x: 20, y: 80, width: 280, height: 44)
     buttonShare.setTitle("分享", forState: UIControlState.Normal)
-    buttonShare.addTarget(self, action: "handleShare:", forControlEvents: UIControlEvents.TouchUpInside)
+    buttonShare.addTarget(self, action: "handleShare:", forControlEvents: .TouchUpInside)
     view.addSubview(buttonShare)
   }
   
@@ -53,7 +51,6 @@ class viewcontroller: UIViewController {
     let activityViewControl = UIActivityViewController(activityItems: [NSString(string: textField.text!)], applicationActivities: nil)
     
     presentViewController(activityViewControl, animated: true, completion: {})
-    
   }
   
   
@@ -68,7 +65,6 @@ extension viewcontroller : UITextFieldDelegate {
     textField.resignFirstResponder()
     return true
   }
-
 }
 
 

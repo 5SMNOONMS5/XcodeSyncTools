@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='A - AlertviewController'/>
-        <page name='A - Animation Test'/>
         <page name='A - Array'/>
         <page name='A - AttributedString'/>
         <page name='C - Closure '/>
         <page name='D - Date'/>
         <page name='D - Delay'/>
         <page name='E - Enumerations'/>
-        <page name='K - KVC &amp; KVO'/>
         <page name='N - NSUserActivity'/>
         <page name='R - Running Script'/>
         <page name='S - SFSafariViewController'/>
         <page name='S - String'/>
         <page name='U - UIActivityViewControl'/>
-        <page name='U - UIAlertController1'/>
-        <page name='U - UIAlertController2'/>
+        <page name='U - UIAlertController_1'/>
+        <page name='U - UIAlertController_2'/>
         <page name='U - UIAlertViewControl'/>
         <page name='U - UIBarButtonItem'/>
         <page name='U - UIButton'/>

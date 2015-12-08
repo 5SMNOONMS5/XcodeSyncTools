@@ -1,22 +1,26 @@
 
-import Foundation
 import UIKit
+import Foundation
+import XCPlayground
+
 
 //Button word of different colors
 let imageView = UIImageView(image: UIImage(named: "1"))
 
 class viewcontroller: UIViewController {
+    
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
-    let button = UIButton(type: UIButtonType.System)
+    let button = UIButton(type: .System)
     button.frame = CGRect(x: 110, y: 70, width: 100, height: 44)
-    button.setTitle("確認", forState: UIControlState.Normal)
-    button.addTarget(self, action: "buttonTouch", forControlEvents: UIControlEvents.TouchUpInside)
+    button.setTitle("確認", forState: .Normal)
+    button.addTarget(self, action: "buttonTouch", forControlEvents: .TouchUpInside)
     view.addSubview(button)
     
     //Button word of different colors
-    let myButton = UIButton(type: UIButtonType.System)
+    let myButton = UIButton(type: .System)
     let placeStr = "屏東縣屏東市第100開票所"
    var numberStr = placeStr.componentsSeparatedByString("第")[1]
     numberStr = numberStr.componentsSeparatedByString("開")[0]
@@ -37,8 +41,8 @@ class viewcontroller: UIViewController {
   func hexColorWithRGB(red : CGFloat , green : CGFloat , blue : CGFloat , alpha : CGFloat)->UIColor{
     return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
   }
-  
 }
+
 
 
 

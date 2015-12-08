@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+
 import UIKit
 
 let YearUnit = NSCalendarUnit.Year
@@ -64,5 +64,3 @@ let weekDay = Int(componentsDayRange.weekday)
 let day = componentsDayRange.day
 
 
-
-//: [Next](@next)

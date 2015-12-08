@@ -5,9 +5,9 @@ import UIKit
 let imageView = UIImageView(image: UIImage(named: "1"))
 
 class viewcontroller: UIViewController {
+    
   override func viewDidLoad() {
     super.viewDidLoad()
-    
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -22,11 +22,6 @@ class viewcontroller: UIViewController {
     
     presentViewController(activityControl, animated: true, completion: nil)
     
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 }
 
