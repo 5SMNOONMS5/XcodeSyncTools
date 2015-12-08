@@ -21,6 +21,7 @@ class viewcontroller: UIViewController {
         segmented.center = view.center
         segmented.addTarget(self, action: "segmentedValueChanged:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(segmented)
+
         
     }
     
