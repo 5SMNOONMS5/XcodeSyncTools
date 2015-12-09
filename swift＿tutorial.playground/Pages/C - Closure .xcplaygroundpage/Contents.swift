@@ -1,6 +1,6 @@
 
-import Foundation
 import UIKit
+import Foundation
 
 //: ### Defining a closure: Closures are typically enclosed in curly braces { } and are defined by a function type () -> (), where -> separates the arguments and the return type, followed by the in keyword which separates the closure header from its body.
 let padawans = ["Knox", "Avitla", "Mennaus"]

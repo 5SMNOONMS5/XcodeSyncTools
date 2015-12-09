@@ -8,7 +8,9 @@ let imageView = UIImageView(image: UIImage(named: "1"))
 class viewcontroller: UIViewController {
   
   var datePicker: UIDatePicker!
+    
   var dateLocale : NSLocale!
+    
   var label:UILabel!
   
   override func viewDidLoad() {
@@ -22,14 +24,14 @@ class viewcontroller: UIViewController {
     datePicker.center = view.center
     
     //選擇日期模式
-    datePicker.datePickerMode = UIDatePickerMode.Date
+    datePicker.datePickerMode = .Date
     
     //選擇繁體中文
     dateLocale = NSLocale(localeIdentifier: "zh_TW")
     datePicker.locale = dateLocale
     
     //設定選項變更事件
-    datePicker.addTarget(self, action: "datePickerDateChanged:", forControlEvents: UIControlEvents.ValueChanged)
+    datePicker.addTarget(self, action: "datePickerDateChanged:", forControlEvents: .ValueChanged)
     
     self.view.addSubview(datePicker)
   }

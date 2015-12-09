@@ -1,8 +1,7 @@
 Swift-Code-Snippet
 ===============================
 
-![Version] Swift 2.1
-![Platform] 
+
 
 **Swift-Code-Snippet** is a way coder can quickly copy-paste into their new *swift* project 
 
@@ -32,12 +31,6 @@ ex             A - Array
 ex             U - UIButtton   
 ```
 *  圖片位置請放在 Pages 下方的 Source  
-
-   
-*  圖片命名規則 Image_1 , Image_2 , Image_3 ..依序 
-
-![Version] Swift 2.1
-![Platform] 
 
 *  解釋請放在 Code 的上方 
 

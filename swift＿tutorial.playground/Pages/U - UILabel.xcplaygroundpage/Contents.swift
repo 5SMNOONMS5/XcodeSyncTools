@@ -1,11 +1,13 @@
 
-import Foundation
 import UIKit
+import Foundation
 
 let imageView = UIImageView(image: UIImage(named: "1"))
 
 class viewcontroller: UIViewController {
+    
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
     let label = UILabel(frame: CGRect(x: 80, y: 100, width: 200, height: 200))

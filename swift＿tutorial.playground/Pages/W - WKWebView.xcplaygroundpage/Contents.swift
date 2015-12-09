@@ -1,14 +1,15 @@
-import Foundation
+
 import UIKit
 import WebKit
+import Foundation
 
 class viewcontroller: UIViewController {
+    
   var webView : WKWebView?
   
   override func viewDidLoad() {
-    super.viewDidLoad()
     
-    navigationController?.navigationBarHidden = true
+    super.viewDidLoad()
     
     /* 建立編號設定，設定網頁被載入的方式 */
     let preferences = WKPreferences()
