@@ -1,13 +1,18 @@
 import Foundation
 import UIKit
 
-let imageView = UIImageView(image: UIImage(named: "1"))
+let demoImageView = UIImageView(image: UIImage(named: "1"))
+
 
 class viewcontroller: UIViewController {
+  
   override func viewDidLoad() {
-    super.viewDidLoad()
-    //設定Alert View的title、message、style
     
+    super.viewDidLoad()
+    
+//: ### Setting Alert View
+    //設定Alert View的title、message、style
+  
     let controller = UIAlertController(title: "Please enter your username", message: "This is usually 10 characters long", preferredStyle: .Alert)
     
     //在Alert View加入TextField

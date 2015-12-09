@@ -36,7 +36,8 @@ ex             U - UIButtton
    
 *  圖片命名規則 Image_1 , Image_2 , Image_3 ..依序 
 
-
+![Version] Swift 2.1
+![Platform] 
 
 *  解釋請放在 Code 的上方 
 

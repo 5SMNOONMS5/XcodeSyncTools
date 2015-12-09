@@ -6,6 +6,7 @@ import Foundation.NSArray
 
 
 var someInts = [Int]()
+
 print("someInts is of type [Int] with \(someInts.count) items.")
 
 someInts.append(3)

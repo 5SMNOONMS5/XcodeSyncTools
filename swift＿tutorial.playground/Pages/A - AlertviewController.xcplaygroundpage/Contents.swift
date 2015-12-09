@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+
 
 import Foundation
 import UIKit
@@ -9,8 +9,10 @@ class AlertViewController{
     var alertController : UIAlertController!
     
     func initAlertViewController(){
-        
-        alertController = UIAlertController(title: "CreateBlog", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+      
+      <#  Title  #>
+      
+        alertController = UIAlertController(title: "<#  Title  #>", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         
         alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: {
             (paramAction:UIAlertAction!) in self.actionCancel()
@@ -29,8 +31,3 @@ class AlertViewController{
         
     }
 }
-
-
-
-
-//: [Next](@next)
