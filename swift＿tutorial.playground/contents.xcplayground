@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='A - Array'/>
         <page name='A - AttributedString'/>
         <page name='A - AlertviewController'/>
+        <page name='A - AlertviewController_1'/>
         <page name='C - Closure '/>
+        <page name='C - Color'/>
         <page name='D - Date'/>
         <page name='D - Delay'/>
+        <page name='D - Device'/>
+        <page name='D - Dictionary'/>
         <page name='E - Enumerations'/>
         <page name='N - NSUserActivity'/>
         <page name='R - Running Script'/>

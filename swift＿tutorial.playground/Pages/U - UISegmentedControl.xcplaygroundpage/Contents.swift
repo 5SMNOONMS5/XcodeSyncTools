@@ -1,42 +1,43 @@
 
 
-import Foundation
-import MapKit
+import UIKit
 
 let imageView = UIImageView(image: UIImage(named: "1"))
 
 class viewcontroller: UIViewController {
   
-  var label : UILabel!
   override func viewDidLoad() {
+    
     super.viewDidLoad()
-    label = UILabel(frame: CGRect(x: 130, y: 120, width: 120, height: 30))
-    self.view.addSubview(label)
-
-    //按鈕選取後會立即消失被選取狀態
-    //segmented.momentary = true
     
     let segments = ["iPhone","iPad","iPod","iMac"];
+    
     let segmented = UISegmentedControl(items: segments)
+    
+    //按鈕選取後會立即消失被選取狀態
+    segmented.momentary = true
+    
     segmented.center = view.center
-    segmented.addTarget(self, action: "segmentedValueChanged:", forControlEvents: UIControlEvents.ValueChanged)
+    
+    segmented.addTarget(self, action: "segmentedValueChanged:", forControlEvents: .ValueChanged)
+    segmented.addTarget(<#T##target: AnyObject?##AnyObject?#>, action: "segmentedValueChanged:", forControlEvents: .ValueChanged)
+    
     self.view.addSubview(segmented)
     
   }
   
   func segmentedValueChanged(sender:UISegmentedControl){
     
-    //取得被選取的index
     let selectedIndex = sender.selectedSegmentIndex
     
-    //藉由被選取的index來取得文字內容
+    print("取得被選取的index = \(selectedIndex)")
+    
     let selectedText = sender.titleForSegmentAtIndex(selectedIndex)
     
-    label.text = selectedText
+    print("藉由被選取的index來取得文字內容 =\(selectedText)")
+    
   }
   
 }
-
-
 
 

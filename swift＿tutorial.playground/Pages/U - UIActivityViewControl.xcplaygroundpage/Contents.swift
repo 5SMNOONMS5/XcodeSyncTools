@@ -1,7 +1,5 @@
 
-
-import Foundation
-import MapKit
+import UIKit
 
 let imageView = UIImageView(image: UIImage(named: "1"))
 
@@ -12,12 +10,15 @@ class viewcontroller: UIViewController {
   var buttonShare : UIButton!
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
+    
     createButton()
     createTextField()
   }
   
   func createTextField(){
+    
     textField = UITextField(frame: CGRect(x: 20, y: 35, width: 280, height: 30))
     textField.borderStyle = UITextBorderStyle.RoundedRect
     textField.placeholder = "請輸入分享文字..."
@@ -26,6 +27,7 @@ class viewcontroller: UIViewController {
   }
   
   func createButton(){
+    
     buttonShare = UIButton(type: UIButtonType.System)
     buttonShare.frame = CGRect(x: 20, y: 80, width: 280, height: 44)
     buttonShare.setTitle("分享", forState: UIControlState.Normal)
@@ -48,12 +50,11 @@ class viewcontroller: UIViewController {
     
     /*將你的字串強制轉型(cast)為NSString是非常重要的一步，如果沒有這樣做，
     控制器將無法顯示適當的分享選項*/
-    let activityViewControl = UIActivityViewController(activityItems: [NSString(string: textField.text!)], applicationActivities: nil)
+    let activityViewControl = UIActivityViewController(activityItems:
+      [NSString(string: textField.text!)], applicationActivities: nil)
     
     presentViewController(activityViewControl, animated: true, completion: {})
   }
-  
-  
 }
 
 

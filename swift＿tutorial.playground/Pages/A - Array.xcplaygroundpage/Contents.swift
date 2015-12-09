@@ -25,6 +25,20 @@ class DataImporter {
     }
 }
 
-
-
+//: ### Extension Array
+extension Array{
+  
+//: random
+  
+  public func random() -> Element {
+    let index = Int(arc4random_uniform(UInt32(self.count)))
+    return self[index]
+  }
+  
+//: random
+  
+  
+  
+  
+}
 

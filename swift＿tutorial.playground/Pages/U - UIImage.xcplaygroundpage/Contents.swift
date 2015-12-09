@@ -1,5 +1,4 @@
 
-import Foundation
 import UIKit
 
 let imageView = UIImageView(image: UIImage(named: "1"))

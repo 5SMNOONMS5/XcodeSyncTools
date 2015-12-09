@@ -1,24 +1,19 @@
 
-
-
 import UIKit
-import Foundation
 
 class AlertViewController{
     
     var alertController : UIAlertController!
     
     func initAlertViewController(){
-      
-      <#  Title  #>
-      
-        alertController = UIAlertController(title: "<#  Title  #>", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+ 
+        alertController = UIAlertController(title: "<#  Title  #>", message: "<# message #>", preferredStyle: UIAlertControllerStyle.Alert)
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: {
+        alertController.addAction(UIAlertAction(title: "<#  Title  #>", style: .Default, handler: {
             (paramAction:UIAlertAction!) in self.actionCancel()
         }))
         
-        alertController.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: {
+        alertController.addAction(UIAlertAction(title: "<#  Title  #>", style: .Default, handler: {
             (paramAction:UIAlertAction!) in self.actionConfrim()
         }))
     }
@@ -28,7 +23,7 @@ class AlertViewController{
     }
     
     func actionConfrim(){
-        
+        alertController.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

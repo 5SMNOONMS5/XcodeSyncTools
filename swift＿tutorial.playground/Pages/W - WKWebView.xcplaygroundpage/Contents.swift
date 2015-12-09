@@ -1,7 +1,8 @@
 
 import UIKit
 import WebKit
-import Foundation
+
+internal let stringURL = "http://www.apple.com"
 
 class viewcontroller: UIViewController {
     
@@ -13,19 +14,24 @@ class viewcontroller: UIViewController {
     
     /* 建立編號設定，設定網頁被載入的方式 */
     let preferences = WKPreferences()
+    
     preferences.javaScriptEnabled = false
     
     /* 為編號設定建立一個組態(configuration) */
     let configuration = WKWebViewConfiguration()
+    
     configuration.preferences = preferences
     
     webView = WKWebView(frame: view.bounds, configuration: configuration)
     
     if let theWebView = webView{
-      let url = NSURL(string: "http://www.apple.com")
-      let urlRequest = NSURLRequest(URL: url!)
+      
+      let urlRequest = NSURLRequest(URL: NSURL(string: stringURL)! )
+      
       theWebView.loadRequest(urlRequest)
+      
       theWebView.navigationDelegate = self
+      
       view.addSubview(theWebView)
     }
   }
@@ -58,6 +64,7 @@ extension viewcontroller : WKNavigationDelegate{
       alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
       
       presentViewController(alertController, animated: true, completion: nil)
+      
       return
     }
     

@@ -21,16 +21,14 @@ class viewcontroller: UIViewController {
     let safariVC = SFSafariViewController(URL:NSURL(string: stringURL)!, entersReaderIfAvailable: false)
     
     safariVC.delegate = self
+    
     self.presentViewController(safariVC, animated: true, completion: nil)
   }
 }
 
 // MARK: - SFSafariViewControllerDelegate
-
 extension viewcontroller : SFSafariViewControllerDelegate{
   
-  //關閉  SFSafariViewController
-
   func safariViewControllerDidFinish(controller: SFSafariViewController) {
     controller.dismissViewControllerAnimated(true, completion: nil)
   }

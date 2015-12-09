@@ -1,22 +1,25 @@
 
 import UIKit
 
-
-class vc : UIViewController {
+class VC : UIViewController {
   
   override func viewDidLoad() {
     
     super.viewDidLoad()
     
-    //: ### Remove Subviews
+//: ### Remove Subviews
     
     let subViews = self.view.subviews
     
     for subview in subViews{
+      
       if subview is UITableView {
+        
         subview.removeFromSuperview()
+        
       }
     }
+    
   }
 }
 

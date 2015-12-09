@@ -1,7 +1,5 @@
 
-
-import Foundation
-import MapKit
+import UIKit
 
 let imageView = UIImageView(image: UIImage(named: "1"))
 
@@ -14,13 +12,18 @@ class viewcontroller: UIViewController {
   var label:UILabel!
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
     label = UILabel(frame: CGRect(x: 70, y: 120, width: 120, height: 30))
+    
     label.text = "test"
+    
     self.view.addSubview(label)
     
+    
     datePicker = UIDatePicker()
+    
     datePicker.center = view.center
     
     //選擇日期模式

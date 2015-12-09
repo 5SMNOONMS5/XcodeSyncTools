@@ -9,22 +9,22 @@ class viewcontroller: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        //沒有select、selectAll、paste的UITextField
+      
+        /** 沒有select、selectAll、paste 的 UITextField */
         let myTextField = CustomTextField()
-        myTextField.text = "Test"
-        
-        //正常的UITextField
+      
+        /** 正常的 UITextField */
         let textField = UITextField(frame: CGRect(x: 10, y: 100, width: 220, height: 31))
+      
         textField.borderStyle = UITextBorderStyle.RoundedRect
         
-        //字體垂直置中
+        /** 字體垂直置中 */
         textField.contentVerticalAlignment = .Center
-        
-        //字體水平置中
+      
+        /** 字體水平置中 */
         textField.textAlignment = .Left
-        
-        textField.placeholder = "請輸入金額"
+      
+        textField.placeholder = "<# placeholder #>"
         
         let currencyLabel = UILabel(frame: CGRectZero)
         
@@ -39,11 +39,12 @@ class viewcontroller: UIViewController {
         在文字欄位的左視圖上正確地對齊
         */
         currencyLabel.frame.size.width += 10
+      
         textField.leftView = currencyLabel
         
         //顯示leftView的時機
         textField.leftViewMode = .Always
-        
+      
         view.addSubview(textField)
     }
     

@@ -1,9 +1,7 @@
 
 import UIKit
-import Foundation
 
 var myMutableString = NSMutableAttributedString()
-
 
 myMutableString = NSMutableAttributedString(
     string: "I Love Pizza!",

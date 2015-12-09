@@ -14,17 +14,17 @@ class viewcontroller: UIViewController {
     //Left
     let btn = UIButton(type: UIButtonType.Custom)
     btn.setImage(UIImage(named: "back"), forState: .Normal)
-    btn.frame = CGRect(x: 0, y: 0, width: 48, height: 48)
+    btn.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
     btn.addTarget(self, action: "backEvent", forControlEvents: .TouchUpInside)
-    let leftBtn = UIBarButtonItem(customView: btn)
-    navigationItem.leftBarButtonItem = leftBtn
+    
+    navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
     
     //Right
     let items = ["Up","Down"]
     let segmentedControl = UISegmentedControl(items: items)
     segmentedControl.momentary = true
     segmentedControl.addTarget(self, action: "segmentedControlTapped:", forControlEvents: .ValueChanged)
-    
+
     navigationItem.rightBarButtonItem = UIBarButtonItem(customView: segmentedControl)
   }
   
@@ -33,10 +33,11 @@ class viewcontroller: UIViewController {
   }
   
   func segmentedControlTapped(sender: UISegmentedControl){
+    
     if sender.selectedSegmentIndex == 0 {
-      print("You were pressed up")
+      print(" pressed up")
     }else{
-      print("You were pressed down")
+      print(" pressed down")
     }
   }
 }

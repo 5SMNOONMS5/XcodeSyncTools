@@ -1,10 +1,10 @@
 
-import Foundation
 import UIKit
 
 class viewcontroller: UIViewController {
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
     //Countdown five second
@@ -15,16 +15,16 @@ class viewcontroller: UIViewController {
     
     //Determine whether there is notification
     let setting = UIApplication.sharedApplication().currentUserNotificationSettings()
+    
     if UIUserNotificationType.None == setting?.types{
       //Open
-      
     }else{
       //Close
-      
     }
   }
   
   override func viewWillAppear(animated: Bool) {
+    
     super.viewWillAppear(animated)
     
     //註冊推播
@@ -34,9 +34,13 @@ class viewcontroller: UIViewController {
   }
   
   func registerNotificationforSecond(second second: Double, message : String ){
+    
     let notification:UILocalNotification = UILocalNotification()
+    
     notification.alertBody = message
+    
     notification.applicationIconBadgeNumber = 1
+    
     notification.fireDate = NSDate(timeIntervalSinceNow: second)
     
     UIApplication.sharedApplication().scheduleLocalNotification(notification)
