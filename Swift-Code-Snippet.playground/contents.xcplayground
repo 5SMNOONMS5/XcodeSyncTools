@@ -2,9 +2,6 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='A - Array'/>
-        <page name='A - AttributedString'/>
-        <page name='A - AlertviewController'/>
-        <page name='A - AlertviewController_1'/>
         <page name='C - Closure '/>
         <page name='C - Color'/>
         <page name='D - Date'/>
@@ -15,24 +12,5 @@
         <page name='N - NSUserActivity'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
-        <page name='S - SFSafariViewController'/>
-        <page name='U - UIView'/>
-        <page name='U - UISwitch'/>
-        <page name='U - UISegmentedControl'/>
-        <page name='U - UIActivityViewControl'/>
-        <page name='U - UIAlertViewControl'/>
-        <page name='U - UIBarButtonItem'/>
-        <page name='U - UIButton'/>
-        <page name='U - UIDatePicker'/>
-        <page name='U - UIImage'/>
-        <page name='U - UILabel'/>
-        <page name='U - UILocalNotification'/>
-        <page name='U - UIPickerView'/>
-        <page name='U - UIProgressView'/>
-        <page name='U - UIScrollView'/>
-        <page name='U - UITableView'/>
-        <page name='U - UITextField'/>
-        <page name='U - UIWebView'/>
-        <page name='W - WKWebView'/>
     </pages>
 </playground>
