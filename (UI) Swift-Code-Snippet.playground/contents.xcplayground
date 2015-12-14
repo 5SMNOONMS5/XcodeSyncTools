@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='A - AlertviewController'/>
+        <page name='A - AlertviewController_1'/>
+        <page name='A - AttributedString'/>
+        <page name='S - SFSafariViewController'/>
+        <page name='U - UIActivityViewControl'/>
+        <page name='U - UIAlertViewControl'/>
+        <page name='U - UIBarButtonItem'/>
+        <page name='U - UIButton'/>
+        <page name='U - UIDatePicker'/>
+        <page name='U - UIImage'/>
+        <page name='U - UILabel'/>
+        <page name='U - UILocalNotification'/>
+        <page name='U - UIPickerView'/>
+        <page name='U - UIProgressView'/>
+        <page name='U - UIScrollView'/>
+        <page name='U - UISegmentedControl'/>
+        <page name='U - UISwitch'/>
+        <page name='U - UITableView'/>
+        <page name='U - UITextField'/>
+        <page name='U - UIView'/>
+        <page name='U - UIWebView'/>
+        <page name='U - UIImagePickerController'/>
+        <page name='W - WKWebView'/>
+    </pages>
 </playground>
