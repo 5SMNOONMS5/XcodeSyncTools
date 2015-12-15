@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='A - AlertviewController'/>
         <page name='A - AlertviewController_1'/>
-        <page name='A - AttributedString'/>
         <page name='M - MKMapView'/>
+        <page name='N - NSUserActivity'/>
         <page name='S - SFSafariViewController'/>
         <page name='U - UIActivityViewControl'/>
         <page name='U - UIAlertViewControl'/>

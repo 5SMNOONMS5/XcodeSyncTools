@@ -1,4 +1,4 @@
-import Foundation
+
 import UIKit
 
 // 鍵盤不擋住UITextField
@@ -6,15 +6,21 @@ import UIKit
 class viewcontroller : UIViewController{
   
   var mtf = UITextField()
+  
   var kbSize : CGSize!
+  
   var keyboardIsHidden = false
+  
   var beforeMove : CGFloat = 0.0
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
     let myTextField = UITextField()
+    
     myTextField.delegate = self
+    
     view.addSubview(myTextField)
     
     //監聽鍵盤顯示通知
@@ -26,6 +32,7 @@ class viewcontroller : UIViewController{
   }
   
   func handleKeyboardDidShow(notification: NSNotification){
+    
     var viewFrame = self.view.frame
     var info = notification.userInfo!
     kbSize = info[UIKeyboardFrameBeginUserInfoKey]?.CGRectValue.size
@@ -58,6 +65,7 @@ class viewcontroller : UIViewController{
   func handleKeyboardWillHide(notification: NSNotification){
     
     if keyboardIsHidden {
+      
       keyboardIsHidden = false
       var viewFrame = self.view.frame
       viewFrame.origin.y += beforeMove
@@ -73,7 +81,9 @@ class viewcontroller : UIViewController{
 }
 
 // MARK: - UITextFieldDelegate
+
 extension viewcontroller : UITextFieldDelegate{
+  
   func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
     mtf = textField
     return true

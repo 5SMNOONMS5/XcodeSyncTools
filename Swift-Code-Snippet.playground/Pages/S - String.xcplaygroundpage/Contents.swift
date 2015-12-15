@@ -62,6 +62,7 @@ let startT = string4.rangeOfString("t", options:.LiteralSearch , range: nil, loc
 
 
 var result2 : String.CharacterView.Index? = nil
+
 for index in string4.characters.indices{
   if string4[index] == "t"{
     result2 = index

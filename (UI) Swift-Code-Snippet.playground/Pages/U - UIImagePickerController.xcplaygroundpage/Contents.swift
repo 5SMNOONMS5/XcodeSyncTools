@@ -1,9 +1,12 @@
-import Foundation
+
 import UIKit
 
 class viewcontroller: UIViewController {
+  
   override func viewDidLoad() {
+    
     super.viewDidLoad()
+    
     //啟動照相功能
     let imagePicker = UIImagePickerController()
     imagePicker.delegate = self
@@ -16,7 +19,7 @@ class viewcontroller: UIViewController {
 // MARK: - UIImagePickerControllerDelegate
 extension viewcontroller : UIImagePickerControllerDelegate{
   
-  //取得照片
+  //按下拍照
   func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     
     //離開拍照畫面
@@ -26,6 +29,7 @@ extension viewcontroller : UIImagePickerControllerDelegate{
     print("This is your image: \(img)")
   }
   
+  //取消拍照
   func imagePickerControllerDidCancel(picker: UIImagePickerController) {
     picker.dismissViewControllerAnimated(true, completion: nil)
     navigationController?.popViewControllerAnimated(true)
@@ -35,6 +39,7 @@ extension viewcontroller : UIImagePickerControllerDelegate{
 
 // MARK: - UINavigationControllerDelegate
 extension viewcontroller : UINavigationControllerDelegate{
+  
   func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
     
     
