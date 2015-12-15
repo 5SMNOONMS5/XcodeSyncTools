@@ -1,7 +1,9 @@
-Swift-Code-Snippet
+Swift Code Snippet Share
 ===============================
 
-**Swift-Code-Snippet** is a way coder can quickly copy-paste into their **swift** project 
+**Swift-Code-Snippet** is a place can share your personal code snippet with one another , for  quickly copy-paste into their **swift** file 
+
+Using playground is because swift update very often , let playgornd check of the code with the swift lastest version
 
 Screen Shots :
 ------------

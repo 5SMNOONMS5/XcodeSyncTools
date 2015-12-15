@@ -10,6 +10,7 @@
         <page name='D - Device'/>
         <page name='D - Dictionary'/>
         <page name='E - Enumerations'/>
+        <page name='N - Object'/>
         <page name='R - Running Script'/>
         <page name='S - String'/>
     </pages>

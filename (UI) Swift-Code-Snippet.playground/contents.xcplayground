@@ -6,6 +6,7 @@
         <page name='M - MKMapView'/>
         <page name='N - NSUserActivity'/>
         <page name='S - SFSafariViewController'/>
+        <page name='U - UIViewControllerExtension'/>
         <page name='U - UIActivityViewControl'/>
         <page name='U - UIAlertViewControl'/>
         <page name='U - UIBarButtonItem'/>
