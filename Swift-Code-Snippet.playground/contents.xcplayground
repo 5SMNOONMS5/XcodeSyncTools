@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='A - Array'/>
         <page name='A - AttributedString'/>
@@ -12,6 +12,7 @@
         <page name='E - Enumerations'/>
         <page name='N - Object'/>
         <page name='R - Running Script'/>
+        <page name='L - Lazy Initialization'/>
         <page name='S - String'/>
     </pages>
 </playground>

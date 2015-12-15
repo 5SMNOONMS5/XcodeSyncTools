@@ -13,17 +13,9 @@ someInts.append(3)
 
 someInts = []
 
-//: ### Lazy Initialization
 
-class DataImporter {
-   
-    lazy var players: [String] = self.initialPlayers()
-    
-    func initialPlayers() -> [String] {
-        var players = ["John Doe"]
-        return players
-    }
-}
+
+
 
 //: ### Extension Array
 extension Array{
