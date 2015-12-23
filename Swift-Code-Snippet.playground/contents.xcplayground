@@ -14,5 +14,6 @@
         <page name='R - Running Script'/>
         <page name='L - Lazy Initialization'/>
         <page name='S - String'/>
+        <page name='S - NSSet'/>
     </pages>
 </playground>

@@ -7,11 +7,46 @@ import Foundation.NSArray
 
 var someInts = [Int]()
 
-print("someInts is of type [Int] with \(someInts.count) items.")
+//: Creating an Array by Adding Two Arrays Together
+
+var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
+var anotherThreeDoubles = [Double](count: 3, repeatedValue: 2.5)
+var sixDoubles = threeDoubles + anotherThreeDoubles
+
+//: Basic array method practice
 
 someInts.append(3)
 
+someInts += [5]
+
+someInts += [5,10,15,20]
+
+someInts[0]
+
+someInts[2...4]
+
+someInts.removeLast()
+
+for int in someInts {
+  print(int)
+}
+
+for (index, value) in someInts.enumerate() {
+  print("Item \(index + 1): \(value)")
+}
+
 someInts = []
+
+if someInts.isEmpty{
+  print("array is empty now")
+}
+
+someInts.insert(10, atIndex: 0)
+
+someInts.removeAtIndex(0)
+
+
+
 
 
 

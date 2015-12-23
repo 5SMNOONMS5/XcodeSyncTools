@@ -15,4 +15,17 @@ let earthsOrder = Planet.Earth.rawValue
 
 let sunsetDirection = CompassPoint.West.rawValue
 
+//: ### Get rawValue via parameter
 
+if let somePlanet = Planet(rawValue: 3) {
+  switch somePlanet {
+  case .Venus:
+    print("Venus")
+  case .Earth:
+    print("Earth")
+  case .Mars:
+    print("Mars")
+  default:
+    print("Not a safe place for humans")
+  }
+}
