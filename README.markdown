@@ -1,9 +1,9 @@
 Swift Code Snippet Share
 ===============================
 
-**Swift-Code-Snippet** is a place can share your personal code snippet with one another , for  quickly copy-paste into their **swift** file 
+**Swift-Code-Snippet** is a place everybody can share their own personal code snippet with one another 
 
-Using playground is because swift update very often , let playgornd check of the code with the swift lastest version
+Using playground is because swift update very often , let playground check of the code with the swift lastest version
 
 Screen Shots :
 ------------
@@ -12,19 +12,14 @@ Screen Shots :
 
 Code Style : 
 ------------
-please following Office Style By Ray Wenderlich (https://github.com/raywenderlich/swift-style-guide)
-
-
-Installation :
-------------
-*  下載檔案
-*  透過字母順序找到相對應的類別 , 複製 Code 到指定專案  
+please following office style written by Ray Wenderlich (https://github.com/raywenderlich/swift-style-guide)
 
 
 Pull Request Style :
 ------------
 
-*  Pages 命名規則，請按照英文字母順序命名，以類別名稱第一個英文字母為主
+*  Pages Naming Style，Please arranged alphabetically of the first letter of class
+
 
 **Preferred:**
 
@@ -34,7 +29,7 @@ Pull Request Style :
 
 ![Xcode indent settings](screens/2.png)
 
-*  圖片請統一放在當前類別 Pages 下方的 Resource 目錄中 
+*  Pictures are require put under the **Resource** folder of current class pages 
 
 **Preferred:**
 
@@ -44,7 +39,7 @@ Pull Request Style :
 
 ![Xcode indent settings](screens/4.png)
 
-*  解釋請放在 Code 的**上**方 
+*Code Explanations are located in the top of the code 
 
 **Preferred:**
 
@@ -53,23 +48,3 @@ Pull Request Style :
 **Not Preferred:**
 
 ![Xcode indent settings](screens/6.png)
-
-*  每新開一個 Pages 請把最上方 Pervious 跟最下方 Next 刪除
-
-**Preferred:**
-
-![Xcode indent settings](screens/7.png)
-
-**Not Preferred:**
-
-![Xcode indent settings](screens/8.png)
-
-*  上傳請使用 Rendered 模式，可到 Tab -> Editor -> Show Rendered Markup 更換
-
-**Preferred:**
-
-![Xcode indent settings](screens/9.png)
-
-**Not Preferred:**
-
-![Xcode indent settings](screens/10.png)
