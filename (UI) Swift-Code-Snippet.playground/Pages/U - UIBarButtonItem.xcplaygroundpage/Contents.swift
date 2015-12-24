@@ -8,10 +8,17 @@ let imageView = UIImageView(image: UIImage(named: "1"))
 let imageView2 = UIImageView(image: UIImage(named: "2"))
 
 class viewcontroller: UIViewController {
+  
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     
-    //Left
+    //Left - 1
+    let barBtnCancel = UIBarButtonItem(title: "back", style: .Plain, target: self, action: "backEvent:")
+    self.navigationItem.rightBarButtonItem = barBtnCancel
+    
+    
+    //Left - 2
     let btn = UIButton(type: UIButtonType.Custom)
     btn.setImage(UIImage(named: "back"), forState: .Normal)
     btn.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
@@ -19,7 +26,7 @@ class viewcontroller: UIViewController {
     
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
     
-    //Right
+    //Right With UISegmentedControl
     let items = ["Up","Down"]
     let segmentedControl = UISegmentedControl(items: items)
     segmentedControl.momentary = true

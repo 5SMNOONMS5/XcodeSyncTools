@@ -9,8 +9,8 @@ var someInts = [Int]()
 
 //: Creating an Array by Adding Two Arrays Together
 
-var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
-var anotherThreeDoubles = [Double](count: 3, repeatedValue: 2.5)
+var threeDoubles = [2.5,2.5,2.5]
+var anotherThreeDoubles = [Double](count: 3, repeatedValue: 5)
 var sixDoubles = threeDoubles + anotherThreeDoubles
 
 //: Basic array method practice
@@ -18,6 +18,8 @@ var sixDoubles = threeDoubles + anotherThreeDoubles
 someInts.append(3)
 
 someInts += [5]
+
+someInts += [someInts.last!+3]
 
 someInts += [5,10,15,20]
 

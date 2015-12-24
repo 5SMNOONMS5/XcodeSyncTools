@@ -18,6 +18,11 @@ extension UIViewController {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
   
+  public func postNotificationName(name: String) {
+    NSNotificationCenter.defaultCenter().postNotificationName(name, object: nil)
+  
+  }
+  
 //: ### Notifications ( Keyborad Will Shown )
   //MARK: - Notifications ( Keyborad Will Shown )
   public func addKeyboardWillShowNotification() {
