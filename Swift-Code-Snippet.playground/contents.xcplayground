@@ -15,5 +15,6 @@
         <page name='L - Lazy Initialization'/>
         <page name='S - String'/>
         <page name='S - NSSet'/>
+        <page name='F - Frame'/>
     </pages>
 </playground>

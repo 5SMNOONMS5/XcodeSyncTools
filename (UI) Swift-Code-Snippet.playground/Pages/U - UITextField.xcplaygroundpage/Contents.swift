@@ -21,7 +21,9 @@ class viewcontroller: UIViewController {
         /** 字體垂直置中 */
         textField.contentVerticalAlignment = .Center
       
-        /** 字體水平置中 */
+        /** on/off correction */
+        textField.autocorrectionType = .No
+      
         textField.textAlignment = .Left
       
         textField.placeholder = "<# placeholder #>"
