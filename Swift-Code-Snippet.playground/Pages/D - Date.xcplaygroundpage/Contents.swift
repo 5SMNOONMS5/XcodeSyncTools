@@ -21,8 +21,6 @@ var components: NSDateComponents
 
 components = calendar.components(MonthUnit.union(DayUnit), fromDate: currentDate)
 
-print(components)
-
 //: ### Compare Two Days
 
 let start = "2010-09-01"

@@ -22,9 +22,10 @@
         <page name='U - UISwitch'/>
         <page name='U - UITableView'/>
         <page name='U - UITextField'/>
-        <page name='U - UITextField_1'/>
+        <page name='U - UITextView'/>
         <page name='U - UIView'/>
         <page name='U - UIWebView'/>
+        <page name='U - UICollectionView'/>
         <page name='U - UIImagePickerController'/>
         <page name='W - WKWebView'/>
         <page name='A - AdaptivePopover'/>

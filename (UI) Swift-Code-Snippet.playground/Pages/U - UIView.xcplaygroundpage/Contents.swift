@@ -1,26 +1,31 @@
 
 import UIKit
 
-class VC : UIViewController {
+extension UIView{
   
-  override func viewDidLoad() {
+  func firstAvailableViewController() -> UIViewController? {
     
-    super.viewDidLoad()
+    return traverseResponderChainForUIViewController() as? UIViewController
+  }
+  
+  func traverseResponderChainForUIViewController() -> AnyObject?{
     
-//: ### Remove Subviews
-    
-    let subViews = self.view.subviews
-    
-    for subview in subViews{
-      
-      if subview is UITableView {
-        
-        subview.removeFromSuperview()
-        
-      }
+    guard let nextResponder = self.nextResponder() else {
+      return nil
     }
     
+    if let nextResponder = nextResponder as? UIViewController {
+      return nextResponder
+    }
+    
+    if let nextResponder = nextResponder as? UIView{
+      return nextResponder.traverseResponderChainForUIViewController()
+    }
+    
+    return nil
   }
 }
+
+
 
 

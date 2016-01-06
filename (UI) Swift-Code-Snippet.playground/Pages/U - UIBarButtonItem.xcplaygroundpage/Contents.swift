@@ -13,6 +13,8 @@ class viewcontroller: UIViewController {
     
     super.viewDidLoad()
     
+    let barBtnflexibleSpace = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
+    
     //Left - 1
     let barBtnCancel = UIBarButtonItem(title: "back", style: .Plain, target: self, action: "backEvent:")
     self.navigationItem.rightBarButtonItem = barBtnCancel

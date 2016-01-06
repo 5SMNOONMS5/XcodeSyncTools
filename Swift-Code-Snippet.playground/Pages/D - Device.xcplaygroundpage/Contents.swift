@@ -124,3 +124,30 @@ UIDevice.deviceModelString()
 UIDevice.isSystemVersionOver("7.1")
 
 
+//: ### Detect device
+
+enum UIUserInterfaceIdiom : Int
+{
+  case Unspecified
+  case Phone
+  case Pad
+}
+
+let DeviceHeight = UIScreen.mainScreen().bounds.size.height
+let DeviceWidth = UIScreen.mainScreen().bounds.size.width
+let DeviceMaxLength = max(DeviceHeight, DeviceWidth)
+let DeviceMinLength = min(DeviceHeight, DeviceWidth)
+
+
+struct Device {
+  
+  static let iPhone4  = UIDevice.currentDevice().userInterfaceIdiom == .Phone && DeviceMaxLength < 568.0
+  static let iPhone5  = UIDevice.currentDevice().userInterfaceIdiom == .Phone && DeviceMaxLength == 568.0
+  static let iPhone6          = UIDevice.currentDevice().userInterfaceIdiom == .Phone && DeviceMaxLength == 667.0
+  static let iPhone6s         = UIDevice.currentDevice().userInterfaceIdiom == .Phone && DeviceMaxLength == 736.0
+  static let iPad              = UIDevice.currentDevice().userInterfaceIdiom == .Pad && DeviceMaxLength == 1024.0
+}
+
+
+
+

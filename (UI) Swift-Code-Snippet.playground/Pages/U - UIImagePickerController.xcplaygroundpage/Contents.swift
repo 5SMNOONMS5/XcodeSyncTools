@@ -7,10 +7,11 @@ class viewcontroller: UIViewController {
     
     super.viewDidLoad()
     
-    //啟動照相功能
+    /**  engage  UIImagePickerController  */
     let imagePicker = UIImagePickerController()
     imagePicker.delegate = self
     imagePicker.sourceType = .Camera
+    imagePicker.allowsEditing = false
     imagePicker.showsCameraControls = true
     self.presentViewController(imagePicker, animated: true, completion: nil)
   }
@@ -19,17 +20,17 @@ class viewcontroller: UIViewController {
 // MARK: - UIImagePickerControllerDelegate
 extension viewcontroller : UIImagePickerControllerDelegate{
   
-  //按下拍照
+  /**  take  photo  */
   func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     
-    //離開拍照畫面
+    /**  leave  UIImagePickerController  */
     picker.dismissViewControllerAnimated(true, completion: nil)
     
     let img = info[UIImagePickerControllerOriginalImage] as? UIImage
     print("This is your image: \(img)")
   }
   
-  //取消拍照
+  /**  Dismiss  UIImagePickerController  */
   func imagePickerControllerDidCancel(picker: UIImagePickerController) {
     picker.dismissViewControllerAnimated(true, completion: nil)
     navigationController?.popViewControllerAnimated(true)

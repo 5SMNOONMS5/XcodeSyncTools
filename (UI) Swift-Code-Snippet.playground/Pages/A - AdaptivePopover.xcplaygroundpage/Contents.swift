@@ -18,21 +18,12 @@ class SchoolListTC: UITableViewController, UIPopoverPresentationControllerDelega
     
     // set popover view contentSize
     self.preferredContentSize = CGSize(width:320,height:100)
+    
   }
   
   func tapCancel(_ : UIBarButtonItem) {
     dismissViewControllerAnimated(true, completion:nil);
   }
-  
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-    //selected a school
-    let schoolName = tableView.cellForRowAtIndexPath(indexPath)!.textLabel!.text
-    print("did select school: \(schoolName)")
-    dismissViewControllerAnimated(true, completion:nil)
-  }
-  
-  // popover settings, adaptive for horizontal compact trait
-  // #pragma mark - UIPopoverPresentationControllerDelegate
   
   func adaptivePresentationStyleForPresentationController(PC: UIPresentationController) -> UIModalPresentationStyle{
     
@@ -46,13 +37,14 @@ class SchoolListTC: UITableViewController, UIPopoverPresentationControllerDelega
     case (_, true):
       // popover only on landscape on iPhone
       let size = PC.presentingViewController.view.frame.size
-      if(size.width>320.0){ //landscape
+      if(size.width>320.0){
         return .None
       }else{
         return .FullScreen
       }
       
-    default: // no popover on iPhone
+    default:
+      // no popover on iPhone
       return .FullScreen
     }
     
@@ -63,4 +55,20 @@ class SchoolListTC: UITableViewController, UIPopoverPresentationControllerDelega
     -> UIViewController?{
       return UINavigationController(rootViewController: self)
   }
+  
+  func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
+  }
 }
+
+
+//: ### Quick Start
+
+let popViewViewController : UIViewController?
+popViewViewController!.modalPresentationStyle = .Popover
+popViewViewController!.preferredContentSize = CGSizeMake(350, 350)
+let popoverMenuViewController = popViewViewController!.popoverPresentationController
+popoverMenuViewController!.permittedArrowDirections = .Up
+popoverMenuViewController!.delegate = <# AnyObject #>
+popoverMenuViewController!.sourceView = <# UIView #>
+popoverMenuViewController!.sourceRect = CGRect(
+  x: <# x#>, y: <# y#> ,width: 1,height: 1)
