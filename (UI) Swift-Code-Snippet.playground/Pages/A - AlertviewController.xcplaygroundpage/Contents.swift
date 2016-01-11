@@ -7,7 +7,7 @@ class AlertViewController{
     
     func initAlertViewController(){
  
-        alertController = UIAlertController(title: "<#  Title  #>", message: "<# message #>", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController = UIAlertController(title: "<#  Title  #>", message: "<# message #>", preferredStyle: .Alert)
         
         alertController.addAction(UIAlertAction(title: "<#  Title  #>", style: .Default, handler: {
             (paramAction:UIAlertAction!) in self.actionCancel()
