@@ -34,3 +34,23 @@ myMutableString.addAttribute(NSStrokeWidthAttributeName,
         location: 0,
         length: 1))
 
+
+
+var a = 5
+var b = 3
+
+
+a ^= b
+
+
+
+
+
+
+
+
+
+
+
+
+

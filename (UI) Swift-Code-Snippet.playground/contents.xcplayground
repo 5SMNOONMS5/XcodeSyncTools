@@ -2,7 +2,8 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='A - AlertviewController'/>
-        <page name='A - AlertviewController_1'/>
+        <page name='A - AdaptivePopover'/>
+        <page name='G - GestureRecognizer'/>
         <page name='M - MKMapView'/>
         <page name='N - NSUserActivity'/>
         <page name='S - SFSafariViewController'/>
@@ -22,11 +23,13 @@
         <page name='U - UISwitch'/>
         <page name='U - UITableView'/>
         <page name='U - UITextField'/>
-        <page name='U - UITextField_1'/>
+        <page name='U - UITextView'/>
         <page name='U - UIView'/>
         <page name='U - UIWebView'/>
+        <page name='U - UICollectionView'/>
         <page name='U - UIImagePickerController'/>
+        <page name='U - UINavigationController'/>
         <page name='W - WKWebView'/>
-        <page name='A - AdaptivePopover'/>
+        <page name='A  - Application'/>
     </pages>
 </playground>

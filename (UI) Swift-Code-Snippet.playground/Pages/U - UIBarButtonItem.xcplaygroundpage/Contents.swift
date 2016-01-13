@@ -1,4 +1,4 @@
-import Foundation
+
 import UIKit
 
 //Left
@@ -12,6 +12,8 @@ class viewcontroller: UIViewController {
   override func viewDidLoad() {
     
     super.viewDidLoad()
+    
+    let barBtnflexibleSpace = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
     
     //Left - 1
     let barBtnCancel = UIBarButtonItem(title: "back", style: .Plain, target: self, action: "backEvent:")

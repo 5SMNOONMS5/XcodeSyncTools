@@ -1,9 +1,6 @@
 
-import UIKit
-import Foundation
 
-//Button word of different colors
-let imageView = UIImageView(image: UIImage(named: "1"))
+import UIKit
 
 class viewcontroller: UIViewController {
   
@@ -11,27 +8,19 @@ class viewcontroller: UIViewController {
     
     super.viewDidLoad()
     
-    let button = UIButton(type: .System)
-    button.frame = CGRect(x: 110, y: 70, width: 100, height: 44)
-    button.setTitle("確認", forState: .Normal)
-    button.addTarget(self, action: "buttonTouch", forControlEvents: .TouchUpInside)
-    view.addSubview(button)
+    let btn = UIButton(type: .System)
     
-    //Button word of different colors
-    let myButton = UIButton(type: .System)
-    let placeStr = "屏東縣屏東市第100開票所"
-    var numberStr = placeStr.componentsSeparatedByString("第")[1]
-    numberStr = numberStr.componentsSeparatedByString("開")[0]
+    btn.frame = CGRect(x: 110, y: 70, width: 100, height: 44)
     
-    let range: NSRange = (placeStr as NSString).rangeOfString(numberStr)
+    btn.setTitle("Title", forState: .Normal)
     
-    let myMutableString = NSMutableAttributedString(string: placeStr, attributes: [NSForegroundColorAttributeName: UIColor.blackColor()])
+    btn.addTarget(self, action: "buttonTouch", forControlEvents: .TouchUpInside)
     
-  
+    btn.titleLabel?.textColor  = UIColor.redColor()
     
-    myMutableString.addAttribute(NSForegroundColorAttributeName, value: hexColorWithRGB(113, green: 112, blue: 113, alpha: 1), range: range)
+    btn.layer.cornerRadius = 5
     
-    myButton.setAttributedTitle(myMutableString, forState: .Normal)
+    view.addSubview(btn)
   }
   
   func buttonTouch(){

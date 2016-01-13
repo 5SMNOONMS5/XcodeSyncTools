@@ -18,7 +18,7 @@ public func stringFromClass(aClass: AnyClass) -> String {
 }
 
 
-//: ### Usage
+//: ### Get Class Name
 
 
 class aUIViewClass: UIView {
