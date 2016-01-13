@@ -1,13 +1,13 @@
 
 import UIKit
 
-class VC: UIViewController {
-  
-  override func viewDidLoad() {
 
-    navigationController?.navigationBarHidden = false
-    navigationController?.navigationBar.topItem?.title = "some"
 
-  }
-}
+let navigationController: UINavigationController?
+let rootViewController = UIViewController()
+
+navigationController = UINavigationController(rootViewController: rootViewController)
+navigationController!.navigationBarHidden = false
+navigationController!.navigationBar.topItem?.title = "some"
+
 

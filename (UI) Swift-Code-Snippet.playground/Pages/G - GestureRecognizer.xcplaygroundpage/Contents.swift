@@ -17,10 +17,6 @@ class VC : UIViewController {
   }
   
   
-  
-  
-  
-  
   func handleTap(tap : UITapGestureRecognizer){
     print("handleTap")
   }

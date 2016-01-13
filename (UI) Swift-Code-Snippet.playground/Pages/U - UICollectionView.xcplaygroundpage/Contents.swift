@@ -4,9 +4,7 @@ import UIKit
 private let reuseIdCell : String = "reuseIdCell"
 private let reuseIdHeader : String = "reuseIdHeader"
 
-
 let collectionView: UICollectionView!
-
 
 let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 layout.itemSize = CGSize(width: 44, height: 44)
