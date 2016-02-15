@@ -85,9 +85,11 @@ if let lastT = result2{
 print(lastT, terminator: "")
 }
 
-//: ### 
+//: ### Convert Float To Int
 
+let value = 3.1416
 
+String(format: "%.2f", value)
 
 
 
