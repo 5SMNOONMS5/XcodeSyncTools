@@ -31,5 +31,6 @@
         <page name='U - UINavigationController'/>
         <page name='W - WKWebView'/>
         <page name='A  - Application'/>
+        <page name='W - Windows'/>
     </pages>
 </playground>

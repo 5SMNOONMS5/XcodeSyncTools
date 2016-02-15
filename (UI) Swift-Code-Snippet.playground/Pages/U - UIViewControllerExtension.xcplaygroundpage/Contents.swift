@@ -135,6 +135,13 @@ extension UIViewController {
       navigationController?.navigationBar.barTintColor = value
     }
   }
+//: ### Go to setting
+  
+  public func gotoSetting(){
+    let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)
+    UIApplication.sharedApplication().openURL(settingsUrl!)
+  }
+
   
 }
 

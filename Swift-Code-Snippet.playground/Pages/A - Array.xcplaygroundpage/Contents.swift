@@ -21,11 +21,15 @@ someInts += [5]
 
 someInts += [someInts.last!+3]
 
-someInts += [5,10,15,20]
+someInts += [5,10,15,20,20]
 
 someInts[0]
 
 someInts[2...4]
+
+someInts.indexOf(5)
+
+someInts
 
 someInts.removeLast()
 
