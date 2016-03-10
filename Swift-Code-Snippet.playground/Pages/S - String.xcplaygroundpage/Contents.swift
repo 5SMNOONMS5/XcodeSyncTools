@@ -9,17 +9,20 @@ import UIKit
  let string3 = string1 + string2
  var string4 = "Swift is strngg"
  let string5 = "TestIn Range"
-
-
 //: ### check specific within String
 
+
 for index in string1.characters.indices {
-    
+  
     if string1[index] == "H"{
         print("\(string1) contain H character")
         break
     }
 }
+
+
+Array(string1.characters)
+
 
 //: ### remove all white space
 
@@ -50,6 +53,11 @@ range.location
 range.length
 
 
+//: ### 移除特定字串，或者更換至新的字串
+
+let newString = string1.stringByReplacingOccurrencesOfString("H", withString: "Q")
+
+let newString2 = string1.stringByReplacingOccurrencesOfString("H", withString: "")
 
 //: ### 將"."插入至倒數第 2 個字前
 
@@ -90,10 +98,6 @@ print(lastT, terminator: "")
 let value = 3.1416
 
 String(format: "%.2f", value)
-
-
-
-
 
 //: ### subscript
 

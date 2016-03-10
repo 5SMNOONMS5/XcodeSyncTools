@@ -12,6 +12,7 @@ let AllUnits = YearUnit.union(MonthUnit).union(WeekUnit).union(WeekdayUnit).unio
 var calendar: NSCalendar = NSCalendar.currentCalendar()
 
 var currentDate: NSDate = NSDate()
+
 let dateFormatter = NSDateFormatter()
 
 var components: NSDateComponents
@@ -21,7 +22,7 @@ var components: NSDateComponents
 
 components = calendar.components(MonthUnit.union(DayUnit), fromDate: currentDate)
 
-//: ### Compare Two Days
+//: ### Distance Between Two Days
 
 let start = "2010-09-01"
 
@@ -60,5 +61,41 @@ let month = componentsDayRange.month
 let weekOfMonth = componentsDayRange.weekOfMonth 
 let weekDay = Int(componentsDayRange.weekday)
 let day = componentsDayRange.day
+
+
+//: ### Two Dates Comparison 
+
+
+extension NSDate{
+  
+  func isGreaterThanDate(dateToCompare: NSDate) -> Bool {
+    
+    if self.compare(dateToCompare) == NSComparisonResult.OrderedDescending {
+      return true
+    }
+    return false
+  }
+  
+  
+  func isLessThanDate(dateToCompare: NSDate) -> Bool {
+    
+    if self.compare(dateToCompare) == NSComparisonResult.OrderedAscending {
+      return true
+    }
+    return false
+  }
+
+  func equalToDate(dateToCompare: NSDate) -> Bool {
+   
+    if self.compare(dateToCompare) == NSComparisonResult.OrderedSame {
+      return true
+    }
+    
+    return false
+  }
+  
+  
+}
+
 
 

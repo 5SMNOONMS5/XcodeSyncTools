@@ -11,3 +11,23 @@ imageView.center = view.center
 imageView.backgroundColor = UIColor.blackColor()
 view.addSubview(imageView)
 
+
+//: ### Extension
+
+extension UIImage{
+  
+  
+  class func imageWithColor(color: UIColor) -> UIImage {
+    
+    let rect = CGRectMake(0, 0, 1, 1)
+    // Create a 1 by 1 pixel content
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+    color.setFill()
+    UIRectFill(rect)
+    
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    return image
+  }
+}

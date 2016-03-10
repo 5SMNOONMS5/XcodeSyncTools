@@ -30,7 +30,7 @@ class Person{
         [unowned self] in
         
         return "Hello, \(self.name)!"
-        }()
+    }()
     
     init(name: String) {
         self.name = name

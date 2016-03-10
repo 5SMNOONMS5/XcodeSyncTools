@@ -31,6 +31,8 @@ var characters2: [String: String] = ["B":"2","D":"4"]
 var characters3: [String: String] = ["E":"5","F":"6"]
 var emptyCharacters = [String: String]()
 
+characters1
+
 characters1.union(characters2)
 
 characters1 += characters3
