@@ -5,6 +5,7 @@
         <page name='A - AttributedString'/>
         <page name='C - Closure '/>
         <page name='C - Color'/>
+        <page name='C - CALayer'/>
         <page name='D - Date'/>
         <page name='D - Delay'/>
         <page name='D - Device'/>
