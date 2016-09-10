@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 
 $DIRECTORY="~/Library/Developer/Xcode/UserData/CodeSnippets"
