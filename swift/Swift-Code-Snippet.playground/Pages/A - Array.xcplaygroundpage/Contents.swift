@@ -34,7 +34,7 @@ someInts
 someInts.removeLast()
 
 for int in someInts {
-  print(int)
+  print("\(int)")
 }
 
 for (index, value) in someInts.enumerate() {
