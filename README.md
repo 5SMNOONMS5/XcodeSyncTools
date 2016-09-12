@@ -25,3 +25,5 @@ before push to remote repositories，it update all code-snippets in  **~/Library
 # In mac terminal
 sh git-push.sh
 ```
+
+![demo](gettingStart.gif)
