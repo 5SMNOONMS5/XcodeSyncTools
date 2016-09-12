@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TT</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - TableviewDelegate
+extension SettingViewController: UITableViewDelegate{
+  
+  func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+    return GlobalConstants.SharedInstance.cellHeight
+  }
+  
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+    
+  }
+}
+
+// MARK: - UITableViewDataSource
+extension SettingViewController: UITableViewDataSource{
+  
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+    return section0.count
+  }
+  
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell {
+    
+    private let reuseIdCell : String = "reuseIdCell"
+
+    let section0 : [String] = ["Notification".localized,"Theme".localized]
+
+    tableview.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdCell)
+
+    
+    let cell = tableview.dequeueReusableCellWithIdentifier(reuseIdCell, forIndexPath: indexPath) as UITableViewCell
+    
+    return cell
+  }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E4A7984E-D218-4910-89A6-848B80D5D593</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>## Tableview Delegate &amp; Datasource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

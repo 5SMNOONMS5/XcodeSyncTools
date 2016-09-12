@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>RR</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+-(void)refershControl{
+    
+    self.refreshControl = [UIRefreshControl new];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:&lt;# Message #&gt;];
+    self.refreshControl.tintColor = [UIColor magentaColor];
+    [self.refreshControl addTarget:self action:@selector(refreshControl:) forControlEvents:UIControlEventValueChanged];
+}
+
+#pragma mark -
+#pragma mark - &lt; Refresh Control &gt;
+
+- (void)refreshControl:(id)sender{
+    
+    [self performSelectorOnMainThread:@selector(&lt;# Select Method #&gt;) withObject:nil waitUntilDone:YES];
+    
+    [(UIRefreshControl *)sender endRefreshing];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D70CB5F1-A889-411E-97FA-C19AED29B7CC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>## Refersh Control</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
