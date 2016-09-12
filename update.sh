@@ -7,8 +7,8 @@ declare -a APPLICATIONS=("xcode" "atom")
 
 ## declare an array contains supported application directories
 declare -a DIRECTORIES=(
-"/Users/StephenChen/Library/Developer/Xcode/UserData/CodeSnippets"
-"/Users/StephenChen/.atom/snippets.cson")
+"~/Library/Developer/Xcode/UserData/CodeSnippets"
+"~/.atom/snippets.cson")
 
 #========================= xcode =========================
 
@@ -20,7 +20,7 @@ if [ "$platform" == "${APPLICATIONS[0]}" ]; then
 
     CURRENT_WORKING_HOME=`pwd`
 
-    ln -s "${CURRENT_WORKING_HOME}"/xcode/* /Users/StephenChen/Library/Developer/Xcode/UserData/CodeSnippets
+    ln -s "${CURRENT_WORKING_HOME}"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 
   else
 
@@ -40,7 +40,7 @@ elif [ "$platform" == "${APPLICATIONS[1]}" ]; then
 
   else
 
-    echo "/Users/StephenChen/.atom/snippets.cson doesn't exist , please create an one "
+    echo "~/.atom/snippets.cson doesn't exist , please create an one "
 
   fi
 
