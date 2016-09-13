@@ -20,11 +20,13 @@ if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
 
   if [ -d "$PATHXCODE" ]; then
 
+    rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
+
     CURRENT_WORKING_HOME=`pwd`
 
     ln -s "$CURRENT_WORKING_HOME"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 
-    echo "success update sinppet in ~/Library/Developer/Xcode/UserData/CodeSnippets"
+    echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
   else
 

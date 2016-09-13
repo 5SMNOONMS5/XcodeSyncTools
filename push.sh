@@ -12,6 +12,8 @@ if [[ $(git diff) ]]; then
   # remove all file include symbolic link and newest snippets
   rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
 
+
+
   CURRENT_WORKING_HOME=`pwd`
 
   # re-link again
@@ -19,7 +21,7 @@ if [[ $(git diff) ]]; then
 
   git add -A
 
-  git commit -m '$message'
+  git commit -m $message
 
   git push
 
