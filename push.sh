@@ -6,14 +6,7 @@ message=$@
 
 if [[ $(git diff) ]]; then
 
-  # mv new .codesnippet to ./xcode
-  find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec mv {} ./xcode \;
-
-  # remove all file include symbolic link and newest snippets
-  rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
-
-  # re-link again
-  ln -s ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+  find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
 
   git add -A
 

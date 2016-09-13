@@ -16,13 +16,15 @@ PATHATOM=~/.atom/snippets.cson
 
 if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
 
+
+
   echo "start working with Xcode snippet"
 
   if [ -d "$PATHXCODE" ]; then
 
     rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
 
-    ln -s ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+    cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 
     echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
