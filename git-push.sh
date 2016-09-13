@@ -9,7 +9,6 @@ if [[ $(git diff) ]]; then
   # mv new .codesnippet to ./xcode
   find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec mv {} ./xcode \;
 
-
   # remove all file include symbolic link and newest snippets
   rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
 
