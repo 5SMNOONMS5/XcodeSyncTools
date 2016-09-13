@@ -7,7 +7,7 @@
 
 #### Atom developer
 -----------------------------------
-run below commands when pull **everytime** ,  this will update the code-snippet in **~/.atom/snippets.cson***
+run below commands when pull **everytime** ,  this will update the newest snippets in **~/.atom/snippets.cson***
 ```bash
 # In mac terminal
 sh update.sh atom
@@ -15,7 +15,7 @@ sh update.sh atom
 
 #### Xcode developer
 -----------------------------------
-run below commands when pull **everytime** ,  this will update the code-snippet in **~/Library/Developer/Xcode/UserData/CodeSnippets/***
+run below commands when pull **everytime** ,  this will update the newest snippets in **~/Library/Developer/Xcode/UserData/CodeSnippets**
 ```bash
 # In mac terminal
 sh update.sh xcode
@@ -23,11 +23,11 @@ sh update.sh xcode
 
 ##Contributor
 -----------------------------------
-contributor mush follow the snippet-rules made by us , if you want be part of us , feel free to contact us
+contributor must follow the snippet naming convention made by us , if you want be part of us , feel free to contact us.
 
 ##Contributor Usage
 ----------------------------------
-contributor will create new/delete snippets , after **finish** , run below command
+contributor will create new/delete snippets , after **finish** run below command
 
 ```bash
 # In mac terminal
