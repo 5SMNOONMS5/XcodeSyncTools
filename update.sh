@@ -1,46 +1,46 @@
 #!/bin/sh
 
-platform=$@
+PLATFORM=$@
+PLATFORM=`echo "$PLATFORM" | tr '[A-Z]' '[a-z]'`
 
 ## declare an array contains supported application
 declare -a APPLICATIONS=("xcode" "atom")
 
 ## declare an array contains supported application directories
-declare -a DIRECTORIES=(
-"~/Library/Developer/Xcode/UserData/CodeSnippets"
-"~/.atom/snippets.cson")
+# declare -a DIRECTORIES=("~/Library/Developer/Xcode/UserData/CodeSnippets" "~/.atom/snippets.cson")
+
+PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
+PATHATOM=~/.atom/snippets.cson
 
 #========================= xcode =========================
 
-if [ "$platform" == "${APPLICATIONS[0]}" ]; then
+if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
 
   echo "start working with Xcode snippet"
 
-  if [ -d "${DIRECTORIES[0]}" ]; then
+  if [ -d "$PATHXCODE" ]; then
 
     CURRENT_WORKING_HOME=`pwd`
 
-    ln -s "${CURRENT_WORKING_HOME}"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+    ln -s "$CURRENT_WORKING_HOME"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 
-    echo "Success update sinppet in ~/Library/Developer/Xcode/UserData/CodeSnippets"
+    echo "success update sinppet in ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
   else
 
-    echo "~/Library/Developer/Xcode/UserData/CodeSnippets doesn't exist , please create an one "
+    echo "but ~/Library/Developer/Xcode/UserData/CodeSnippets doesn't exist "
 
   fi
 
 #========================= atom =========================
 
-elif [ "$platform" == "${APPLICATIONS[1]}" ]; then
+elif [ "$PLATFORM" == "${APPLICATIONS[1]}" ]; then
 
   echo "current working with Atom snippet "
 
-  if [ -d "${DIRECTORIES[1]}" ]; then
+  if [ -d "$PATHATOM" ]; then
 
-    CURRENT_WORKING_HOME=`pwd`
-
-    echo "Success update sinppet "
+    echo "not done yet"
 
   else
 
