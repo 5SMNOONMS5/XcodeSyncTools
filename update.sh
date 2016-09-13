@@ -15,9 +15,7 @@ PATHATOM=~/.atom/snippets.cson
 #========================= xcode =========================
 
 if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
-
-
-
+  
   echo "start working with Xcode snippet"
 
   if [ -d "$PATHXCODE" ]; then
