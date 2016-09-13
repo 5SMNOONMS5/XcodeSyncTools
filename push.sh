@@ -12,12 +12,8 @@ if [[ $(git diff) ]]; then
   # remove all file include symbolic link and newest snippets
   rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
 
-
-
-  CURRENT_WORKING_HOME=`pwd`
-
   # re-link again
-  ln -s "$CURRENT_WORKING_HOME"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+  ln -s ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 
   git add -A
 
