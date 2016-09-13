@@ -6,6 +6,17 @@ message=$@
 
 if [[ $(git diff) ]]; then
 
+  # mv new .codesnippet to ./xcode
+  find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec mv {} ./xcode \;
+
+  # remove all file include symbolic link and newest snippets
+  rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
+
+  CURRENT_WORKING_HOME=`pwd`
+
+  # re-link again
+  ln -s "$CURRENT_WORKING_HOME"/xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+
   git add -A
 
   git commit -m '$message'
