@@ -4,12 +4,12 @@ source ~/.bash_profile
 #fetch all arguments via $@
 message=$@
 
-echo $message
+echo ${message}
 
 if [[ $(git diff) ]]; then
 
   # check message is empty
-  if [[ -z "$message"  ]]; then
+  if [[ -z "${message}"  ]]; then
 
     echo "no commit message . abort !"
 
@@ -19,7 +19,7 @@ if [[ $(git diff) ]]; then
 
     git add -A
 
-    git commit -m $message
+    git commit -m ${message}
 
     git push
 
