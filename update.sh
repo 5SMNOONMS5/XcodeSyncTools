@@ -18,17 +18,32 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
   echo "start working with Xcode snippet"
 
-  if [ -d "${PATHXCODE}" ]; then
+  echo "in order to renew snippets this will quit xcode,  press [y/n] to proceed :" ; read response
 
-    rm ${PATHXCODE}/*.codesnippet
+  # read user input response
+  # read response
 
-    cp ./xcode/* ${PATHXCODE}
+  if [ "${response}" == "y" ]; then
 
-    echo "success update sinppet into ${PATHXCODE}"
+    echo "smart choice"
+
+    if [ -d "${PATHXCODE}" ]; then
+
+      rm ${PATHXCODE}/*.codesnippet
+
+      cp ./xcode/* ${PATHXCODE}
+
+      echo "success update sinppet into ${PATHXCODE}"
+
+    else
+
+      echo "\"BUT\" ${PATHXCODE} doesn't exist "
+
+    fi
 
   else
 
-    echo "\"BUT\" ${PATHXCODE} doesn't exist "
+    echo "oh ! see you next time "
 
   fi
 
