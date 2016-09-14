@@ -18,10 +18,9 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
   echo "start working with Xcode snippet"
 
-  echo "in order to renew snippets this will quit xcode,  press [y/n] to proceed :" ; read response
+  echo "in order to renew snippets this will quit xcode,  press [y/n] to proceed :"
 
-  # read user input response
-  # read response
+  read response
 
   if [ "${response}" == "y" ]; then
 
