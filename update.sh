@@ -15,20 +15,20 @@ PATHATOM=~/.atom/snippets.cson
 #========================= xcode =========================
 
 if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
-  
+
   echo "start working with Xcode snippet"
 
   if [ -d "$PATHXCODE" ]; then
 
-    rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
+    rm ${PATHXCODE}/*.codesnippet
 
-    cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+    cp ./xcode/* ${PATHXCODE}
 
-    echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
+    echo "success update sinppet into ${PATHXCODE}"
 
   else
 
-    echo "but ~/Library/Developer/Xcode/UserData/CodeSnippets doesn't exist "
+    echo "\"BUT\" ${PATHXCODE} doesn't exist "
 
   fi
 
