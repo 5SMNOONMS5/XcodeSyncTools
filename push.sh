@@ -4,8 +4,6 @@ source ~/.bash_profile
 #fetch all arguments via $@
 message=$@
 
-echo ${message}
-
 if [[ $(git diff) ]]; then
 
   # check message is empty
