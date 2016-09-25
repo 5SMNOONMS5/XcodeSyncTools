@@ -6,7 +6,7 @@ message=$@
 
 if [[ $(git diff) ]]; then
 
-  find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
+  # find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
 
   git add -A
 
