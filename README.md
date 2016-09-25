@@ -21,6 +21,10 @@ run below commands when pull **everytime** ,  this will update the newest snippe
 sh update.sh xcode
 ```
 
+##demo
+
+![usage demo](usage.png)
+
 ##Contributor
 -----------------------------------
 contributor must follow the snippet naming convention made by us , if you want be part of us , feel free to contact us.
@@ -34,6 +38,7 @@ contributor will create new/delete snippets , after **finish** run below command
 sh push.sh commit-message
 ```
 
-##Gif demo
+##demo
 
-![demo](gettingStart.gif)
+![contributor demo](contributor.png)
+

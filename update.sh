@@ -10,29 +10,44 @@ declare -a APPLICATIONS=("xcode" "atom")
 # declare -a DIRECTORIES=("~/Library/Developer/Xcode/UserData/CodeSnippets" "~/.atom/snippets.cson")
 
 PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
-PATHATOM=~/.atom/snippets.cson
+PATHATOM=~/.atom/snippets.cso
 
 #========================= xcode =========================
 
-if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
+if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
-  echo "start working with Xcode snippet"
+  echo "in order to renew snippets this will quit xcode,  press [y/n] to proceed :"
 
-  # directory not exist , create a new one
-  if [[ ! -d "$PATHXCODE" ]]; then
-     echo "codeSnippets directory not exist , create a new one"
-     mkdir ~/Library/Developer/Xcode/UserData/CodeSnippets/
-  # if CodeSnippets already exis , move old code CodeSnippetsOld
+  read response
+
+  if [ "${response}" == "y" ]; then
+
+    echo "start working with Xcode snippet"
+
+    # directory not exist , create a new one
+    if [[ ! -d "${PATHXCODE}" ]]; then
+
+       echo "codeSnippets directory not exist , create a new one"
+
+       mkdir ${PATHXCODE}
+
+    # if CodeSnippets already exis , move old code CodeSnippetsOld
+    else
+       echo "move old sources into codeSnippetsOld directory"
+
+       mkdir ~/Library/Developer/Xcode/UserData/CodeSnippetsOld/
+
+       cp ${PATHXCODE}/* ~/Library/Developer/Xcode/UserData/CodeSnippetsOld
+    fi
+
+    cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+    
+    echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
+
   else
-     echo "move old codeSnippets into codeSnippetsOld directory"
-     mkdir ~/Library/Developer/Xcode/UserData/CodeSnippetsOld/
-     mv ~/Library/Developer/Xcode/UserData/CodeSnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippetsOld
+
+    echo "oh ! see you next time "
   fi
-
-  cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
-
-  # cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
-  echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
 #========================= atom =========================
 
