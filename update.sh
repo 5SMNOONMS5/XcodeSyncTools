@@ -15,22 +15,24 @@ PATHATOM=~/.atom/snippets.cson
 #========================= xcode =========================
 
 if [ "$PLATFORM" == "${APPLICATIONS[0]}" ]; then
-  
+
   echo "start working with Xcode snippet"
 
-  if [ -d "$PATHXCODE" ]; then
-
-    rm ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet
-
-    cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
-
-    echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
-
+  # directory not exist , create a new one
+  if [[ ! -d "$PATHXCODE" ]]; then
+     echo "codeSnippets directory not exist , create a new one"
+     mkdir ~/Library/Developer/Xcode/UserData/CodeSnippets/
+  # if CodeSnippets already exis , move old code CodeSnippetsOld
   else
-
-    echo "but ~/Library/Developer/Xcode/UserData/CodeSnippets doesn't exist "
-
+     echo "move old codeSnippets into codeSnippetsOld directory"
+     mkdir ~/Library/Developer/Xcode/UserData/CodeSnippetsOld/
+     mv ~/Library/Developer/Xcode/UserData/CodeSnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippetsOld
   fi
+
+  cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+
+  # cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
+  echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
 #========================= atom =========================
 
