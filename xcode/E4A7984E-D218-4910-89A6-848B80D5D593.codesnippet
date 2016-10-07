@@ -10,39 +10,37 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// MARK: - TableviewDelegate
-extension SettingViewController: UITableViewDelegate{
-  
-  func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
-    return GlobalConstants.SharedInstance.cellHeight
-  }
-  
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+extension &lt;# UIViewController #&gt;: UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+        return &lt;# Int #&gt;
+    }
     
-  }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+    }
 }
 
 // MARK: - UITableViewDataSource
-extension SettingViewController: UITableViewDataSource{
-  
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
-    return section0.count
-  }
-  
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell {
+extension &lt;# UIViewController #&gt;: UITableViewDataSource{
     
-    private let reuseIdCell : String = "reuseIdCell"
-
-    let section0 : [String] = ["Notification".localized,"Theme".localized]
-
-    tableview.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdCell)
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return &lt;# Int #&gt;
+    }
     
-    let cell = tableview.dequeueReusableCellWithIdentifier(reuseIdCell, forIndexPath: indexPath) as UITableViewCell
-    
-    return cell
-  }
-}</string>
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        
+        let reuseId : String = &lt;# String #&gt;
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseId)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath) as UITableViewCell
+        
+        return cell
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E4A7984E-D218-4910-89A6-848B80D5D593</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -50,7 +48,7 @@ extension SettingViewController: UITableViewDataSource{
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>## Tableview Delegate &amp; Datasource</string>
+	<string>Tableview Delegate &amp; Datasource </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
