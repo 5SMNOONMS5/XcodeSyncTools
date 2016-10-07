@@ -3,42 +3,43 @@
 
 **Code-Snippet** is a place everybody can share their own personal code snippet with one another
 
-##Usage
+##User Quick Start
 
-#### Atom developer
+#### Atom
 -----------------------------------
-run below commands when pull **everytime** ,  this will update the newest snippets in **~/.atom/snippets.cson***
+* run commands while **each pull**, this will update the newest snippets into **~/.atom/snippets.cson***
 ```bash
-# In mac terminal
+
+# In terminal Without Fork Repositories
+
+# In terminal With Fork Repositories
 sh update.sh atom
+
+
+
+
 ```
 
-#### Xcode developer
+#### Xcode
 -----------------------------------
-run below commands when pull **everytime** ,  this will update the newest snippets in **~/Library/Developer/Xcode/UserData/CodeSnippets**
+* run commands while **each pull**, this will update the newest snippets into **~/Library/Developer/Xcode/UserData/CodeSnippets**
 ```bash
 # In mac terminal
 sh update.sh xcode
 ```
 
-##demo
 
-![usage demo](usage.png)
+
+
 
 ##Contributor
------------------------------------
-contributor must follow the snippet naming convention made by us , if you want be part of us , feel free to contact us.
 
-##Contributor Usage
+
+
+#### Xcode
 ----------------------------------
-contributor will create new/delete snippets , after **finish** run below command
-
+* **push** your newest snippet  
 ```bash
 # In mac terminal
 sh push.sh commit-message
 ```
-
-##demo
-
-![contributor demo](contributor.png)
-
