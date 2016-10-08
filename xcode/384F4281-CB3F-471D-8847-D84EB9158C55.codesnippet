@@ -9,21 +9,23 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  /**
-  - &lt;# Function Name  #&gt;:
-  - parameter left:
-  - parameter right:
-  - returns:
-  - Throws:
-  - Complexity:
-  - Precondition:
-  - Postcondition:
-  - Requires:
-  - Note:
-  - Seealso:
-  - Warning:
-  - Complexity:
-  */</string>
+	<string>/**
+     &lt;# Description #&gt;
+     
+     - parameter &lt;# Name #&gt;  :
+     - parameter &lt;# Name #&gt;  :
+     - Returns:
+     - Throws:
+     - Complexity:
+     - Precondition:
+     - Postcondition:
+     - Requires:
+     - Note:
+     - Seealso:
+     - Warning:
+     - Complexity:
+     
+*/</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>384F4281-CB3F-471D-8847-D84EB9158C55</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -31,7 +33,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string> Annoation</string>
+	<string>Annoation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

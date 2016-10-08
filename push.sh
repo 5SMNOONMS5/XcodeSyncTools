@@ -6,34 +6,26 @@ message=$@
 
 PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
 
-if [[ $(git diff) ]]; then
+# find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
 
-  # find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
+# check commit message
+if [[ -z "${message}"  ]]; then
 
-  # check commit message
-  if [[ -z "${message}"  ]]; then
-
-    echo "no commit message . abort !"
-
-  else
-
-    rm ./xcode/*
-
-    echo "update old codesnippet under xcode folder to newest one"
-    cp ${PATHXCODE}/* ./xcode
-
-    echo "start push"
-    git add -A
-
-    git commit -m "${message}"
-
-    git push
-    echo "done"
-
-  fi
+  echo "no commit message . abort !"
 
 else
 
-  echo "not thing to commit , working directory clear"
+  rm ./xcode/*
+
+  echo "update old codesnippet under xcode folder to newest one"
+  cp ${PATHXCODE}/* ./xcode
+
+  echo "start push"
+  git add -A
+
+  git commit -m "${message}"
+
+  git push
+  echo "done"
 
 fi
