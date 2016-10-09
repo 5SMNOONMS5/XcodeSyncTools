@@ -9,21 +9,17 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let btn = UIButton(type: .System)
+	<string>let &lt;#textView#&gt; = UITextView(frame: CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;))
+        &lt;#textView#&gt;.text = &lt;#content#&gt;
+        view.addSubview(&lt;#textView#&gt;)
         
-        btn.frame = CGRect(x: 110, y: 70, width: 100, height: 44)
-        
-        btn.setTitle("Title", forState: .Normal)
-        
-        btn.addTarget(self, action: "buttonTouch", forControlEvents: .TouchUpInside)
-        
-        btn.titleLabel?.textColor  = UIColor.redColor()
-        
-        btn.layer.cornerRadius = 5
-        
+        let btn = UIButton(type: .system)
+        btn.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        btn.setTitle(&lt;#title#&gt;, for: .normal)
+        btn.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
         view.addSubview(btn)
         
-        func buttonTouch(){
+        func buttonTouch(sender: UIButton){
             print("The button was touched")
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
