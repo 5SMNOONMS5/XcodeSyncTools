@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II </string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let tempView = UIView()
-        tempView.frame = CGRectMake(0, 0, 100, 100)
-        tempView.backgroundColor = UIColor.blackColor()
-        view.addSubview(tempView)</string>
+	<string>    let &lt;#name#&gt; = UIView()
+    &lt;#name#&gt;.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
+    &lt;#name#&gt;.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+    &lt;#name#&gt;.center = &lt;#CGPoint#&gt;
+    view.addSubview(&lt;#name#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6BBE4649-0541-4518-A58B-C73FFEFF45BB</string>
 	<key>IDECodeSnippetLanguage</key>
