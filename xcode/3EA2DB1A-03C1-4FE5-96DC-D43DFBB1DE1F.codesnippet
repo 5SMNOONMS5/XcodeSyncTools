@@ -9,11 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#textView#&gt; = UITextView(frame: CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;))
-        &lt;#textView#&gt;.text = &lt;#content#&gt;
-        view.addSubview(&lt;#textView#&gt;)
-        
-        let btn = UIButton(type: .system)
+	<string>let btn = UIButton(type: .system)
         btn.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
         btn.setTitle(&lt;#title#&gt;, for: .normal)
         btn.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
@@ -29,7 +25,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>init a UIButton</string>
+	<string>Init a UIButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
