@@ -5,7 +5,7 @@
 
 ##User Quick Starts
 
-#### Atom
+#### Atom (not support)
 -----------------------------------
 * run commands while **each pull**, this will update the newest snippets into **~/.atom/snippets.cson***
 ```bash
@@ -27,14 +27,7 @@ sh update.sh xcode
 sh synchronizeRepository.sh xcode
 ```
 
-##Contributor
 
-temporarily we only support xcode :) 
+##Flow
 
-#### Xcode
-----------------------------------
-* **push** your newest snippet  
-```bash
-# In mac terminal
-sh push.sh commit-message
-```
+![Flow chart](img/Flow.png)

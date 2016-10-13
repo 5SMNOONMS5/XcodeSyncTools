@@ -26,6 +26,5 @@ else
   git commit -m "${message}"
 
   git push
-  echo "done"
 
 fi
