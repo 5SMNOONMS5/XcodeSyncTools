@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II</string>
+	<string>II </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#name#&gt; = UIImageView()
-    &lt;#name#&gt;.image = UIImage(named: &lt;#T##String#&gt;)
-    &lt;#name#&gt;.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
-    &lt;#name#&gt;.contentMode = &lt;#UIViewContentMode#&gt;
-    &lt;#name#&gt;.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-    &lt;#name#&gt;.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-    view.addSubview(&lt;#name#&gt;)</string>
+	<string>let imageView = UIImageView(image: UIImage(named: "imageName"))
+        imageView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.frame = self.bounds
+        imageView.center = self.center
+        imageView.backgroundColor = UIColor.blackColor()
+        addSubview(imageView)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>94DE4856-C663-4E30-854F-621DB762413E</string>
 	<key>IDECodeSnippetLanguage</key>

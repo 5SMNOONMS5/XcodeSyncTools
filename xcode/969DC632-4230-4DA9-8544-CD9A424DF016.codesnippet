@@ -3,21 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II</string>
+	<string>II </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> var &lt;#name#&gt; = UILabel()
-    &lt;#name#&gt;.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
-    &lt;#name#&gt;.font = UIFont.boldSystemFont(ofSize: &lt;#T##CGFloat#&gt;)
-    &lt;#name#&gt;.text = &lt;#String#&gt;
-    &lt;#name#&gt;.textColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-    &lt;#name#&gt;.lineBreakMode = &lt;#NSLineBreakMode#&gt;
-    &lt;#name#&gt;.textAlignment = &lt;#NSTextAlignment#&gt;
-    &lt;#name#&gt;.numberOfLines = &lt;#Int#&gt;
-    view.addSubview(&lt;#name#&gt;)</string>
+	<string> lblTitle = UILabel()
+        lblTitle.frame = CGRect(x: 10, y: 10, width: 100, height: 100)
+        lblTitle.font = UIFont.boldSystemFontOfSize(15)
+        lblTitle.textColor = UIColor.orangeColor()
+        lblTitle.text = "text"
+        lblTitle.textAlignment = .Right
+        addSubview(lblTitle)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>969DC632-4230-4DA9-8544-CD9A424DF016</string>
 	<key>IDECodeSnippetLanguage</key>

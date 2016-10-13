@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II</string>
+	<string>II </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#name#&gt; = UIButton(type: .system)
-    &lt;#name#&gt;.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
-    &lt;#name#&gt;.setTitle(&lt;#String#&gt;, for: .normal)
-    &lt;#name#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.actionButtonTocuh), for: .touchUpInside)
-    &lt;#name#&gt;.titleLabel?.textColor  = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-    &lt;#name#&gt;.layer.cornerRadius = &lt;#Int#&gt;
-    view.addSubview(&lt;#name#&gt;)
-    
-    func actionButtonTocuh(){
-      print("The button was touched")
-    }
-</string>
+	<string>let btn = UIButton(type: .system)
+        btn.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        btn.setTitle(&lt;#title#&gt;, for: .normal)
+        btn.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
+        view.addSubview(btn)
+        
+        func buttonTouch(sender: UIButton){
+            print("The button was touched")
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3EA2DB1A-03C1-4FE5-96DC-D43DFBB1DE1F</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -28,7 +25,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>init a UIButton</string>
+	<string>Init a UIButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

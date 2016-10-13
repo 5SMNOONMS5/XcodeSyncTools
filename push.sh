@@ -1,5 +1,5 @@
 #!/bin/sh
-source ~/.bash_profile
+#source ~/.bash_profile
 
 #fetch all arguments via $@
 message=$@
