@@ -9,13 +9,12 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let imageView = UIImageView(image: UIImage(named: "imageName"))
-        imageView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        imageView.frame = self.bounds
-        imageView.center = self.center
-        imageView.backgroundColor = UIColor.blackColor()
-        addSubview(imageView)</string>
+	<string>   let &lt;# name #&gt; = UIImageView(image: UIImage(named: &lt;#image name#&gt;))
+        &lt;# name #&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;# name #&gt;.contentMode = &lt;#UIViewContentMode#&gt;
+        &lt;# name #&gt;.backgroundColor = &lt;#UIColor#&gt;
+        view.addSubview(&lt;# name #&gt;)
+        </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>94DE4856-C663-4E30-854F-621DB762413E</string>
 	<key>IDECodeSnippetLanguage</key>
