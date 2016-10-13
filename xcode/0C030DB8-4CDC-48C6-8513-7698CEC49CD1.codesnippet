@@ -9,10 +9,10 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  let layerStatusBar = CALayer()
-        layerStatusBar.frame = CGRectMake(0, 0, Constants.ScreenWidth, Constants.StatusBarHeight)
-        layerStatusBar.backgroundColor = UIColor.blackColor().CGColor
-        view.layer.addSublayer(layerStatusBar)</string>
+	<string>let &lt;#name#&gt; = CALayer()
+        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#name#&gt;.backgroundColor = &lt;#UIColor#&gt;
+        view.layer.addSublayer(&lt;#name#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0C030DB8-4CDC-48C6-8513-7698CEC49CD1</string>
 	<key>IDECodeSnippetLanguage</key>

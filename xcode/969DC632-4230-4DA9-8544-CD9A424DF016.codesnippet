@@ -9,13 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> lblTitle = UILabel()
-        lblTitle.frame = CGRect(x: 10, y: 10, width: 100, height: 100)
-        lblTitle.font = UIFont.boldSystemFontOfSize(15)
-        lblTitle.textColor = UIColor.orangeColor()
-        lblTitle.text = "text"
-        lblTitle.textAlignment = .Right
-        addSubview(lblTitle)</string>
+	<string>let &lt;#name#&gt; = UILabel()
+        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#name#&gt;.font = &lt;#UIFont#&gt;
+        &lt;#name#&gt;.textColor = &lt;#UIColor#&gt;
+        &lt;#name#&gt;.text = &lt;#String#&gt;
+        &lt;#name#&gt;.textAlignment = &lt;#NSTextAlignment#&gt;
+        view.addSubview(&lt;#name#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>969DC632-4230-4DA9-8544-CD9A424DF016</string>
 	<key>IDECodeSnippetLanguage</key>
