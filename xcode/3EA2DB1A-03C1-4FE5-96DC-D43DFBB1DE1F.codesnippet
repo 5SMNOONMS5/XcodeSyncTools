@@ -9,15 +9,16 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let btn = UIButton(type: .system)
-        btn.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        btn.setTitle(&lt;#title#&gt;, for: .normal)
-        btn.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
-        view.addSubview(btn)
+	<string>let &lt;#btn#&gt; = UIButton(type: .system)
+        &lt;#btn#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#btn#&gt;.setTitle(&lt;#title#&gt;, for: .normal)
+        &lt;#btn#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
+        view.addSubview(&lt;#btn#&gt;)
         
         func buttonTouch(sender: UIButton){
             print("The button was touched")
-        }</string>
+        }
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3EA2DB1A-03C1-4FE5-96DC-D43DFBB1DE1F</string>
 	<key>IDECodeSnippetLanguage</key>
