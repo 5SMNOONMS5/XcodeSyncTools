@@ -3,24 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>PP</string>
+	<string>II </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>print("########## \(#function) ##########")</string>
+	<string>  let &lt;#name#&gt; = UIActivityIndicatorView()
+        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#name#&gt;.activityIndicatorViewStyle = &lt;#UIActivityIndicatorViewStyle#&gt;
+        &lt;#name#&gt;.color = &lt;#UIColor#&gt;
+        &lt;#name#&gt;.startAnimating()
+        &lt;#name#&gt;.stopAnimating()
+        view.addSubview(&lt;#name#&gt;)
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>64BEC307-0148-4EDB-B0CC-61AD4026C0A4</string>
+	<string>A35DFDB2-2B32-4ED4-A702-7EE82C1BAFEC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>## Print Function</string>
+	<string>Init a UIActivityIndicatorView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
