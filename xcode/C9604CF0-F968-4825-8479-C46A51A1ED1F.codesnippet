@@ -14,8 +14,13 @@
         
         let &lt;#tabBarItem#&gt; = UITabBarItem(title: &lt;#T##String?#&gt;, image: &lt;#T##UIImage?#&gt;, selectedImage: &lt;#T##UIImage?#&gt;)
         &lt;#tabBarItem#&gt;.tag = 1
+        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .normal)
+        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .selected)
+        
         let &lt;#tabBarItem#&gt; = UITabBarItem(title: &lt;#T##String?#&gt;, image: &lt;#T##UIImage?#&gt;, selectedImage: &lt;#T##UIImage?#&gt;)
         &lt;#tabBarItem#&gt;.tag = 2
+        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .normal)
+        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .selected)
         
         
         // Initialize a tab bar (default height is 49)
@@ -25,7 +30,7 @@
         tabBar.items = [&lt;#tabBarItem#&gt;, &lt;#tabBarItem#&gt;]
         tabBar.delegate = self
         view.addSubview(tabBar)
-     
+        
         extension &lt;#ViewController#&gt;: UITabBarDelegate{
             func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
                 // item.tag
@@ -42,6 +47,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
