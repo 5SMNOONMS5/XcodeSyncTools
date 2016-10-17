@@ -9,18 +9,17 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#barButtonItem#&gt; = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(&lt;#ViewController#&gt;.barButtonItemAction))
-        self.navigationItem.leftBarButtonItem = &lt;#barButtonItem#&gt;
-     
-        func barButtonItemAction(){
+	<string>let &lt;#pinch#&gt; = UIPinchGestureRecognizer(target: self, action: #selector(&lt;#ViewController#&gt;.pinchGesture))
+        
+        func pinchGesture(){
             
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C6C74DDE-E44A-4E7F-9280-F5762707F8C2</string>
+	<string>0F660E3B-A3C3-41C5-9ED5-C7DBF623B511</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init a UIBarButtonItem</string>
+	<string>Init a UIPinchGestureRecognizer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
