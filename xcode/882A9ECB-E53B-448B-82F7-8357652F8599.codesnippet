@@ -3,28 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II </string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  let &lt;#name#&gt; = UIActivityIndicatorView()
-        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;#name#&gt;.activityIndicatorViewStyle = &lt;#UIActivityIndicatorViewStyle#&gt;
-        &lt;#name#&gt;.color = &lt;#UIColor#&gt;
-        &lt;#name#&gt;.startAnimating()
-        &lt;#name#&gt;.stopAnimating()
-        view.addSubview(&lt;#name#&gt;)
+	<string> var &lt;#   instance  #&gt; :UIImageView!
+        
+        &lt;#   instance  #&gt; = UIImageView(frame:CGRectMake(&lt;#   x  #&gt;, &lt;#   y  #&gt;, &lt;#   width  #&gt;, &lt;#   height  #&gt;))
+        
+        &lt;#   instance  #&gt;.image = UIImage(named:"&lt;#   Image Name  #&gt;")
+        
+        self.view.addSubview(&lt;#   instance  #&gt;)
+        
+        self.view.sendSubviewToBack(&lt;#   instance  #&gt;)
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A35DFDB2-2B32-4ED4-A702-7EE82C1BAFEC</string>
+	<string>882A9ECB-E53B-448B-82F7-8357652F8599</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init a UIActivityIndicatorView</string>
+	<string>## init Imageview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

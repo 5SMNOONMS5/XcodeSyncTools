@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>AA</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *  @brief &lt;# (建議必寫) - 大綱簡易說明 #&gt;
+ *  @param &lt;# (建議必寫) – 參數說明 #&gt;
+ *  @return&lt;# (建議必寫) – 回傳說明#&gt;
+ *  @exception&lt;# – 例外說明#&gt;
+ *  @see   &lt;# – 參考#&gt;
+ *  @warning&lt;# – 警告說明#&gt;
+ *  @bug&lt;# – 錯誤說明#&gt;
+ *  @discussion&lt;# -描敘#&gt;
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>154A518A-7C91-47C3-82AC-802DE18D2028</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>## Annotation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
