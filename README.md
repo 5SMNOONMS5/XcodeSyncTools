@@ -9,22 +9,24 @@
 -----------------------------------
 * run commands while **each pull**, this will update the newest snippets into **~/.atom/snippets.cson***
 ```bash
-# In terminal "Without" Fork Repositories
-sh update.sh atom
+# "Without" Fork Repositories
+sh update-snippets-from-local-repo.sh atom
 
-# In terminal "With" Fork Repositories
-sh synchronizeRepository.sh atom
+# "With" Fork Repositories
+sh update-local-repo-from-upstream.sh
+sh update-snippets-from-local-repo.sh atom
 ```
 
 #### Xcode
 -----------------------------------
 * run commands while **each pull**, this will update the newest snippets into **~/Library/Developer/Xcode/UserData/CodeSnippets**
 ```bash
-# In terminal "Without" Fork Repositories
-sh update.sh xcode
+# "Without" Fork Repositories
+sh update-snippets-from-local-repo.sh xcode
 
-# In terminal "With" Fork Repositories
-sh synchronizeRepository.sh xcode
+# "With" Fork Repositories
+sh update-local-repo-from-upstream.sh
+sh update-snippets-from-local-repo.sh xcode
 ```
 
 
