@@ -9,25 +9,11 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#image#&gt; = UIImage(named: &lt;#T##String#&gt;)?.withRenderingMode(.alwaysOriginal)
-        let &lt;#image#&gt; = UIImage(named: &lt;#T##String#&gt;)?.withRenderingMode(.alwaysOriginal)
-        
-        let &lt;#tabBarItem#&gt; = UITabBarItem(title: &lt;#T##String?#&gt;, image: &lt;#T##UIImage?#&gt;, selectedImage: &lt;#T##UIImage?#&gt;)
-        &lt;#tabBarItem#&gt;.tag = 1
-        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .normal)
-        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .selected)
-        
-        let &lt;#tabBarItem#&gt; = UITabBarItem(title: &lt;#T##String?#&gt;, image: &lt;#T##UIImage?#&gt;, selectedImage: &lt;#T##UIImage?#&gt;)
-        &lt;#tabBarItem#&gt;.tag = 2
-        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .normal)
-        &lt;#tabBarItem#&gt;.setTitleTextAttributes([NSForegroundColorAttributeName: &lt;#UIColor#&gt;], for: .selected)
-        
-        
-        // Initialize a tab bar (default height is 49)
+	<string>// Initialize a tab bar (default height is 49)
         let screenHeight = UIScreen.main.bounds.size.height
         let screenWidth = UIScreen.main.bounds.size.width
         let tabBar = UITabBar(frame: CGRect(x: 0, y: screenHeight-49, width: screenWidth, height: 49))
-        tabBar.items = [&lt;#tabBarItem#&gt;, &lt;#tabBarItem#&gt;]
+        tabBar.items = [&lt;#UITabBarItem#&gt;]
         tabBar.delegate = self
         view.addSubview(tabBar)
         
@@ -36,14 +22,13 @@
                 // item.tag
             }
             
-        }
-</string>
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C9604CF0-F968-4825-8479-C46A51A1ED1F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init a UITabBarItem and a UITabBar</string>
+	<string>Init a UITabBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
