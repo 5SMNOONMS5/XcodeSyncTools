@@ -22,6 +22,8 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
   if [ "${response}" == "y" ]; then
 
+    kill 15 `lsof -c Xcode`
+
     echo "start working with Xcode snippet"
 
     # directory not exist , create a new one
@@ -41,7 +43,9 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
     fi
 
     cp ./xcode/* ~/Library/Developer/Xcode/UserData/CodeSnippets
-    
+
+    open -a Xcode
+
     echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
   else
