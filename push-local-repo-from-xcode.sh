@@ -1,10 +1,10 @@
 #!/bin/sh
 #source ~/.bash_profile
+#source ./scripts\ source/path.sh
 
 #fetch all arguments via $@
 message=$@
 
-PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
 
 # find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
 
