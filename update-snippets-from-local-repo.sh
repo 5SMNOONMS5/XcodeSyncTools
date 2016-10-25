@@ -1,4 +1,6 @@
 #!/bin/sh
+source ~/.bash_profile
+source ./scripts\ source/path.sh
 
 PLATFORM=$@
 PLATFORM=`echo "$PLATFORM" | tr '[A-Z]' '[a-z]'`
@@ -8,9 +10,6 @@ declare -a APPLICATIONS=("xcode" "atom")
 
 ## declare an array contains supported application directories
 # declare -a DIRECTORIES=("~/Library/Developer/Xcode/UserData/CodeSnippets" "~/.atom/snippets.cson")
-
-PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
-PATHATOM=~/.atom/snippets.cso
 
 #========================= xcode =========================
 

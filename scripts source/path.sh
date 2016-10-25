@@ -1,1 +1,3 @@
-PATHXCODE=~/Library/Developer/Xcode/UserData/CodeSnippets
+
+PATHXCODE=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets
+PATHATOM=${HOME}/.atom/snippets.cso

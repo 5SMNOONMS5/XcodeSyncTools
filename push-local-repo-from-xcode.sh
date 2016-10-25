@@ -1,14 +1,13 @@
 #!/bin/sh
-#source ~/.bash_profile
-#source ./scripts\ source/path.sh
+source ~/.bash_profile
+source ./scripts\ source/path.sh
 
 #fetch all arguments via $@
 message=$@
 
-
 # find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
 
-# check commit message
+check commit message
 if [[ -z "${message}"  ]]; then
 
   echo "no commit message . abort !"
