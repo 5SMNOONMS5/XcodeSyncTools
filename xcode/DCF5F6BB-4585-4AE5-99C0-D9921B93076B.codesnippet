@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II </string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#textField#&gt; = UITextField(frame: CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;))
+        &lt;#textField#&gt;.placeholder = &lt;#Content#&gt;
+        &lt;#textField#&gt;.borderStyle = &lt;#.Style#&gt;
+        &lt;#textField#&gt;.delegate = self
+        view.addSubview(&lt;#textField#&gt;)
+    
+        extension &lt;#ViewController#&gt;: UITextFieldDelegate{
+            func textFieldDidBeginEditing(_ textField: UITextField) {
+                &lt;#code#&gt;
+            }
+            
+            func textFieldDidEndEditing(_ textField: UITextField) {
+                &lt;#code#&gt;
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DCF5F6BB-4585-4AE5-99C0-D9921B93076B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a UITextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CC </string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+// MARK: - TableviewDelegate
+extension &lt;# UIViewController #&gt;: UICollectionViewDelegate{
+  
+  // Parallax Header
+  
+  override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -&gt; UICollectionReusableView {
+    
+    if kind == CSStickyHeaderParallaxHeader {
+      let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "parallaxHeader", forIndexPath: indexPath)
+      return view
+    } else if kind == UICollectionElementKindSectionHeader {
+      let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "sectionHeader", forIndexPath: indexPath)
+      view.backgroundColor = UIColor.lightGrayColor()
+      return view
+    }
+    
+    return UICollectionReusableView()
+    
+  }
+  
+}
+
+// MARK: - UITableViewDataSource
+extension &lt;# UIViewController #&gt;: UICollectionViewDataSource{
+  
+  func initializationCollectionView(){
+    
+    self.collectionView?.alwaysBounceVertical = true
+    self.view.backgroundColor = UIColor.whiteColor()
+    
+    // Setup Cell
+    self.collectionView?.registerClass(CollectionViewCell.self, forCellWithReuseIdentifier: reuseIdSetting)
+    self.layout?.itemSize = CGSizeMake(self.view.frame.size.width, 44)
+    
+    // Setup Header
+    self.collectionView?.registerClass(CollectionParallaxHeader.self, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "parallaxHeader")
+    self.layout?.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 100)
+    
+    // Setup Section Header
+    self.collectionView?.registerClass(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader")
+    self.layout?.headerReferenceSize = CGSizeMake(320, 40)
+
+  }
+
+  override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+    return self.items.count
+  }
+  
+  override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -&gt; UICollectionViewCell {
+    
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdSetting, forIndexPath: indexPath) as! CollectionViewCell
+    cell.text = self.items[indexPath.row]
+    return cell
+  }
+  
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EA76DBEB-653E-42F3-B768-F0E8A37E3959</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UICollectionView - Delegate &amp; Datasource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
