@@ -8,14 +8,11 @@ PLATFORM=`echo "$PLATFORM" | tr '[A-Z]' '[a-z]'`
 ## declare an array contains supported application
 declare -a APPLICATIONS=("xcode" "atom")
 
-## declare an array contains supported application directories
-# declare -a DIRECTORIES=("~/Library/Developer/Xcode/UserData/CodeSnippets" "~/.atom/snippets.cson")
-
 #========================= xcode =========================
 
 if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
-  echo "in order to renew snippets this will quit xcode,  press [y/n] to proceed :"
+  echo "In order to renew snippets , it will quit xcode first, please press [y/n] to proceed :"
 
   read response
 
