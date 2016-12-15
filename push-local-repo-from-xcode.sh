@@ -1,25 +1,25 @@
 #!/bin/sh
 source ~/.bash_profile
 source ./scripts\ source/path.sh
+source ./scripts\ source/color.sh
 
-#fetch all arguments via $@
 message=$@
 
-# find ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet -type f -exec cp {} ./xcode \;
+# check commit message
+if [[ -z "${message}" ]]; then
 
-check commit message
-if [[ -z "${message}"  ]]; then
-
-  echo "no commit message . abort !"
+  echo "${REDCOLOR} No commit mesage . Abort !"
 
 else
 
   rm ./xcode/*
 
-  echo "update old codesnippet under xcode folder to newest one"
+  echo "${GREENCOLOR} Update old codesnippet under xcode folder to newest one"
+
   cp ${PATHXCODE}/* ./xcode
 
-  echo "start push"
+  echo "${GREENCOLOR} Start push"
+
   git add -A
 
   git commit -m "${message}"

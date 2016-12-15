@@ -1,6 +1,7 @@
 #!/bin/sh
 source ~/.bash_profile
 source ./scripts\ source/path.sh
+source ./scripts\ source/color.sh
 
 PLATFORM=$@
 PLATFORM=`echo "$PLATFORM" | tr '[A-Z]' '[a-z]'`
@@ -12,7 +13,7 @@ declare -a APPLICATIONS=("xcode" "atom")
 
 if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
-  echo "In order to renew snippets , it will quit xcode first, please press [y/n] to proceed :"
+  echo "${YELLOWCOLOR} In order to renew snippets , it will quit xcode first, please press [y/n] to proceed :"
 
   read response
 
@@ -20,18 +21,18 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
     kill 15 `lsof -c Xcode`
 
-    echo "start working with Xcode snippet"
+    echo "${GREENCOLOR} Start working with Xcode snippet"
 
     # directory not exist , create a new one
     if [[ ! -d "${PATHXCODE}" ]]; then
 
-       echo "codeSnippets directory not exist , create a new one"
+       echo "${GREENCOLOR} CodeSnippets directory not exist , create a new one"
 
        mkdir ${PATHXCODE}
 
     # if CodeSnippets already exis , move old code CodeSnippetsOld
     else
-       echo "move old sources into codeSnippetsOld directory"
+       echo "${GREENCOLOR} Move old sources into codeSnippetsOld directory"
 
        mkdir ~/Library/Developer/Xcode/UserData/CodeSnippetsOld/
 
@@ -42,35 +43,35 @@ if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
     open -a Xcode
 
-    echo "success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
+    echo "${GREENCOLOR} Success update sinppet into ~/Library/Developer/Xcode/UserData/CodeSnippets"
 
   else
 
-    echo "oh ! see you next time "
+    echo "${GREENCOLOR} Oh ! see you next time "
   fi
 
 #========================= atom =========================
 
 elif [ "$PLATFORM" == "${APPLICATIONS[1]}" ]; then
 
-  echo "current working with Atom snippet "
+  echo "${GREENCOLOR} Current working with Atom snippet "
 
   if [ -d "$PATHATOM" ]; then
 
-    echo "not done yet"
+    echo "${REDCOLOR} Not done yet"
 
   else
 
-    echo "~/.atom/snippets.cson doesn't exist , please create an one "
+    echo "${GREENCOLOR} ~/.atom/snippets.cson doesn't exist , please create an one "
 
   fi
 
 #========================= not support yet =========================
 else
 
-  echo "terminate, please enter support applicatins ! ex : sh update.sh ${APPLICATIONS[1]}";
+  echo "${REDCOLOR} Terminate, please enter support applicatins ! ex : sh update.sh ${APPLICATIONS[1]}";
 
-  echo "current support applications : ${APPLICATIONS[@]}"
+  echo "${GREENCOLOR} Current support applications : ${APPLICATIONS[@]}"
 
   exit
 

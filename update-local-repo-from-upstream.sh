@@ -1,6 +1,7 @@
 #!/bin/sh
+source ./scripts\ source/color.sh
 
-echo "start synchronize remote repository"
+echo "${GREENCOLOR} Start synchronize remote repository"
 
 git fetch upstream
 
