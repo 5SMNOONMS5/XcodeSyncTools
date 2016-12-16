@@ -1,3 +1,4 @@
+#!/bin/sh
 
 GRAYCOLOR="\033[33;30m"
 
