@@ -13,13 +13,13 @@ declare -a APPLICATIONS=("xcode" "atom")
 
 if [ "${PLATFORM}" == "${APPLICATIONS[0]}" ]; then
 
-  echo "${YELLOWCOLOR} In order to renew snippets , it will quit xcode first, please press [y/n] to proceed :"
+  echo "${YELLOWCOLOR} In order to renew snippets , it will quit xcode first, please press [y/n] to proceed:"
 
   read response
 
   if [ "${response}" == "y" ]; then
 
-    kill 15 `lsof -c Xcode`
+#    kill 15 `lsof -c Xcode`
 
     echo "${GREENCOLOR} Start working with Xcode snippet"
 

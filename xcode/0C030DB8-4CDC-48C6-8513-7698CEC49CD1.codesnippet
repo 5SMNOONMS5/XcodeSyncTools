@@ -17,8 +17,6 @@
 	<string>0C030DB8-4CDC-48C6-8513-7698CEC49CD1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a CALayer</string>
 	<key>IDECodeSnippetUserSnippet</key>

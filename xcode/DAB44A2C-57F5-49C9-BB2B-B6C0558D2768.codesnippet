@@ -27,8 +27,6 @@
 	<string>DAB44A2C-57F5-49C9-BB2B-B6C0558D2768</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a TabBarController</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -26,8 +26,6 @@
 	<string>A1B2149F-07C5-4771-8DC3-9778544C8D59</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UISlider</string>
 	<key>IDECodeSnippetUserSnippet</key>

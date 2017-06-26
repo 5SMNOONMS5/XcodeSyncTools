@@ -19,8 +19,6 @@
 	<string>94DE4856-C663-4E30-854F-621DB762413E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UIImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>

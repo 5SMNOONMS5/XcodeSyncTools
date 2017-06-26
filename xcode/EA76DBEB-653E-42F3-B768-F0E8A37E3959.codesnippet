@@ -70,8 +70,6 @@ extension &lt;# UIViewController #&gt;: UICollectionViewDataSource{
 	<string>EA76DBEB-653E-42F3-B768-F0E8A37E3959</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UICollectionView - Delegate &amp; Datasource</string>
 	<key>IDECodeSnippetUserSnippet</key>

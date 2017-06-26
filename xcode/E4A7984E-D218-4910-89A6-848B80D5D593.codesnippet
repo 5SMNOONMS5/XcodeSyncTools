@@ -41,10 +41,8 @@ extension &lt;# UIViewController #&gt;: UITableViewDataSource{
 	<string>E4A7984E-D218-4910-89A6-848B80D5D593</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TableView - Delegate &amp; DataSource </string>
+	<string>UITableView - Delegate &amp; DataSource </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

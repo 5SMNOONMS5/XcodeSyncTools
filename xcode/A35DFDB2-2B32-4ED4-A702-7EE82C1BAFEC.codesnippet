@@ -21,8 +21,6 @@
 	<string>A35DFDB2-2B32-4ED4-A702-7EE82C1BAFEC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UIActivityIndicatorView</string>
 	<key>IDECodeSnippetUserSnippet</key>

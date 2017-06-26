@@ -44,8 +44,6 @@ extension &lt;#UIViewController#&gt; : UIPickerViewDataSource{
 	<string>3D856FAE-DBA9-4104-B0AC-9A3ADB6D1C9D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UIPickerView - Delegate &amp; Datasource</string>
 	<key>IDECodeSnippetUserSnippet</key>

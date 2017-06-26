@@ -39,8 +39,6 @@ extension &lt;# UIView Name #&gt; {
 	<string>AEE9AE40-E09F-4D4F-A9CE-B428E3EA389B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UIView with class</string>
 	<key>IDECodeSnippetUserSnippet</key>

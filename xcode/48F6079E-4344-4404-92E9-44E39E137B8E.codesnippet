@@ -19,8 +19,6 @@
 	<string>48F6079E-4344-4404-92E9-44E39E137B8E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UIRotationGestureRecognizer</string>
 	<key>IDECodeSnippetUserSnippet</key>

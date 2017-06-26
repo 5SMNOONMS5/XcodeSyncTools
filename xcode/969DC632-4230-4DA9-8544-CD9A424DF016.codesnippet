@@ -20,8 +20,6 @@
 	<string>969DC632-4230-4DA9-8544-CD9A424DF016</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UILabel</string>
 	<key>IDECodeSnippetUserSnippet</key>

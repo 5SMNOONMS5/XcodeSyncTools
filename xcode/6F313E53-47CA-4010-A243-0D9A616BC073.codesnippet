@@ -29,8 +29,6 @@
 	<string>6F313E53-47CA-4010-A243-0D9A616BC073</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a AlertViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>

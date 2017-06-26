@@ -21,8 +21,6 @@ PlaygroundPage.current.needsIndefiniteExecution = true</string>
 	<string>7D6CAC9D-A85A-44D8-9323-5C3F8C6CB566</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a Playground Live Render</string>
 	<key>IDECodeSnippetUserSnippet</key>

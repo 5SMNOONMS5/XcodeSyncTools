@@ -30,8 +30,6 @@
 	<string>70F5EEF4-D403-4184-936D-ED82997145A9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>View Lift Cycle</string>
 	<key>IDECodeSnippetUserSnippet</key>
