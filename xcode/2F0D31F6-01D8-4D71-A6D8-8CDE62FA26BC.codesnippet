@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II </string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>let &lt;#switch#&gt; = UISwitch(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
@@ -23,6 +23,8 @@
 	<string>2F0D31F6-01D8-4D71-A6D8-8CDE62FA26BC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init a UISwitch</string>
 	<key>IDECodeSnippetUserSnippet</key>

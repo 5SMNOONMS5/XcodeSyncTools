@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>CC</string>
+	<string>SS</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)</string>
+	<string>#selector(&lt;# ClassName #&gt;.&lt;# MethodName #&gt;(_:))</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B60DAB28-5F23-4047-AA6F-ED2026BBF9BB</string>
+	<string>360B7726-43B0-4F4F-9E92-28C41050957B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>## CGRectMake</string>
+	<string>Selector</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

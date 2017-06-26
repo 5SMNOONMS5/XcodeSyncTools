@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TT</string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_main_queue(), ^{
-    
-});
-</string>
+	<string>import UIKit
+import PlaygroundSupport
+
+let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+view.backgroundColor = UIColor.blue
+
+PlaygroundPage.current.liveView = view
+PlaygroundPage.current.needsIndefiniteExecution = true</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9F87DFC9-949E-4F01-9BE9-92D5047CBF23</string>
+	<string>7D6CAC9D-A85A-44D8-9323-5C3F8C6CB566</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>## Main Thread</string>
+	<string>Init a Playground Live Render</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

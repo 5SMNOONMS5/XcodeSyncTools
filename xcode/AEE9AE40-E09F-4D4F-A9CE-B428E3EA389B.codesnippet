@@ -3,37 +3,46 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>AA</string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
-     &lt;# Description #&gt;
-     
-     - parameter &lt;# Name #&gt;  :
-     - parameter &lt;# Name #&gt;  :
-     - Returns:
-     - Throws:
-     - Complexity:
-     - Precondition:
-     - Postcondition:
-     - Requires:
-     - Note:
-     - Seealso:
-     - Warning:
-     - Complexity:
-     
-*/</string>
+	<string>class &lt;# UIView Name #&gt;: UIView {
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    convenience init(frame: CGRect, color: UIColor) {
+        self.init(frame: frame)
+    }
+
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+}
+
+extension &lt;# UIView Name #&gt; {
+    
+    
+    
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>384F4281-CB3F-471D-8847-D84EB9158C55</string>
+	<string>AEE9AE40-E09F-4D4F-A9CE-B428E3EA389B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Annoation</string>
+	<string>Init a UIView with class</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
