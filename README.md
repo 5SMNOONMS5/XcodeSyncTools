@@ -37,7 +37,7 @@ sh update-snippets-from-local-repo.sh xcode
 
 ![Flow chart](img/Flow.png)
 
-## Personal Keyword 
+## Personal Keyword
 
 ### II
 
@@ -59,7 +59,7 @@ Type **FF** for FIXME
 
 ### MM
 
-Type **II** for Mark
+Type **MM** for Mark
 
 ![II](img/MM.png)
 
@@ -68,5 +68,3 @@ Type **II** for Mark
 Type **VV** for View Life Cycle
 
 ![II](img/VV.png)
-
-
