@@ -6,19 +6,23 @@
 	<string>MM</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#Mark#&gt;</string>
+	<string>    // ******************************************
+    //
+    // MARK: -
+    //
+    // ******************************************</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D05D7C1E-1ABD-4AE9-98BB-578EDE772FAF</string>
+	<string>F7F0C095-D562-4C41-850A-1D0FC5310B50</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Mark</string>
+	<string>## MARK</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
