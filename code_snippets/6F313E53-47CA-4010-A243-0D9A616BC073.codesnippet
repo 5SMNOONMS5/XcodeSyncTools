@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#name#&gt; = UIAlertController(title: &lt;#T##String?#&gt;,
+                                     message: &lt;#T##String?#&gt;,
+                                     preferredStyle: &lt;#T##UIAlertControllerStyle#&gt;)
+    
+    let &lt;#action1#&gt; = UIAlertAction(title: &lt;#T##String?#&gt;,
+                                    style: &lt;#T##UIAlertActionStyle#&gt;){ (&lt;#UIAlertAction#&gt;) in
+                                      &lt;#code#&gt;
+    }
+    let &lt;#action2#&gt; = UIAlertAction(title: &lt;#T##String?#&gt;,
+                                    style: &lt;#T##UIAlertActionStyle#&gt;){ (&lt;#UIAlertAction#&gt;) in
+                                      &lt;#code#&gt;
+    }
+    
+    &lt;#name#&gt;.addAction(&lt;#action1#&gt;)
+    &lt;#name#&gt;.addAction(&lt;#action2#&gt;)
+    self.present(&lt;#T##UIViewController#&gt;, animated: &lt;#T##Bool#&gt;, completion: &lt;#T##(() -&gt; Void)?##(() -&gt; Void)?##() -&gt; Void#&gt;)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F313E53-47CA-4010-A243-0D9A616BC073</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a AlertViewController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

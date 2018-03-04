@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// Initialize a tab bar (default height is 49)
+        let screenHeight = UIScreen.main.bounds.size.height
+        let screenWidth = UIScreen.main.bounds.size.width
+        let tabBar = UITabBar(frame: CGRect(x: 0, y: screenHeight-49, width: screenWidth, height: 49))
+        tabBar.items = [&lt;#UITabBarItem#&gt;]
+        tabBar.delegate = self
+        view.addSubview(tabBar)
+        
+        extension &lt;#ViewController#&gt;: UITabBarDelegate{
+            func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+                // item.tag
+            }
+            
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C9604CF0-F968-4825-8479-C46A51A1ED1F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a UITabBar</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

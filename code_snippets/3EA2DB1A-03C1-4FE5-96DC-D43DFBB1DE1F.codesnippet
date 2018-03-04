@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#btn#&gt; = UIButton(type: .system)
+        &lt;#btn#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#btn#&gt;.setTitle(&lt;#title#&gt;, for: .normal)
+        &lt;#btn#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.buttonTouch(sender:)), for: .touchUpInside)
+        view.addSubview(&lt;#btn#&gt;)
+        
+        func buttonTouch(sender: UIButton){
+            print("The button was touched")
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3EA2DB1A-03C1-4FE5-96DC-D43DFBB1DE1F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a UIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
