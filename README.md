@@ -1,4 +1,4 @@
-#Code Snippet
+# XcodeSyncTools
 ===============================
 
 My personal code-snippet sync tool, store in one place, using everywhere.
@@ -18,7 +18,7 @@ sh xcode-sync.sh -s
 
 ```bash
 sh xcode-sync.sh -h
-```
+``` 
 
 ## Keyword
 
@@ -26,28 +26,28 @@ sh xcode-sync.sh -h
 
 Type **II** for initialization
 
-![II](img/II.png)
+![II](imgs/II.png)
 
 ### DD
 
 Type **DD** for Delegate And Datasource
 
-![II](img/DD.png)
+![II](imgs/DD.png)
 
 ### FF
 
 Type **FF** for FIXME
 
-![II](img/FF.png)
+![II](imgs/FF.png)
 
 ### MM
 
 Type **MM** for Mark
 
-![II](img/MM.png)
+![II](imgs/MM.png)
 
 ### VV
 
 Type **VV** for View Life Cycle
 
-![II](img/VV.png)
+![II](imgs/VV.png)
