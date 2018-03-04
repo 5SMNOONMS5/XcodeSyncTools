@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>     let &lt;#name#&gt; = UIScrollView()
+        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#name#&gt;.contentSize = CGSize(width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#name#&gt;.contentInset = UIEdgeInsetsMake(&lt;#T##top: CGFloat##CGFloat#&gt;, &lt;#T##left: CGFloat##CGFloat#&gt;, &lt;#T##bottom: CGFloat##CGFloat#&gt;, &lt;#T##right: CGFloat##CGFloat#&gt;)
+        &lt;#name#&gt;.contentOffset = CGPoint(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;)
+        view.addSubview(&lt;#name#&gt;)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DCC3BB0A-EAA4-4979-9580-7B3D778E1100</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a UIScrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

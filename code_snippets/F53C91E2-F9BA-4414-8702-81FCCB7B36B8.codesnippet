@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// make a gradient layer
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        let colors = [UIColor(red:0.18, green:0.38, blue:0.76, alpha:1.0).cgColor,
+                      UIColor(red:0.02, green:0.05, blue:0.15, alpha:1.0).cgColor]
+        gradient.colors = colors
+        
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradient.frame = CGRect(x: 0, y: 0, width: width, height: height )
+        gradient.opacity = 0.7
+        gradient.mask = maskLayer</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F53C91E2-F9BA-4414-8702-81FCCB7B36B8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init a CAGradientLayer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
