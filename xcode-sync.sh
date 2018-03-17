@@ -4,11 +4,10 @@ version="0.2.0"
 
 #default config
 path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git" # change to your own (ex: gitub, bitcket....etc)
-path_xcode_custom_file=${HOME}/Library/Developer/Xcode/Templates/File\ Templates/Custom
+path_xcode_custom_file=${HOME}/Library/Developer/Xcode/
 path_xcode_code_snippet=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets
 
-
-#for colorizing numbers,
+#for colorizing numbers
 declare -a colors
 colors[2]=33         # yellow text
 colors[4]=32         # green text
@@ -48,6 +47,9 @@ EOF
 
 # close Xcode project
 close_xcode () {
+
+
+  
 	echo "In order to renew snippets, it will quit xcode first, please press [y/n] to proceed:"
 	read response
 
