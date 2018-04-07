@@ -6,15 +6,14 @@
 //  ___COPYRIGHT___
 //
 
-/// FIXME: Add MVVMLibrary and Alamofire First
-import Alamofire
 import Foundation
+import GCFramework
 
-final class ___FILEBASENAMEASIDENTIFIER___: SCNetworkRequestProtocol {
+final class ___FILEBASENAMEASIDENTIFIER___: GCNetworkRequestProtocol {
 
-    var networkClient: SCNetworkClient = SCNetworkClient()
+    var networkClient: GCNetworkClient = GCNetworkClient()
 
-    typealias ResponseType = SCResponseNetworkStatus
+    typealias ResponseType = GCResponseNetworkStatus
 
     var baseURL: String
 
@@ -29,7 +28,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: SCNetworkRequestProtocol {
     }
 
     /// FIXME: Enter your return type
-    func performNetwork(callback: @escaping (<#TypeSaft. Same as  ___FILEBASENAMEASIDENTIFIER___ class#>?, SCResponseNetworkStatus) -> Void) {
+    func performNetwork(callback: @escaping (<#TypeSaft. Same as  ___FILEBASENAMEASIDENTIFIER___ class#>?, GCResponseNetworkStatus) -> Void) {
 
         /// Start request
         self.networkClient.performRequest(self) { (data, networkStatus) in
@@ -50,7 +49,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: SCNetworkRequestProtocol {
 }
 
 // MARK: - SCJSONDecodablePeorocol
-extension ___FILEBASENAMEASIDENTIFIER___: SCJSONDecodablePeorocol {
+extension ___FILEBASENAMEASIDENTIFIER___: GCJSONDecodablePeorocol {
     
     /// FIXME: Enter your return type
     typealias ResponseStruct = <#TypeSaft. Same as  ___FILEBASENAMEASIDENTIFIER___ class#>
