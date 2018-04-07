@@ -1,7 +1,9 @@
 # XcodeSyncTools
 ===============================
 
-My personal code-snippet sync tool, store in one place, using everywhere.
+中文版 [這邊](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/README_CN.md)
+
+My personal swift version **code-snippet** and **file-templates** sync tool.
 
 ## Quick Start
 
