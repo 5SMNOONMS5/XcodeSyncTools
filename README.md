@@ -3,7 +3,25 @@
 
 中文版 [這邊](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/README_CN.md)
 
-My personal swift version **code-snippet** and **file-templates** sync tool.
+My personal xcode **code-snippets** and **file-template** sync tool.
+
+## What is code-snippet and file-template in Xcode??
+
+### code-snippet
+
+![](imgs/git_xcode_sinppets.gif)
+
+Place your customize keyword and your buildin snippets will popup, it save times for you.
+
+### file-template
+
+![](imgs/git_xcode_filetemplate.gif)
+
+Like code-snippet, but additional it creates files and xibs for you.  
+
+## What is this project do??
+
+Sync multiply code-snippet and file-template in different computer.
 
 ## Quick Start
 
