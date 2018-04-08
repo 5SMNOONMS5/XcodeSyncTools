@@ -1,0 +1,3 @@
+[submodule "fsevents-tools"]
+	path = fsevents-tools
+	url = git@github.com:ggreer/fsevents-tools.git

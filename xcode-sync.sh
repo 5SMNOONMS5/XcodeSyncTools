@@ -39,7 +39,8 @@ usage() {
 
   Options:
     -v, --version    Output version
-    -s, --sync     	 Sync code snippet
+    -s, --sync     	 Sync code snippet and start fsevents-tools.
+    -w, --watch      Observer the folder change  
     -h, --help       This message.
     --               End of options
 EOF
@@ -48,18 +49,22 @@ EOF
 # close Xcode project
 close_xcode () {
 
-
-  
 	echo "In order to renew snippets, it will quit xcode first, please press [y/n] to proceed:"
 	read response
 
-	if [ "$response" == "y" ]; then
-		# Thanks to http://osxdaily.com/2014/09/05/gracefully-quit-application-command-line/
+	if [ "$response" == "y" ]; then2014
+		# Thanks to http://osxdaily.com//09/05/gracefully-quit-application-command-line/
 		osascript -e 'quit app "Xcode"'
 	else
 		echo "goodbye 88"
 		exit
 	fi
+}
+
+# Embed fsevents-tools as submodule
+updateSubmodule () {
+  git submodule update --init
+  sh fsevents-tools/autogen.sh
 }
 
 # open Xcode project
@@ -81,6 +86,13 @@ syncCustomFileTemplate () {
 	cp -r ./custom_files/* "$path_xcode_custom_file"
 }
 
+watchFolder () {
+  echo "Start watch the folder change via fsevents-tools"
+  cd fsevents-tools
+  # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
+  ./notifyloop /Users/stephenchen/Desktop/test1 rsync -vrulptgoD /Users/stephenchen/Desktop/test1/ /Users/stephenchen/Desktop/test2/ --delete
+}
+
 # parse options
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
   case $1 in
@@ -89,10 +101,16 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       exit
       ;;
     -s | --sync )
-	  close_xcode
+	    close_xcode
       syncCodeSnippet
       syncCustomFileTemplate
       open_xcode
+      updateSubmodule
+      watchFolder
+      exit
+      ;;
+    -w | --watch )
+      watchFolder
       exit
       ;;
     -h | --help | * )
