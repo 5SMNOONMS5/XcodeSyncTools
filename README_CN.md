@@ -23,6 +23,13 @@ A English version of this document can be found [here](https://github.com/5SMNOO
 
 * 同步多台電腦的 程式碼片段 還有 程式碼樣板 檔案。
 
+## 此專案原理
+
+![](imgs/diagram.gif)
+
+* 看圖其實很好懂，比較想說的是 [fsevents-tools](https://github.com/ggreer/fsevents-tools) 。 fsevents-tools 利用 OS X's [FSEvents](https://en.wikipedia.org/wiki/FSEvents) API 來監聽檔案或者目錄的變化，
+只要發生任何變化 (新增，刪除，修改) 就會跟著執行 rsync 腳本去把 xcode 目錄底下的 程式碼樣板 還有 程式碼片段 同步到這個專用底下的資料夾，這樣每當在 xcode 裡面修正樣板程式碼的時候，XcodeSyncTools 專案底下的檔案也會隨著一起變動。
+
 ## 快速開始
 
 * 把專案 clone 下來。
@@ -78,3 +85,5 @@ Type **VV** for View Life Cycle
 ![II](imgs/VV.png)
 
 ## 程式碼樣板 使用方式
+
+----- 待續 -----
