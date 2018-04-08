@@ -52,7 +52,7 @@ close_xcode () {
 	echo "In order to renew snippets, it will quit xcode first, please press [y/n] to proceed:"
 	read response
 
-	if [ "$response" == "y" ]; then2014
+	if [ "$response" == "y" ]; then
 		# Thanks to http://osxdaily.com//09/05/gracefully-quit-application-command-line/
 		osascript -e 'quit app "Xcode"'
 	else
@@ -64,7 +64,9 @@ close_xcode () {
 # Embed fsevents-tools as submodule
 updateSubmodule () {
   git submodule update --init
-  sh fsevents-tools/autogen.sh
+  cd fsevents-tools
+  sh autogen.sh
+  cd ..
 }
 
 # open Xcode project
@@ -106,7 +108,7 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       syncCustomFileTemplate
       open_xcode
       updateSubmodule
-      watchFolder
+      # watchFolder
       exit
       ;;
     -w | --watch )
