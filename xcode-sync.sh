@@ -107,7 +107,7 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       syncCodeSnippet
       syncCustomFileTemplate
       open_xcode
-      # updateSubmodule
+      updateSubmodule
       watchFolder
       exit
       ;;
