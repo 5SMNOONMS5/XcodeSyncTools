@@ -102,14 +102,14 @@ syncCustomFileTemplate () {
 
 # watch the folder change
 watchFolder () {
-    echo "Start watch the folder change via fsevents-tools"
+    echo "Start watch $path_xcode_code_snippet change via fsevents-tools"
     cd fsevents-tools
     # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
-    ./notifyloop /Users/stephenchen/Desktop/test1 rsync -vrulptgoD /Users/stephenchen/Desktop/test1/ /Users/stephenchen/Desktop/test2/ --delete
+    ./notifyloop "$path_xcode_code_snippet" rsync -vrulptgoD "$path_xcode_code_snippet"/ ../code_snippets --delete
 }
 
 testFunc () {
-
+    echo "testFunc"
 }
 
 # parse options

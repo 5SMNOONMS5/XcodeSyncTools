@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension NSObject {
+    class func brc_swizzleMethod(_ origSelector: Selector, withMethod newSelector: Selector) {
+        let origMethod = class_getInstanceMethod(self, origSelector)
+        let newMethod = class_getInstanceMethod(self, newSelector)
+        if class_addMethod(self, origSelector, method_getImplementation(newMethod!), method_getTypeEncoding(newMethod!)) {
+            class_replaceMethod(self, newSelector, method_getImplementation(origMethod!), method_getTypeEncoding(origMethod!))
+        }
+        else {
+            method_exchangeImplementations(origMethod!, newMethod!)
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC6C1A89-8095-4CAC-9D69-042A00249063</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Method swizzle</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
