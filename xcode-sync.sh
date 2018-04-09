@@ -40,9 +40,10 @@ usage() {
   	sh xcode-sync.sh [options]
 
   Options:
-    -v, --version    Output version
+    -v, --version    Output version.
     -s, --sync     	 Sync code snippet and start fsevents-tools.
-    -w, --watch      Observer the folder change  
+    -w, --watch      Observer the folder change.
+    -t, --test       Test script, don't use this. 
     -h, --help       This message.
     --               End of options
 EOF
@@ -51,6 +52,7 @@ EOF
 # close Xcode project
 close_xcode () {
 
+    # Temp: 這邊之後還要加上 xcode 是否有開啟
 	echo "In order to renew snippets, it will quit xcode first, please press [y/n] to proceed:"
 	read response
 
@@ -65,7 +67,7 @@ close_xcode () {
 
 # Embed fsevents-tools as submodule
 updateSubmodule () {
-
+    # Temp: 先確認有沒有 init 之後應該改成還要判斷有沒有新版本
     declare isSubmoduleInit="$(find ./fsevents-tools -print | wc -l | awk '{ print $1 }')"
 
     if [ "$isSubmoduleInit" != "0" ]; then
@@ -98,6 +100,7 @@ syncCustomFileTemplate () {
   	cp -r ./custom_files/* "$path_xcode_custom_file"
 }
 
+# watch the folder change
 watchFolder () {
     echo "Start watch the folder change via fsevents-tools"
     cd fsevents-tools
@@ -108,7 +111,6 @@ watchFolder () {
 testFunc () {
 
 }
-
 
 # parse options
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
