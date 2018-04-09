@@ -28,7 +28,9 @@ A English version of this document can be found [here](https://github.com/5SMNOO
 ![](imgs/diagram.png)
 
 * 看圖其實很好懂，比較想說的是 [fsevents-tools](https://github.com/ggreer/fsevents-tools) 。 fsevents-tools 利用 OS X's [FSEvents](https://en.wikipedia.org/wiki/FSEvents) API 來監聽檔案或者目錄的變化，
-只要發生任何變化 (新增，刪除，修改) 就會跟著執行 rsync 腳本去把 xcode 目錄底下的 程式碼樣板 還有 程式碼片段 同步到這個專用底下的資料夾，這樣每當在 xcode 裡面修正樣板程式碼的時候，XcodeSyncTools 專案底下的檔案也會隨著一起變動。
+只要發生任何變化 (新增，刪除，修改) 就會跟著執行 [rsync](https://zh.wikipedia.org/wiki/Rsync) 腳本去把 xcode 目錄底下的 程式碼樣板 還有 程式碼片段 同步到此專用底下的資料夾，這樣每當開發者在 xcode 裡面修正樣板程式碼的時候，XcodeSyncTools 專案底下的檔案也會隨著一起變動。然後再 git push 達到同步的效果。
+
+* 你可以把 fsevents-tools 想成是 OS X 版本的 [inotify](https://zh.wikipedia.org/wiki/Inotify)。
 
 ## 快速開始
 

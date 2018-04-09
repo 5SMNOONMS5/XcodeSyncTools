@@ -1,19 +1,21 @@
 #!/bin/sh
 
-version="0.2.0"
+version="0.4.0"
 
 #default config
-path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git" # change to your own (ex: gitub, bitcket....etc)
+
+# change to your own (ex: gitub, bitcket....etc)
+path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
 path_xcode_custom_file=${HOME}/Library/Developer/Xcode/
 path_xcode_code_snippet=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets
 
 #for colorizing numbers
 declare -a colors
-colors[2]=33         # yellow text
-colors[4]=32         # green text
-colors[8]=34         # blue text
-colors[16]=36        # cyan text
-colors[32]=35        # purple text
+colors[2]=33                  # yellow text
+colors[4]=32                  # green text
+colors[8]=34                  # blue text
+colors[16]=36                 # cyan text
+colors[32]=35                 # purple text
 colors[64]="33m\033[7"        # yellow background
 colors[128]="32m\033[7"       # green background
 colors[256]="34m\033[7"       # blue background
@@ -63,37 +65,50 @@ close_xcode () {
 
 # Embed fsevents-tools as submodule
 updateSubmodule () {
-  git submodule update --init
-  cd fsevents-tools
-  sh autogen.sh
-  cd ..
+
+    declare isSubmoduleInit="$(find ./fsevents-tools -print | wc -l | awk '{ print $1 }')"
+
+    if [ "$isSubmoduleInit" != "0" ]; then
+        echo "Already init submodule, skip this."
+        return
+    fi
+
+    git submodule update --init
+    cd fsevents-tools
+    sh autogen.sh
+    cd ..
 }
 
 # open Xcode project
 open_xcode () {
-	open -a Xcode
+	 open -a Xcode
 }
 
 # sync code-snippet from ./code_snippets into xcode load path
 syncCodeSnippet () {
-	echo "sync xcode snippets"
-	check "$path_xcode_code_snippet"
-	cp ./code_snippets/* "$path_xcode_code_snippet"
+    echo "Sync xcode snippets"
+    check "$path_xcode_code_snippet"
+    cp ./code_snippets/* "$path_xcode_code_snippet"
 }
 
 # sync custom template from ./custom_file folder into xcode load path
 syncCustomFileTemplate () {
-	echo "sync xcode custom file"
-	check "$path_xcode_custom_file"
-	cp -r ./custom_files/* "$path_xcode_custom_file"
+  	echo "Sync xcode custom file"
+  	check "$path_xcode_custom_file"
+  	cp -r ./custom_files/* "$path_xcode_custom_file"
 }
 
 watchFolder () {
-  echo "Start watch the folder change via fsevents-tools"
-  cd fsevents-tools
-  # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
-  ./notifyloop /Users/stephenchen/Desktop/test1 rsync -vrulptgoD /Users/stephenchen/Desktop/test1/ /Users/stephenchen/Desktop/test2/ --delete
+    echo "Start watch the folder change via fsevents-tools"
+    cd fsevents-tools
+    # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
+    ./notifyloop /Users/stephenchen/Desktop/test1 rsync -vrulptgoD /Users/stephenchen/Desktop/test1/ /Users/stephenchen/Desktop/test2/ --delete
 }
+
+testFunc () {
+
+}
+
 
 # parse options
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
@@ -103,7 +118,7 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       exit
       ;;
     -s | --sync )
-	    close_xcode
+      close_xcode
       syncCodeSnippet
       syncCustomFileTemplate
       open_xcode
@@ -113,6 +128,10 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       ;;
     -w | --watch )
       watchFolder
+      exit
+      ;;
+    -t | --test )
+      testFunc
       exit
       ;;
     -h | --help | * )
