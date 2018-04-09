@@ -89,8 +89,6 @@ syncCustomFileTemplate () {
 }
 
 watchFolder () {
-  echo "working on....."
-  exit
   echo "Start watch the folder change via fsevents-tools"
   cd fsevents-tools
   # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
