@@ -48,13 +48,9 @@ Xcode 目錄底下的檔案變化，然後同步回去 XcodeSyncTools 目錄底�
 * 註：不要直接載下來，因為我是用 [git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodule) 的方式把 [fsevents-tools](https://github.com/ggreer/fsevents-tools) 加進這專案裡面。
 
 ```bash
-# 第 1 步: 先 clone 
-
-# 透過 SSH 
-git clone git@github.com:5SMNOONMS5/XcodeSyncTools.git 
-
+# 第 1 步: clone 
 # 透過 Http
-git clone https://github.com/5SMNOONMS5/XcodeSyncTools.git
+git clone --depth 1 https://github.com/5SMNOONMS5/XcodeSyncTools.git
 
 # 第 2 步: 移動工作目錄到 XcodeSyncTools 底下
 cd XcodeSyncTools

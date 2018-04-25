@@ -1,19 +1,21 @@
 #!/bin/sh
 
-version="0.4.0"
+version="0.5.0"
 
 #default config
 
 # change to your own (ex: gitub, bitcket....etc)
-path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
+path_source_url="https://github.com/5SMNOONMS5/tttt.git"
+# path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
 
-source1=${HOME}/Library/Developer/Xcode/Templates/
-source1_rsync=Templates
 
-source2=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets/
-source2_rsync=CodeSnippets
+src1=${HOME}/Library/Developer/Xcode/Templates
+src1_local=Templates
 
-#for colorizing numbers
+src2=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets
+src2_local=CodeSnippets
+
+# I will make colorful console output in the future
 declare -a colors
 colors[2]=33                  # yellow text
 colors[4]=32                  # green text
@@ -30,10 +32,18 @@ colors[2048]="31m\033[7"      # red background (won with default target)
 # check path
 check() {
 	# Thanks to https://askubuntu.com/questions/648577/copying-files-from-directories-having-spaces-in-its-name
+  echo $(basename $1)
 	if [ ! -d "$1" ]; then
-		echo "$1 path not found, create a new one"
-		mkdir "$1"
+		echo "$(basename $1) path not found, create a new one"
+  else 
+    echo "$(basename $1) already exist, duplicate a $(basename $1)_old folder"
+    if [ -d "$1_old" ]; then 
+      echo "has $1_old remove old version first"
+      rm -rf "$1_old"
+    fi
+    mv "$1" "$1_old"
 	fi
+  mkdir "$1"
 }
 
 # Usage info
@@ -47,6 +57,7 @@ usage() {
     -v, --version    Output version.
     -s, --sync     	 Sync code snippet and start fsevents-tools.
     -w, --watch      Observer the folder change.
+    -c, --change     Change remote git URL to your own repo.
     -t, --test       Test script, don't use this. 
     -h, --help       This message.
     --               End of options
@@ -78,22 +89,12 @@ close_xcode () {
 # Embed fsevents-tools as submodule
 updateSubmodule () {
 
-     declare isGitRepo="$(git rev-parse --is-inside-work-tree)"
-     # Thanks to https://stackoverflow.com/questions/2180270/check-if-current-directory-is-a-git-repository
-     if [ ! "$isGitRepo" ]; then
-         echo "Currently working directory is not git repositories"
-         exit 1
-     fi
-
-#     declare isSubmoduleInit="$(find ./fsevents-tools -print | wc -l | awk '{ print $1 }')"
-#
-#     if [ "$isSubmoduleInit" > 48 ]; then
-#         echo "Already init submodule, skip this."
-#         return
-#     fi
-
-#    # update subfolder with extra argu --recursive
-#    git submodule update --init --recursive
+    declare isGitRepo="$(git rev-parse --is-inside-work-tree)"
+    # Thanks to https://stackoverflow.com/questions/2180270/check-if-current-directory-is-a-git-repository
+    if [ ! "$isGitRepo" ]; then
+        echo "Currently working directory is not git repositories"
+        exit 1
+    fi
 
     echo "Submodule update"
     git submodule update --init
@@ -110,29 +111,34 @@ open_xcode () {
 # Sync Code-snippets
 syncCodeSnippets () {
     echo "Sync xcode snippets"
-    check "$source2"
-    cp -r "$source2_rsync"/* "$source2"
+    check "$src2"
+    cp -r "$src2_local"/* "$src2"
 }
 
 # Sync file-template
 syncFileTemplates () {
   	echo "Sync xcode custom file"
-  	check "$source1"
-  	cp -r "$source1_rsync"/* "$source1"
+  	check "$src1"
+  	cp -r "$src1_local"/* "$src1"
+}
+
+changeGitRemoteURL () {
+    echo "Change remote git repo, remember to customize your .gitignore"
+    git remote set-url origin $path_source_url
 }
 
 # Watch the folder change
 watchFolder () {
 
     # Thanks to https://askubuntu.com/questions/476041/how-do-i-make-rsync-delete-files-that-have-been-deleted-from-the-source-folder
-    declare local_source1="$(pwd)"/"$source1_rsync"
-    declare rsync1=("rsync --exclude=.DS_Store -vrulptg "$source1" "$local_source1" --delete")
+    declare local_source1="$(pwd)"/"$src1_local"
+    declare rsync1=("rsync --exclude=.DS_Store -vrulptg "$src1/" "$local_source1" --delete")
 
-    declare local_source2="$(pwd)"/"$source2_rsync"
-    declare rsync2=("rsync --exclude=.DS_Store -vrulptg "$source2" "$local_source2" --delete")
+    declare local_source2="$(pwd)"/"$src2_local"
+    declare rsync2=("rsync --exclude=.DS_Store -vrulptg "$src2/" "$local_source2" --delete")
 
     cd fsevents-tools
-    ./notifyloop ${source1} ${source2} "${rsync1}" "${rsync2}"
+    ./notifyloop ${src1}/ ${src2}/ "${rsync1}" "${rsync2}"
 }
 
 testFunc () {
@@ -159,8 +165,12 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       watchFolder
       exit 1
       ;;
+    -c | --chagne )
+      changeGitRemoteURL
+      exit 1
+      ;;
     -t | --test )
-      testFunc
+      # check "$src2"
       exit 1
       ;;
     -h | --help | * )

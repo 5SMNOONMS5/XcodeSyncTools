@@ -2,21 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Kind</key>
-	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
-	<key>Description</key>
-	<string>Singlthon file</string>
-	<key>Summary</key>
-	<string>Easy way to create Singlthon file</string>
+  	<key>DefaultCompletionName</key>
+	<string>MyCollectionView</string>
+  <key>Description</key>
+  <string>UICollectionView with build-in Xib file</string>
+  <key>Kind</key>
+  <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+  <key>Options</key>
+  <array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the UICollectionView to create</string>
+			<key>Identifier</key>
+			<string>viewName</string>
+			<key>Name</key>
+			<string>New UICollectionView Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+    <dict>
+			<key>Default</key>
+			<string>___VARIABLE_viewName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+    </dict>
+    <dict>
+			<key>Default</key>
+			<string>___VARIABLE_viewName:identifier___CollectionView</string>
+			<key>Description</key>
+			<string>The view name</string>
+			<key>Identifier</key>
+			<string>interactorName</string>
+			<key>Name</key>
+			<string>Interactor Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+    </dict>
+  </array>
+  <key>Platforms</key>
+  <array>
+		<string>com.apple.platform.iphoneos</string>
+  </array>
 	<key>SortOrder</key>
-	<string>30</string>
-	<key>AllowedTypes</key>
-	<array>
-		<string>public.swift-source</string>
-	</array>
-	<key>DefaultCompletionName</key>
-	<string>SwiftPHUIView</string>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
+	<string>2</string>
+  <key>Summary</key>
+  <string>Easy generates a new UICollectionView with Cell xib</string>
 </dict>
 </plist>
