@@ -35,9 +35,14 @@
 
 ## V - Plist 的參數
 
-![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/create_file.gif)
+Plist 一覽
+
+![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t6.png)
 
 Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸入檔案名稱的時候
+
+![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/create_file.gif)
+
 
 
 
@@ -46,7 +51,6 @@ Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸�
 ## VI - 源碼變數 ~~> 產生後的檔案
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t5.png)
-![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t6.png)
 
 * 源碼變數介紹，假設我開了一個新專案，名稱叫做 MyProject，透過產生了一個 test.swift 的檔案。
 
