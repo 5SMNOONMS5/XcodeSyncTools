@@ -29,34 +29,33 @@
 |--:|---|
 | TemplateIcon.png  |  48 * 48  |
 | TemplateIcon@2x.png  | 96 * 96  | 
-| TemplateInfo. plist  | 一些設定參數，下方會描敘更多 |
+| TemplateInfo.plist  | 設定參數，下方會描敘更多 |
 | \_\_\_FILEBASENAME___.xib  | 客製化的 xib  | 
 | \_\_\_FILEBASENAME___.swift  | 客製化的 swift |
 
-## V - 細看 樣版源碼 跟 真實檔案
+## V - Plist 的參數
+
+![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/create_file.gif)
+
+Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸入檔案名稱的時候
+
+
+
+
+
+## VI - 源碼變數 ~~> 產生後的檔案
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t5.png)
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t6.png)
 
-* 圖中參數 
-
-| 參數  | 描述  | 
-|--:|---|
-| \_\_\_FILENAME___  |  檔案名稱，含 swift 後綴名  | 
-| \_\_\_PROJECTNAME___  | 項目的名稱  | 
-| \_\_\_FULLUSERNAME___  | 創建者的姓名 | 
-| \_\_\_DATE___  | 創建這檔案的時間  | 
-| \_\_\_COPYRIGHT___  | 版權說明 | 
-| \_\_\_FILEBASENAMEASIDENTIFIER___  | 檔案名稱，在此範例顯示我剛輸入 Setting | 
-
-* 更多參數
-
-> 假設我開了一個新專案，名稱叫做 MyProject，透過 程式碼樣板 製作出 Test.swift 。
+* 源碼變數介紹，假設我開了一個新專案，名稱叫做 MyProject，透過產生了一個 test.swift 的檔案。
 
 | 參數  | 顯示  | 備註 |
 |--:|---|---|
 | \_\_\_YEAR___	  |  2018  | |
 | \_\_\_TIME___  |  9:36 PM  | |
+| \_\_\_COPYRIGHT___  | 版權說明 | |
+| \_\_\_DATE___  |  創建這檔案的時間  | |
 | \_\_\_ORGANIZATIONNAME___  | 創建者的姓名 | |
 | \_\_\_FILEBASENAME___  | Test.swift  | **沒有**後綴名 |
 | \_\_\_FILENAME___  | Test | **有**後綴名 |
@@ -72,8 +71,6 @@
 | \_\_\_UUIDASIDENTIFIER___	  |   4C046C78-743D-4E52-B59F-E99711C4D3A5  | UUID 通用唯一標識符 (A universally unique identifier) |
 | \_\_\_UUIDASIDENTIFIER___  |  4C046C78-743D-4E52-B59F-E99711C4D3A5  | UUID 通用唯一標識符，任何在 c 語言裡面非法的變量名稱(Ex: $%)，都會被**下劃線**替換掉。|
 | \_\_\_VARIABLE_NameOfVariable___  | Test | 這個值是在創建檔案的時候所輸入的檔名，比如我剛剛輸入 Test，我在源碼寫成 \_\_\_VARIABLE_NameOfVariable___ViewController，那結果就會是 TestViewController |
-
-
 
 ## Reference 
 

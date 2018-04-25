@@ -55,7 +55,7 @@ git clone --depth 1 https://github.com/5SMNOONMS5/XcodeSyncTools.git
 # 第 2 步: 移動工作目錄到 XcodeSyncTools 底下
 cd XcodeSyncTools
 
-# 第 3 步: 同步所有檔案，**只有第一次需要使用**
+# 第 3 步: 同步所有檔案，**只有第一次需要使用**，之後請用 -w 來監聽即可
 sh xcode-sync.sh -s
 
 # 第 4 步: 打開 Xcode ， 開始享用：）
@@ -72,6 +72,22 @@ sh xcode-sync.sh -h
 ```bash
 sh xcode-sync.sh -w
 ``` 
+
+## 改正到新的 repo
+
+這專案的 Code-Snippets 跟 File-Template 都偏向我個人使用，
+
+如果想使用自己的 repo 可以修正 path_source_url 變數
+
+![](Imgs/demo_change.png)
+
+然後在 run 
+
+```bash
+sh xcode-sync.sh -c
+``` 
+
+接著就一連串的 add commit push 迴圈，開啟專屬您的 Code-Snippets 以及 File-Template。
 
 ## Code-Snippets 使用關鍵字
 
