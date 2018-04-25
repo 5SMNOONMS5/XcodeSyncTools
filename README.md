@@ -6,23 +6,21 @@
  
 ## 什麼是 Code-Snippets 跟 File-Template？
 
+* [如何製作 Code-Snippets (圖文教學)](Tutorials/README_CS_CN.md)
+
 ### Code-Snippets
 
 ![](Imgs/git_xcode_sinppets.gif)
 
 * 根據自定義關鍵字，返回一段預先寫好的 Snippet。
 
-* [如何製作 Code-Snippets (圖文教學)](Tutorials/README_CS_CN.md)
-
 ### File-Template
+
+* [如何製作 File-Template (圖文教學)](Tutorials/README_T_CN.md)
 
 ![](Imgs/git_xcode_filetemplate.gif)
 
 * 跟 Code-Snippets 的概念是一樣的，但可以依照預先創建好 資料夾結構。
-
-* 同步多台電腦的 Code-Snippets 還有 File-Template 檔案。
-
-* [如何製作 File-Template (圖文教學)](Tutorials/README_T_CN.md)
 
 ## 專案流程
 
@@ -73,15 +71,13 @@ sh xcode-sync.sh -h
 sh xcode-sync.sh -w
 ``` 
 
-## 改正到新的 repo
+## 擁有自己的 Code-Snippets 及 File-Template
 
-這專案的 Code-Snippets 跟 File-Template 都偏向我個人使用，
-
-如果想使用自己的 repo 可以修正 path_source_url 變數
+這專案的 Code-Snippets 跟 File-Template 都大多數都偏向個人使用, 但如果想使用自己的 repo 可以修正在 xcode-sync.sh 裡面的 path_source_url 變數
 
 ![](Imgs/demo_change.png)
 
-然後在 run 
+修正後，記得 run 
 
 ```bash
 sh xcode-sync.sh -c

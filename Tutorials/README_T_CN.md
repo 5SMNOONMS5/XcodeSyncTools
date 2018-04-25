@@ -1,27 +1,27 @@
 
 # 程式碼樣板 製作教學
 
-## I - 流程
+## I - 大致流程
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t4.gif)
 
 ## II - 路徑
 
-![](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t1.png)
-
 ```
 /Users/stephenchen/Library/Developer/Xcode
 ```
+
+![](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t1.png)
 
 ## III - 目錄結構
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t2.png)
 
-* 這裡透過 TableviewHeader 跟 cell 來比喻。
+* 這裡透過 TableViewHeader 跟 Cell 來比喻。
 
 > 後綴名一定要是 **xctemplate**
 
-## IV - 檔案介紹
+## IV - 資料夾結構
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t3.png)
 
@@ -35,15 +35,15 @@
 
 ## V - Plist 的參數
 
-Plist 一覽
+### Plist 一覽
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t6.png)
 
-Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸入檔案名稱的時候
+### Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸入檔案名稱的時候
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/create_file.gif)
 
-
+### Plist 參數介紹
 
 
 
@@ -52,7 +52,7 @@ Plist 的參數是直接影響**創建的過程**，打個比方，動態的輸�
 
 ![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t5.png)
 
-* 源碼變數介紹，假設我開了一個新專案，名稱叫做 MyProject，透過產生了一個 test.swift 的檔案。
+### 源碼變數介紹，假設我開了一個新專案，名稱叫做 MyProject，透過產生了一個 test.swift 的檔案。
 
 | 參數  | 顯示  | 備註 |
 |--:|---|---|
