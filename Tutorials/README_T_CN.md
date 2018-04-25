@@ -45,8 +45,7 @@
 
 ### Plist 參數介紹
 
-
-
+![.](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t7.png)
 
 ## VI - 源碼變數 ~~> 產生後的檔案
 
