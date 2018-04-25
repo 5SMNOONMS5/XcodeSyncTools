@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - UISegmentedControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#segment#&gt; = UISegmentedControl(items: &lt;#T##[Any]?#&gt;)
+        &lt;#segment#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        &lt;#segment#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.segmentTouch(sender:)), for: .valueChanged)
+        view.addSubview(&lt;#segment#&gt;)
+    
+        
+        func segmentTouch(sender: UISegmentedControl){
+            // sender.titleForSegment(at: sender.selectedSegmentIndex)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3432B2E6-95CD-485D-A068-26EF3B147CC5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init A UISegmentedControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

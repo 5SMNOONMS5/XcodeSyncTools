@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - UISwitch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let &lt;#switch#&gt; = UISwitch(frame: CGRect(x: &lt;# x #&gt;, y: &lt;# y #&gt;, width: &lt;# width #&gt;, height: &lt;# height #&gt;))
+        &lt;#switch#&gt;.thumbTintColor = &lt;#.color#&gt;
+        &lt;#switch#&gt;.onTintColor = &lt;#.color#&gt;
+        &lt;#switch#&gt;.tintColor = &lt;#.color#&gt;
+        &lt;#switch#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.switchAction(sender:)), for: .valueChanged)
+        view.addSubview(&lt;#switch#&gt;)
+        
+        func switchAction(sender: UISwitch){
+            // sender.isOn
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F0D31F6-01D8-4D71-A6D8-8CDE62FA26BC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init A UISwitch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

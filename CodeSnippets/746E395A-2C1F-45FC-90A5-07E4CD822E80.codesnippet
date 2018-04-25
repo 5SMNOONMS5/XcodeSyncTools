@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - WKWebView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import WebKit
+
+func setupWKWebView(){
+    
+    let frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+    let &lt;#name#&gt; = WKWebView(frame: frame, configuration: &lt;#T##WKWebViewConfiguration#&gt;)
+    &lt;#name#&gt;.uiDelegate = self
+    view.addSubview(&lt;#name#&gt;)
+    
+    let &lt;#url#&gt; = URL(string: &lt;#string#&gt;)
+    
+    guard let &lt;#newURL#&gt; = &lt;#url#&gt; else {
+        print(&lt;#not get url#&gt;)
+    }
+    let &lt;#request#&gt; = URLRequest(url: &lt;#newURL#&gt;)
+    &lt;#name#&gt;.load(&lt;#request#&gt;)
+
+}
+
+
+extension &lt;#UIViewController#&gt; : WKUIDelegate{
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>746E395A-2C1F-45FC-90A5-07E4CD822E80</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init A WKWebView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

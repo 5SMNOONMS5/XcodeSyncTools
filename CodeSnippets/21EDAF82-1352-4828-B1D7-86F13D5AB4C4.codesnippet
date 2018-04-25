@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - Tap Gesture</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let &lt;# Variable #&gt; = UITapGestureRecognizer(target: &lt;#T##Any?#&gt;, action: #selector(&lt;# Target #&gt;.actionTap))
+        self.&lt;# Target #&gt;.addGestureRecognizer(&lt;# Variable #&gt;)
+        
+        @objc func actionTap() -&gt; Void {
+            
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>21EDAF82-1352-4828-B1D7-86F13D5AB4C4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init A UITapGesture</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
