@@ -5,9 +5,7 @@ version="0.5.0"
 #default config
 
 # change to your own (ex: gitub, bitcket....etc)
-path_source_url="https://github.com/5SMNOONMS5/tttt.git"
-# path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
-
+path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
 
 src1=${HOME}/Library/Developer/Xcode/Templates
 src1_local=Templates
@@ -123,7 +121,7 @@ syncFileTemplates () {
 }
 
 changeGitRemoteURL () {
-    echo "Change remote git repo, remember to customize your .gitignore"
+    echo "Change remote git repo to "$path_source_url", remember to customize your .gitignore"
     git remote set-url origin $path_source_url
 }
 
