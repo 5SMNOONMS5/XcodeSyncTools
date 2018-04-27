@@ -97,7 +97,7 @@ updateSubmodule () {
     echo "Submodule update"
     git submodule update --init
     cd fsevents-tools
-#    sh autogen.sh
+    sh autogen.sh
     cd ..
 }
 
