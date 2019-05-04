@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  	<key>DefaultCompletionName</key>
+	<key>DefaultCompletionName</key>
 	<string>MyCollectionView</string>
-  <key>Description</key>
-  <string>UICollectionView with build-in Xib file</string>
-  <key>Kind</key>
-  <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-  <key>Options</key>
-  <array>
+	<key>Description</key>
+	<string>UICollectionView with build-in Xib file</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
 		<dict>
 			<key>Description</key>
 			<string>The name of the UICollectionView to create</string>
@@ -24,19 +24,17 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
-    <dict>
+		<dict>
 			<key>Default</key>
 			<string>___VARIABLE_viewName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
-    <dict>
+		</dict>
+		<dict>
 			<key>Default</key>
 			<string>___VARIABLE_viewName:identifier___CollectionView</string>
-			<key>Description</key>
-			<string>The view name</string>
 			<key>Identifier</key>
 			<string>interactorName</string>
 			<key>Name</key>
@@ -45,15 +43,15 @@
 			<true/>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
-  </array>
-  <key>Platforms</key>
-  <array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
 		<string>com.apple.platform.iphoneos</string>
-  </array>
+	</array>
 	<key>SortOrder</key>
 	<string>2</string>
-  <key>Summary</key>
-  <string>Easy generates a new UICollectionView with Cell xib</string>
+	<key>Summary</key>
+	<string>Generate a new UICollectionView with Cell xib</string>
 </dict>
 </plist>

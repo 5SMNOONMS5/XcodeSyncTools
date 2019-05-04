@@ -7,33 +7,35 @@
 //
 import UIKit
 
+/// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UICollectionView {
     
     fileprivate var contents: [String] = Array(repeating: "ssssssss", count: 30)
+
+    fileprivate let identifier: String = "Identifier"
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
-        self.setup()
     }
     
-    convenience init(frame: CGRect, expandWidth: CGFloat, collapsedWidth: CGFloat) {
+    convenience init(frame: CGRect) {
 
         let layout = ___VARIABLE_viewName___CollectionLayout()
         self.init(frame: frame, collectionViewLayout: layout)
-        self.setup()
+        self.setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        fatalError("init(coder:) has not been implemented")
+        self.setupUI()
     }
     
-    fileprivate func setup() {
+    fileprivate func setupUI() {
         
-        self.register(gc_Nib(name: "___VARIABLE_viewName___CollectionViewCell"), forCellWithReuseIdentifier: ___VARIABLE_viewName___CollectionViewCell.className)
+        self.register(UINib(nibName: "___VARIABLE_viewName___CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifier)
         self.backgroundColor = .blue
         
-        self.decelerationRate = UIScrollViewDecelerationRateFast
+        self.decelerationRate = .fast
         self.alwaysBounceHorizontal = true
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
@@ -78,7 +80,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ___VARIABLE_viewName___CollectionViewCell.className, for: indexPath as IndexPath) as! ___VARIABLE_viewName___CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath as IndexPath) as! ___VARIABLE_viewName___CollectionViewCell
         
         return cell
     }

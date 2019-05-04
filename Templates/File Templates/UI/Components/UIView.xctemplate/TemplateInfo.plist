@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Singleton</string>
+	<string>View</string>
 	<key>Description</key>
-	<string>Singleton Class</string>
+	<string>UIView Class</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the Singleton class to create</string>
+			<string>The name of the UIView to create</string>
 			<key>Identifier</key>
 			<string>viewName</string>
 			<key>Name</key>
-			<string>Singleton Name</string>
+			<string>New UIView Name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -26,21 +26,9 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___</string>
+			<string>___VARIABLE_viewName:identifier___View</string>
 			<key>Identifier</key>
 			<string>productName</string>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___</string>
-			<key>Identifier</key>
-			<string>interactorName</string>
-			<key>Name</key>
-			<string>Interactor Name:</string>
-			<key>Required</key>
-			<true/>
 			<key>Type</key>
 			<string>static</string>
 		</dict>
@@ -52,6 +40,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>Generate a Singleton class</string>
+	<string>Generate a new UIView Class</string>
 </dict>
 </plist>

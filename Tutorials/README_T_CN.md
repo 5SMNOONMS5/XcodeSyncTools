@@ -8,7 +8,7 @@
 ## II - 路徑
 
 ```
-/Users/stephenchen/Library/Developer/Xcode
+~/Library/Developer/Xcode/Templates
 ```
 
 ![](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/Imgs/tu_t1.png)

@@ -7,35 +7,30 @@
 //
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIView {
-    
-    @IBOutlet weak var viewContent: UIView!
-    
+// ___FILEBASENAMEASIDENTIFIER___ View
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupXib()
         self.setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.setupXib()
         self.setupUI()
     }
     
     convenience init () {
         self.init(frame: .zero)
+        self.setupUI()
+        self.setupEvents()
     }
-
-    private func setupXib() {
-        Bundle.main.loadNibNamed("___FILEBASENAMEASIDENTIFIER___", owner: self, options: nil)
-        self.viewContent.frame = self.bounds
-        self.addSubview(self.viewContent)
-    }
-
 
     private func setupUI() { 
 
     }
+    
+    private func setupEvents() {
+        
+    }
 }
-

@@ -12,7 +12,6 @@ public final class ___FILEBASENAMEASIDENTIFIER___ {
     
     static let share = ___FILEBASENAMEASIDENTIFIER___()
     
-    /// prevent initial from other
-    private override init() {    }
+    private init() {    }
 }
 

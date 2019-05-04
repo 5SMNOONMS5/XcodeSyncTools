@@ -8,22 +8,7 @@
 
 import UIKit
 
-// <# Important #>
-// If you have your own extension, kindly delete me :(
-public extension NSObject {
-    
-    /// Get class name
-    ///
-    /// EX:
-    ///
-    /// ```swift
-    /// MyClass.className   //=> "MyClass"
-    /// ```
-    class var className: String {
-        return String(describing: self)
-    }
-}
-
+/// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     
     fileprivate var contents: [String] = {
@@ -37,7 +22,9 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
 
     fileprivate var rowDefaultSelected: Int = 0
 
-    override init(frame: CGRect, style: UITableViewStyle) {
+    fileprivate let identifier: String = "Identifier"
+
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.setup()
     }
@@ -53,10 +40,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     }
     
     fileprivate func setup() {
-        self.register(UINib(nibName: "___FILEBASENAMEASIDENTIFIER___Cell", bundle: nil), forCellReuseIdentifier: ___FILEBASENAMEASIDENTIFIER___Cell.className)
-        
-//      <# Important #> If you don't want use xib, remove xib first then uncommment below code
-//        self.register(___FILEBASENAMEASIDENTIFIER___Cell.self, forCellReuseIdentifier: ___FILEBASENAMEASIDENTIFIER___Cell.className)
+        self.register(UINib(nibName: "___FILEBASENAMEASIDENTIFIER___Cell", bundle: nil), forCellReuseIdentifier: identifier)
 
         super.delegate = self
         super.dataSource = self
@@ -65,7 +49,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
         self.estimatedRowHeight = 44.0
         self.showsHorizontalScrollIndicator = false
         self.showsVerticalScrollIndicator = false
-        self.rowHeight = UITableViewAutomaticDimension
+        self.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -111,7 +95,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: ___FILEBASENAMEASIDENTIFIER___Cell.className, for: indexPath) as! ___FILEBASENAMEASIDENTIFIER___Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ___FILEBASENAMEASIDENTIFIER___Cell
         cell.lblContent.text = self.contents[indexPath.row]
         return cell
     }
