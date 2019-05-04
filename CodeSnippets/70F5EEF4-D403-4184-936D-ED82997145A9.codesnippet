@@ -15,19 +15,19 @@
         //
         // ******************************************
         
-        override func viewWillAppear(animated: Bool) {
+        override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(true)
         }
         
-        override func viewDidAppear(animated: Bool) {
+        override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(true)
         }
         
-        override func viewWillDisappear(animated: Bool) {
+        override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(true)
         }
         
-        override func viewDidDisappear(animated: Bool) {
+        override func viewDidDisappear(_ animated: Bool) {
             super.viewDidDisappear(true)
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
