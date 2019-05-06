@@ -1,17 +1,17 @@
 #!/bin/sh
 
-version="0.5.0"
+version="0.7.0"
 
 #default config
 
 # change to your own (ex: gitub, bitcket....etc)
 path_source_url="git@github.com:5SMNOONMS5/XcodeSyncTools.git"
 
-src1=${HOME}/Library/Developer/Xcode/Templates
-src1_local=Templates
+src1="${HOME}/Library/Developer/Xcode/Templates/File Templates"
+src1_local="File Templates"
 
-src2=${HOME}/Library/Developer/Xcode/UserData/CodeSnippets
-src2_local=CodeSnippets
+src2="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+src2_local="CodeSnippets"
 
 # I will make colorful console output in the future
 declare -a colors
@@ -115,7 +115,7 @@ syncCodeSnippets () {
 
 # Sync file-template
 syncFileTemplates () {
-  	echo "Sync xcode custom file"
+  	echo "Sync xcode file template"
   	check "$src1"
   	cp -r "$src1_local"/* "$src1"
 }
@@ -151,7 +151,7 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
       exit 1
       ;;
     -s | --sync )
-      updateSubmodule
+      # updateSubmodule
       close_xcode
       syncCodeSnippets
       syncFileTemplates

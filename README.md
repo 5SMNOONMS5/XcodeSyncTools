@@ -1,7 +1,5 @@
 # XcodeSyncTools
 
-[A English version of this document can be found here](https://github.com/5SMNOONMS5/XcodeSyncTools/blob/master/README_EN.md)
-
 同步 Xcode 在不同電腦裡內建的 **Code-Snippets (程式碼片段)** 還有 **File-Template (檔案模板)**。
  
 ## 什麼是 Code-Snippets 跟 File-Template？
@@ -34,7 +32,7 @@ Xcode 目錄底下的檔案變化，然後同步回去 XcodeSyncTools 目錄底�
 
 ## 如果不用這專案會怎樣嗎?
 
-* 完全不會怎樣，因為大部分的開發者在修正 File-Template 或者 Code-Snippets 時都會在 Xcode 中去製作 (詳情可以看教學部分 [Code-Snippets](Tutorials/README_CS_CN.md) ， [File-Template](Tutorials/README_T_CN.md))，那當製作完了通常會需要在**手動**去同步，那如果使用 [fsevents-tools](https://github.com/ggreer/fsevents-tools) 的話則可以省去這個步驟。
+* 完全不會怎樣，因為大部分的開發者在修正 File-Template 或者 Code-Snippets 時都會在 Xcode 中去製作 (詳情可以看教學部分 [Code-Snippets](Tutorials/README_CS.md) ， [File-Template](Tutorials/README_T.md))，那當製作完了通常會需要在**手動**去同步，那如果使用 [fsevents-tools](https://github.com/ggreer/fsevents-tools) 的話則可以省去這個步驟。
 
 > 您也可以將 pipe 之後接成任意腳本去執行。(ex: 執行 githook 或者 git push)
 
