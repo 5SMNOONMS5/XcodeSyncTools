@@ -3,25 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>FF - FixMe</string>
+	<string>DD - Debug statment</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> /// FIXME:  stephen
- </string>
+	<string>        #if DEBUG
+        
+        #else
+        
+        #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CAB29747-F6DF-4230-AD99-2BB3E72FA2E9</string>
+	<string>426641ED-35C8-4D5E-B03D-973C492A4E81</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Fix Me</string>
+	<string>Debug And Release statment</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

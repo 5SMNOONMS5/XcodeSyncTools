@@ -2,26 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>FF - FixMe</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> /// FIXME:  stephen
- </string>
+	<string>#if DEBUG
+       
+        #else
+
+        #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CAB29747-F6DF-4230-AD99-2BB3E72FA2E9</string>
+	<string>D1542A1A-C32B-4FB9-8D96-EFB4FEA3AE95</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Debug Model Mark</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Fix Me</string>
+	<string>DD - Debug And Release Statment</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
