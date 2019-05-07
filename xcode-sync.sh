@@ -57,8 +57,9 @@ usage() {
     -w, --watch      Observer the folder change.
     -c, --change     Change remote git URL to your own repo.
     -t, --test       Test script, don't use this. 
+    -u, --update 	 Update code snippet and file templates.
     -h, --help       This message.
-    --               End of options
+    --               End of options.
 EOF
 }
 
@@ -148,6 +149,11 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
   case $1 in
     -v | --version )
       echo $version
+      exit 1
+      ;;
+    -u | --update )
+      syncCodeSnippets
+      syncFileTemplates
       exit 1
       ;;
     -s | --sync )
