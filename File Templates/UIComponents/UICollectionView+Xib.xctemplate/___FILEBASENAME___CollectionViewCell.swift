@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell {
+/// ___FILEBASENAMEASIDENTIFIER___
+final class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
     

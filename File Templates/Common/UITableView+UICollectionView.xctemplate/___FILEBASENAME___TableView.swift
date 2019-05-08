@@ -11,15 +11,9 @@ import UIKit
 /// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     
-    fileprivate var contents: [[___VARIABLE_viewName___Model]] = {
-        var model = ___VARIABLE_viewName___Model(title: "Test Collection View")
-        var _contents: [___VARIABLE_viewName___Model] = Array(repeating: model, count: 5)
-        return Array(repeating: _contents, count: 5)
-    }()
+    private var contents: [[___VARIABLE_viewName___Model]] = []
 
-    fileprivate var rowDefaultSelected: Int = 0
-
-    fileprivate let identifier: String = "Identifier"
+    private let identifier: String = "Identifier"
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -28,16 +22,17 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    convenience init(frame: CGRect, contents: [[___VARIABLE_viewName___Model]]) {
+        self.init(frame: frame, style: .plain)
+        self.contents = contents
         self.setup()
     }
     
-    convenience init(contents: [[___VARIABLE_viewName___Model]]) {
-        self.init(frame: .zero, style: .plain)
-        self.contents = contents
-    }
-    
-    fileprivate func setup() {
-        self.register(UINib(nibName: "___FILEBASENAMEASIDENTIFIER___Cell", bundle: nil), forCellReuseIdentifier: identifier)
+    private func setup() {
+
+        self.register(___FILEBASENAMEASIDENTIFIER___Cell.self, forCellReuseIdentifier: identifier)
 
         super.delegate = self
         super.dataSource = self
@@ -52,17 +47,13 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
 
 // ******************************************
 //
-// MARK: - UITableViewDelegate
+// MARK: - UITableViewDataSource & UITableViewDelegate
 //
 // ******************************************
-extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == rowDefaultSelected {
-            tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
-            /// meaning already selected, then don't need extra flag to detect
-            rowDefaultSelected = -1
-        }
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -76,14 +67,6 @@ extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 
     }
-}
-
-// ******************************************
-//
-// MARK: - UITableViewDataSource
-//
-// ******************************************
-extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.contents.count

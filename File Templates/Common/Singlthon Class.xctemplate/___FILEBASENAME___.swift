@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class ___FILEBASENAMEASIDENTIFIER___ {
+final class ___FILEBASENAMEASIDENTIFIER___ {
     
     static let share = ___FILEBASENAMEASIDENTIFIER___()
     

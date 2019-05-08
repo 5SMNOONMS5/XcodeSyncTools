@@ -8,15 +8,14 @@
 
 import UIKit
 
+/// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewLayout {
     
     public override init() {
         super.init()
-        print("SSSSCollectionLayout")
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
     

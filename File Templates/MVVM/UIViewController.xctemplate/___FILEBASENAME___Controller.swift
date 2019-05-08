@@ -49,6 +49,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
         self.makeRequest()
     }
 
+    /// Make request
     private func makeRequest() {
         viewModel.requestAPI{ (response) in
 

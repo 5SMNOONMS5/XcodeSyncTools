@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 /// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
@@ -15,14 +16,24 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
 
     public var onClick: ((_ model: ___VARIABLE_viewName___Model) -> ())?
 
-    private let identifier = "CollectionViewCellIdentifier"
+    private let identifier = "identifier"
 
-    @IBOutlet weak var cv: UICollectionView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    lazy var cv: UICollectionView = {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .horizontal
+        flowLayout.itemSize = CGSize(width: 160.0, height: 170.0)
+        flowLayout.minimumLineSpacing = 8.0
+        return UICollectionView(frame:.zero, collectionViewLayout: flowLayout)
+    }()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setup()
         self.setupCollectionView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,22 +41,24 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    /// Setup TableViewCell self
+    /// Setup TableViewCell itself
     private func setup() {
         self.selectionStyle = .none
+        self.contentView.backgroundColor = .white
     }
 
     /// Setup CollectionView self
     private func setupCollectionView() {
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = CGSize(width: 100, height: 140)
-        flowLayout.minimumLineSpacing = 2.0
-        flowLayout.minimumInteritemSpacing = 5.0
-        cv.collectionViewLayout = flowLayout
+        self.contentView.addSubview(cv)
+        cv.snp.makeConstraints { (make) in
+            make.leading.bottom.trailing.top.equalToSuperview()
+        }
         
-        let nib = UINib(nibName: "___VARIABLE_viewName___CollectionViewCell", bundle: nil)
-        cv.register(nib, forCellWithReuseIdentifier: identifier)
+        cv.backgroundColor = .white
+        cv.register(___VARIABLE_viewName___CollectionViewCell.self, forCellWithReuseIdentifier: identifier)
+        
+        cv.showsHorizontalScrollIndicator = false
+        cv.showsVerticalScrollIndicator = false
     }
 
     public func update(content: [___VARIABLE_viewName___Model]) {
@@ -95,3 +108,4 @@ extension ___FILEBASENAMEASIDENTIFIER___: UICollectionViewDataSource {
         return cell
     }
 }
+

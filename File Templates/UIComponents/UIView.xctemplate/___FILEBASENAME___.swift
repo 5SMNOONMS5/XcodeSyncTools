@@ -12,21 +12,19 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
         
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupUI()
+        fatalError("init(coder:) has not been implemented")
     }
     
     convenience init () {
         self.init(frame: .zero)
-        self.setupUI()
-        self.setupEvents()
+        setup()
+        setupEvents()
     }
 
-    private func setupUI() { 
+    private func setup() { 
 
     }
     
