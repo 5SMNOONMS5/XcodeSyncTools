@@ -11,7 +11,7 @@ import UIKit
 /// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     
-    fileprivate var contents: [String] = {
+    private var contents: [String] = {
         var _contents: [String] = Array(repeating: "asdasdasdasdasdasdasdasdasd", count: 20)
         /// <# Notice #> For testing dynamic cell height, replace your own data
         _contents += Array(repeating: "我愛一條材我愛一條材我愛一條材我愛一條材我愛一條材我愛一條材我愛一條材", count: 5)
@@ -20,9 +20,9 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
         return _contents
     }()
 
-    fileprivate var rowDefaultSelected: Int = 0
+    private var rowDefaultSelected: Int = 0
 
-    fileprivate let identifier: String = "Identifier"
+    private let identifier: String = "Identifier"
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -38,7 +38,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
         self.setup()
     }
     
-    fileprivate func setup() {
+    private func setup() {
         self.register(___FILEBASENAMEASIDENTIFIER___Cell.self, forCellReuseIdentifier: identifier)
 
         super.delegate = self
