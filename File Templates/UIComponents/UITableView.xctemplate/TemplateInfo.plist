@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>NoName</string>
 	<key>Description</key>
-	<string>UITableView, UITableViewCell and Xib</string>
+	<string>UITableView, UITableViewCell without xib</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -52,6 +52,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>Generate a new UITableView with Cell xib</string>
+	<string>Generate a new UITableView and UITableViewCell without xib</string>
 </dict>
 </plist>

@@ -26,21 +26,20 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
-        self.setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setup()
+        fatalError("init(coder:) has not been implemented")
     }
     
     convenience init(contents: [String]) {
         self.init(frame: .zero, style: .plain)
         self.contents = contents
+        self.setup()
     }
     
     fileprivate func setup() {
-        self.register(UINib(nibName: "___FILEBASENAMEASIDENTIFIER___Cell", bundle: nil), forCellReuseIdentifier: identifier)
+        self.register(___FILEBASENAMEASIDENTIFIER___Cell.self, forCellReuseIdentifier: identifier)
 
         super.delegate = self
         super.dataSource = self

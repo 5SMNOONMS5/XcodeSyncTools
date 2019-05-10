@@ -8,9 +8,14 @@
 
 import UIKit
 
+/// ___FILEBASENAMEASIDENTIFIER___
 final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
 
-    @IBOutlet weak var lblContent: UILabel!
+    public let lblContent: UILabel = {
+        let lbl = UILabel()
+        lbl.textAlignment = .center
+        return lbl
+    }()
 
     var gradient: CAGradientLayer = {
         let _gradient: CAGradientLayer = CAGradientLayer()
@@ -26,11 +31,14 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
         
         return _gradient
     }()
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setup()
-        // Initialization code
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -47,6 +55,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
         }
     }
 
+    /// Setup TableViewCell it self
     fileprivate func setup() {
         self.selectionStyle = .none
     }
