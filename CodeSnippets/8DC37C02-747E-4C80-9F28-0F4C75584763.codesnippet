@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DD - Debug statment</string>
+	<string>II - UILabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        #if DEBUG
-        
-        #else
-        
-        #endif</string>
+	<string>    private let Label: UILabel = {
+        let lbl = UILabel()
+        lbl.font = UIFont.systemFont(ofSize: 14.0)
+        lbl.textColor = .black
+        lbl.text = "NSTextAlignment NSTextAlignment NSTextAlignment"
+        lbl.textAlignment = .center
+        return lbl
+    }()
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>426641ED-35C8-4D5E-B03D-973C492A4E81</string>
+	<string>8DC37C02-747E-4C80-9F28-0F4C75584763</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Debug And Release statment</string>
+	<string>UILabel Lazy property </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

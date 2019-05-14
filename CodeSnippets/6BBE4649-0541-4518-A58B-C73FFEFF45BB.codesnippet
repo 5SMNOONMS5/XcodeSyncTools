@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - UIView</string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>   let &lt;#name#&gt; = UIView()
-        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;#name#&gt;.backgroundColor = &lt;#UIColor#&gt;
-        view.addSubview(&lt;#name#&gt;)</string>
+	<string>lazy var view: UIView = {
+    let v = UIView()
+    v.backgroundColor = .red
+    return v
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6BBE4649-0541-4518-A58B-C73FFEFF45BB</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -20,7 +21,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UIView</string>
+	<string>UIView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

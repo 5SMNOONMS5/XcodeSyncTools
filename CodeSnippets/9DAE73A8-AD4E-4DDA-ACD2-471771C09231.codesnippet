@@ -3,27 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - Function</string>
+	<string>II</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  
-    &lt;# Access Controll #&gt; func &lt;# FuncName #&gt;() -&gt; Void {
+	<string>contentView.addSubview(dateLabel)
+        dateLabel.translatesAutoresizingMaskIntoConstraints = false
         
-    }</string>
+        dateLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        dateLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        dateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9AF9D837-9BF8-4619-BA24-E1BAD35E88E5</string>
+	<string>9DAE73A8-AD4E-4DDA-ACD2-471771C09231</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A Function</string>
+	<string>Autolayout Constraints</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
