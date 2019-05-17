@@ -6,15 +6,15 @@
 	<string>II - UIImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>   let &lt;# name #&gt; = UIImageView(image: UIImage(named: &lt;#image name#&gt;))
-        &lt;# name #&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;# name #&gt;.contentMode = &lt;#UIViewContentMode#&gt;
-        &lt;# name #&gt;.backgroundColor = &lt;#UIColor#&gt;
-        view.addSubview(&lt;# name #&gt;)
-        </string>
+	<string>    private let imageView: UIImageView = {
+        let v = UIImageView(image: UIImage(named: &lt;#image name#&gt;))
+        v.contentMode = .scaleAspectFit
+        v.backgroundColor = .red
+        return v
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>94DE4856-C663-4E30-854F-621DB762413E</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -22,7 +22,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UIImageView</string>
+	<string>UIImageView Computed property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

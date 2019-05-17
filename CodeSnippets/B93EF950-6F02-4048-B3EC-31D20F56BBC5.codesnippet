@@ -3,25 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - DateFormatter</string>
+	<string>II - UIView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    private let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM"
-        return formatter
+	<string>    private let view: UIView = {
+        let v = UIView()
+        v.alpha = 0.4
+        v.backgroundColor = UIColor.red
+        v.layer.borderColor = UIColor.gray.cgColor
+        v.layer.borderWidth = 3.0
+        v.layer.cornerRadius = 3.0
+        return v
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE89C3B4-A9C8-406E-9C39-EF735531380D</string>
+	<string>B93EF950-6F02-4048-B3EC-31D20F56BBC5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DateFormatter Computed Property</string>
+	<string>UIView Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

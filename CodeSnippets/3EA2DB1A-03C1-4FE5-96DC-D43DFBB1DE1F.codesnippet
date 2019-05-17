@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    lazy var btn: UIButton = {
+	<string>    private let btn: UIButton = {
         let b = UIButton(type: .system)
         b.setTitle("Butto Here", for: .normal)
         b.addTarget(self, action: #selector(CalendarViewView.onTouch(sender:)), for: .touchUpInside)
@@ -26,7 +26,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Lazy property UIButton</string>
+	<string>UIButton Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

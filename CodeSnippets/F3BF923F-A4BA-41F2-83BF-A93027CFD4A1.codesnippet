@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II</string>
+	<string>II - Private Let Property</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy var view: UIView = {
-    let v = UIView()
-    v.backgroundColor = .red
-    return v
+	<string>private let &lt;#property name#&gt;: &lt;#type name#&gt; = {
+&lt;#statements#&gt;
+return &lt;#value#&gt;
 }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6BBE4649-0541-4518-A58B-C73FFEFF45BB</string>
+	<string>F3BF923F-A4BA-41F2-83BF-A93027CFD4A1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIView</string>
+	<string>Compute Let Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

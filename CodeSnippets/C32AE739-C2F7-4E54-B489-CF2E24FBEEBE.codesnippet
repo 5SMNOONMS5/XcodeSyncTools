@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - DateFormatter</string>
+	<string>II - Private Function</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    private let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM"
-        return formatter
-    }()</string>
+	<string>    private func &lt;#name#&gt;(&lt;#parameters#&gt;) -&gt; &lt;#return type#&gt; {
+        &lt;#function body#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE89C3B4-A9C8-406E-9C39-EF735531380D</string>
+	<string>C32AE739-C2F7-4E54-B489-CF2E24FBEEBE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DateFormatter Computed Property</string>
+	<string>Private Function Shortcut</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -9,12 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>     let &lt;#name#&gt; = UIScrollView()
-        &lt;#name#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;#name#&gt;.contentSize = CGSize(width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;#name#&gt;.contentInset = UIEdgeInsetsMake(&lt;#T##top: CGFloat##CGFloat#&gt;, &lt;#T##left: CGFloat##CGFloat#&gt;, &lt;#T##bottom: CGFloat##CGFloat#&gt;, &lt;#T##right: CGFloat##CGFloat#&gt;)
-        &lt;#name#&gt;.contentOffset = CGPoint(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;)
-        view.addSubview(&lt;#name#&gt;)</string>
+	<string>    private let scrollView: UIScrollView = {
+        let v = UIScrollView()
+        v.contentSize = CGSize(width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+        v.contentInset = UIEdgeInsets(top: &lt;#T##CGFloat#&gt;, left: &lt;#T##CGFloat#&gt;, bottom: &lt;#T##CGFloat#&gt;, right: &lt;#T##CGFloat#&gt;)
+        v.contentOffset = CGPoint(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;)
+        return v
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DCC3BB0A-EAA4-4979-9580-7B3D778E1100</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -22,7 +23,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UIScrollView</string>
+	<string>UIScrollView Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

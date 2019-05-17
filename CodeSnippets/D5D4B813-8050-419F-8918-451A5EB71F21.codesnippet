@@ -9,11 +9,15 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        &lt;# View #&gt; = &lt;# View #&gt;(frame: .zero)
-        &lt;# View #&gt;.addSubview(&lt;# View #&gt;)
-        &lt;# View #&gt;.snp.makeConstraints { (make) in
-            &lt;#code#&gt;
-        }</string>
+	<string>    &lt;#View#&gt;.snp.makeConstraints { (make) in
+        make.left.right.top.bottom.equalToSuperview()
+        make.centerX.centerY.equalToSuperview()
+        make.width.heightequalToSuperview()
+        make.left.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+        make.right.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+        make.top.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+        make.bottom.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D5D4B813-8050-419F-8918-451A5EB71F21</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -21,7 +25,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A View With Snapkit</string>
+	<string>Shortcut code for SnapKit</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
