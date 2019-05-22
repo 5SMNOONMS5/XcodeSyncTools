@@ -19,27 +19,28 @@ final class ___FILEBASENAMEASIDENTIFIER___: UICollectionView {
     }
     
     convenience init(frame: CGRect) {
-        let layout = ___VARIABLE_viewName___CollectionLayout()
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         self.init(frame: frame, collectionViewLayout: layout)
-        self.setupUI()
+        setupViews()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupUI() {
+    private func setupViews() {
         
-        self.register(UINib(nibName: "___VARIABLE_viewName___CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifier)
-        self.backgroundColor = .blue
+        self.backgroundColor = .white
+        self.register(___VARIABLE_viewName___CollectionViewCell.self, forCellWithReuseIdentifier: identifier)
         
         self.decelerationRate = .fast
         self.alwaysBounceHorizontal = true
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
         
-        super.delegate = self
-        super.dataSource = self
+        self.delegate = self
+        self.dataSource = self
     }
 }
 

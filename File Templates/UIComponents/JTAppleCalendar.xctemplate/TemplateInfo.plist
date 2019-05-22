@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MyCollectionView</string>
+	<string>JTAppleCalendar Wrapper</string>
 	<key>Description</key>
-	<string>UICollectionView with build-in Xib file</string>
+	<string>JTAppleCalendar Wrapper With Cell And Supplementary View</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the UICollectionView to create</string>
+			<string>The name of the it</string>
 			<key>Identifier</key>
 			<string>viewName</string>
 			<key>Name</key>
-			<string>New UICollectionView Name:</string>
+			<string>New JTAppleCalendar Wrapper</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___</string>
+			<string>___VARIABLE_viewName:identifier___Calendar</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___CollectionView</string>
+			<string>___VARIABLE_viewName:identifier___Calendar</string>
 			<key>Identifier</key>
 			<string>interactorName</string>
 			<key>Name</key>
@@ -52,6 +52,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>Generate a new UICollectionView with Cell xib</string>
+	<string>Generate a new set of JTAppleCalendar Wrapper</string>
 </dict>
 </plist>
