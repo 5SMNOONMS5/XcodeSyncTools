@@ -3,26 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - CALayer</string>
+	<string>II - didSet &amp; WillSet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    private lazy var line: CALayer = {
-        let layer = CALayer()
-        layer.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        layer.backgroundColor = UIColor.red.cgColor
-        return layer
-    }()</string>
+	<string>var product: LLProduct? {
+    didSet {
+        title = product?.prodName1
+    }
+    willSet(newValue) {
+        
+    }
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0C030DB8-4CDC-48C6-8513-7698CEC49CD1</string>
+	<string>675B81F3-A255-45F8-BEB5-846046609153</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CALayer Computed Property</string>
+	<string>DidSet and WIllSet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
