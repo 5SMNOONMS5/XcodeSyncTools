@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - Notification Center</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    /// Add notification
+    private func addNotification() {
+        let selector = #selector(LLCheckOutViewController.applicationDidBecomeActiveNotification)
+        let name = UIApplication.didBecomeActiveNotification
+        NotificationCenter.default.addObserver(self, selector: selector,
+                                               name: name,
+                                               object: nil)
+    }
+    
+    /// Remove notification
+    private func removeNotification() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    /// NotificationCenter selector method
+    @objc private func applicationDidBecomeActiveNotification() {
+
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7B4F4119-47C3-49F6-8226-2E8AB11B7F05</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Notification Add, Remove, And Target Method</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

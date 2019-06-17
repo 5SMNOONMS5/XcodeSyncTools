@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Only client part of my MVVMC pattern</string>
+	<string>Only client and model part of my MVVMC pattern</string>
 	<key>Description</key>
 	<string>Client class</string>
 	<key>Kind</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___Client</string>
+			<string>___VARIABLE_viewName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viewName:identifier___Client</string>
+			<string>___VARIABLE_viewName:identifier___</string>
 			<key>Identifier</key>
 			<string>interactorName</string>
 			<key>Name</key>
@@ -52,6 +52,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>Generate a new client class</string>
+	<string>Generate a new client and model class</string>
 </dict>
 </plist>
