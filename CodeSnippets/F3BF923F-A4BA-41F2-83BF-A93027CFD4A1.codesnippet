@@ -17,8 +17,8 @@ return &lt;#value#&gt;
 	<string>F3BF923F-A4BA-41F2-83BF-A93027CFD4A1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Compute Let Property</string>
 	<key>IDECodeSnippetUserSnippet</key>

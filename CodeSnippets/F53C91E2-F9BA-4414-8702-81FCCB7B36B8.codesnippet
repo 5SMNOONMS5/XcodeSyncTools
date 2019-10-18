@@ -25,8 +25,8 @@
 	<string>F53C91E2-F9BA-4414-8702-81FCCB7B36B8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init A CAGradientLayer</string>
 	<key>IDECodeSnippetUserSnippet</key>

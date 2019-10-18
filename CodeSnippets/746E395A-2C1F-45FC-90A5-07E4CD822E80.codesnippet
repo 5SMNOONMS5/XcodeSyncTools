@@ -37,8 +37,8 @@ extension &lt;#UIViewController#&gt; : WKUIDelegate{
 	<string>746E395A-2C1F-45FC-90A5-07E4CD822E80</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init A WKWebView</string>
 	<key>IDECodeSnippetUserSnippet</key>

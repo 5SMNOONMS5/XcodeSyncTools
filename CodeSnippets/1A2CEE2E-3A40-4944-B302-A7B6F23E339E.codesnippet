@@ -3,32 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - UIView</string>
+	<string>II - Closure</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    private let view: UIView = {
-        let v = UIView()
-        v.alpha = 0.4
-        v.backgroundColor = UIColor.red
-        v.layer.borderColor = UIColor.gray.cgColor
-        v.layer.borderWidth = 3.0
-        v.layer.cornerRadius = 3.0
-        return v
-    }()</string>
+	<string>var didClick: ((_ sender: &lt;#Object#&gt;) -&gt; ())?</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B93EF950-6F02-4048-B3EC-31D20F56BBC5</string>
+	<string>1A2CEE2E-3A40-4944-B302-A7B6F23E339E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>Closure</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIView Computed Property</string>
+	<string>Init a closure</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

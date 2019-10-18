@@ -22,8 +22,8 @@
 	<string>8DC37C02-747E-4C80-9F28-0F4C75584763</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UILabel Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>

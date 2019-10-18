@@ -29,15 +29,15 @@ final class ___FILEBASENAMEASIDENTIFIER___: UICollectionView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Setup Views
     private func setupViews() {
+        backgroundColor = .white
+        register(KVPromo2CollectionViewCell.self, forCellWithReuseIdentifier: identifier)
         
-        self.backgroundColor = .white
-        self.register(___VARIABLE_viewName___CollectionViewCell.self, forCellWithReuseIdentifier: identifier)
-        
-        self.decelerationRate = .fast
-        self.alwaysBounceHorizontal = true
-        self.showsVerticalScrollIndicator = false
-        self.showsHorizontalScrollIndicator = false
+        decelerationRate = .fast
+        alwaysBounceHorizontal = true
+        showsVerticalScrollIndicator = false
+        showsHorizontalScrollIndicator = false
         
         self.delegate = self
         self.dataSource = self
@@ -67,7 +67,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.contents.count
+        return contents.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

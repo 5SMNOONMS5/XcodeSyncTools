@@ -19,8 +19,8 @@
 	<string>21EDAF82-1352-4828-B1D7-86F13D5AB4C4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init A UITapGesture</string>
 	<key>IDECodeSnippetUserSnippet</key>

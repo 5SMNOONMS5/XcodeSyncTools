@@ -20,8 +20,8 @@
 	<string>DCC3BB0A-EAA4-4979-9580-7B3D778E1100</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UIScrollView Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>

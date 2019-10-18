@@ -16,7 +16,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     override func loadView() {
         let v = UIView(frame: UIScreen.main.bounds)
         v.backgroundColor = .white
-        self.view = v
+        view = v
     }
 
     override func viewDidLoad() {
@@ -44,11 +44,12 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
         
     }
 
-    /// Check parameter before request
+    /// Check parameter before request or show loading....etc
     private func prepareToMakeRequest() {
-        self.makeRequest()
+        makeRequest()
     }
 
+    /// Make request
     private func makeRequest() {
         viewModel.requestAPI{ (response) in
 
@@ -57,9 +58,10 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
         }
     }
 
-
-
-            
+    /// Fake data
+    private func fakeData() {
+        
+    }
 }
 
 

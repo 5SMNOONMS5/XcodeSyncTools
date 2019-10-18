@@ -25,8 +25,8 @@
 	<string>BC6C1A89-8095-4CAC-9D69-042A00249063</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Method Swizzle</string>
 	<key>IDECodeSnippetUserSnippet</key>

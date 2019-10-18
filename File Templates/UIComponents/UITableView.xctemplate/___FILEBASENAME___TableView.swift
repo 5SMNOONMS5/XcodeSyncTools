@@ -35,25 +35,25 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableView {
     convenience init(contents: [String]) {
         self.init(frame: .zero, style: .plain)
         self.contents = contents
-        self.setup()
+        setup()
     }
     
     private func setup() {
-        self.register(___FILEBASENAMEASIDENTIFIER___Cell.self, forCellReuseIdentifier: identifier)
+        register(KVPromo2TableViewCell.self, forCellReuseIdentifier: identifier)
 
         super.delegate = self
         super.dataSource = self
-        self.separatorStyle = .none
-        self.backgroundColor = .clear
-        self.estimatedRowHeight = 44.0
-        self.showsHorizontalScrollIndicator = false
-        self.showsVerticalScrollIndicator = false
-        self.rowHeight = UITableView.automaticDimension
+        separatorStyle = .none
+        backgroundColor = .clear
+        estimatedRowHeight = 44.0
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
+        rowHeight = UITableView.automaticDimension
     }
 }
 
 // ******************************************
-//
+// 
 // MARK: - UITableViewDelegate
 //
 // ******************************************
@@ -89,13 +89,13 @@ extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDelegate {
 extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.contents.count
+        return contents.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ___FILEBASENAMEASIDENTIFIER___Cell
-        cell.lblContent.text = self.contents[indexPath.row]
+        cell.lblContent.text = contents[indexPath.row]
         return cell
     }
 }

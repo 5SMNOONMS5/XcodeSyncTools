@@ -23,8 +23,8 @@
 	<string>3EA2DB1A-03C1-4FE5-96DC-D43DFBB1DE1F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UIButton Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>

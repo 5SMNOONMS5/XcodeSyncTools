@@ -22,8 +22,8 @@
 	<string>3432B2E6-95CD-485D-A068-26EF3B147CC5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Init A UISegmentedControl</string>
 	<key>IDECodeSnippetUserSnippet</key>

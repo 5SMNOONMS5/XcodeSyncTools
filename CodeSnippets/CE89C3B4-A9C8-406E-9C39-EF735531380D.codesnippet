@@ -18,8 +18,8 @@
 	<string>CE89C3B4-A9C8-406E-9C39-EF735531380D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>DateFormatter Computed Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
