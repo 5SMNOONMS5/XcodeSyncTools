@@ -9,14 +9,15 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private let stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis  = NSLayoutConstraint.Axis.vertical
-        stackView.distribution  = UIStackView.Distribution.equalSpacing
-        stackView.alignment = UIStackView.Alignment.center
-        stackView.spacing   = 16.0
-        return stackView
-    }()</string>
+	<string>/// Stack view
+private let stackView: UIStackView = {
+    let v = UIStackView()
+    v.axis  = NSLayoutConstraint.Axis.vertical
+    v.distribution  = UIStackView.Distribution.equalSpacing
+    v.alignment = UIStackView.Alignment.center
+    v.spacing = 16.0
+    return v
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4A089D7D-56AE-44F0-BEDD-AE6F623A7E69</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -24,7 +25,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>StackView Computed Property</string>
+	<string>Create a StackView with computed property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

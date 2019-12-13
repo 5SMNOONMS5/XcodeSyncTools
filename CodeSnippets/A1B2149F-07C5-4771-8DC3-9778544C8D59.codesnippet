@@ -6,22 +6,26 @@
 	<string>II - UISlider</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#slider#&gt; = UISlider(frame: CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;))
-        &lt;#slider#&gt;.maximumValue = &lt;#Float#&gt;
-        &lt;#slider#&gt;.minimumValue = &lt;#Float#&gt;
-        &lt;#slider#&gt;.value = &lt;#Float#&gt;
-        &lt;#slider#&gt;.maximumTrackTintColor = &lt;#.color#&gt;
-        &lt;#slider#&gt;.minimumTrackTintColor = &lt;#.color#&gt;
-        &lt;#slider#&gt;.thumbTintColor = &lt;#.color#&gt;
-        &lt;#slider#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.sliderAction(sender:)), for: .valueChanged)
-        view.addSubview(&lt;#slider#&gt;)
-        
-        func sliderAction(sender: UISlider){
-            // sender.value
-        }</string>
+	<string>/// Slider
+private let slider: UISlider = {
+    let s = UISlider(frame: .zero)
+    s.maximumValue = &lt;#Float#&gt;
+    s.minimumValue = &lt;#Float#&gt;
+    s.value = &lt;#Float#&gt;
+    s.maximumTrackTintColor = &lt;#.color#&gt;
+    s.minimumTrackTintColor = &lt;#.color#&gt;
+    s.thumbTintColor = &lt;#.color#&gt;
+    s.addTarget(self, action: #selector(&lt;#ViewController#&gt;.sliderAction(sender:)), for: .valueChanged)
+    return s
+}()
+
+private func actionSlider(sender: UISlider) {
+    print("actionSlider")
+    // sender.value
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A1B2149F-07C5-4771-8DC3-9778544C8D59</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -29,7 +33,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UISlider</string>
+	<string>Create a silder</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

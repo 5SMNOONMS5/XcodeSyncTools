@@ -3,29 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - UIProgressView</string>
+	<string>II - UIApplication Root View Controller</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// Progress view
-private let viewProgress: UIProgressView() = {
-    let v = UIProgressView(frame: .zero)
-    v.progress = &lt;#Float#&gt;
-    v.trackTintColor = &lt;# UIColor#&gt;
-    v.progressTintColor = &lt;# UIColor#&gt;
-    v.progressViewStyle = &lt;# UIProgressViewStyle#&gt;
-    return v
-}()</string>
+	<string>window = UIWindow(frame: UIScreen.main.bounds)
+window?.rootViewController = MainViewController()
+window?.makeKeyAndVisible()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AFAA13AE-832D-4ED5-ADE5-ACB22DD340E1</string>
+	<string>7F20EC63-1EFF-43B1-AA94-255337C67B41</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create a UIProgressView</string>
+	<string>Root View Controller</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

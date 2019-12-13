@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - API Request</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func requestAPI(completion: @escaping (LLResult&lt;LLBrandModel, LLError&gt;) -&gt; ()) {
+        
+        LLBrandClient().start { response in
+            
+            guard let data = response.value as? Data else {
+                completion(LLResult.failure(LLError.defaultString))
+                return
+            }
+            
+            if let object = self.parseJSON(data: data),
+                object.code == Configuration.API.isSuccess {
+                    /// Do some logic here
+                self.brands.insert(contentsOf: object.brands, at: 0)
+                completion(LLResult.success(object))
+                return
+            }
+            
+            completion(LLResult.failure(LLError.objectMapping(data)))
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>61F9D57A-0FE0-4102-A191-3C52731CDBCA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Api request sample code, usually in view model</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

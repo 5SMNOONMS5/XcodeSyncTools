@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - Notification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    /// Add notification
+    private func addNotificationCenter() -&gt; Void {
+        _ = NotificationCenter.default.reactive.notification(name: .counterPayFinish)
+            .observe {
+            if let some = $0.element?.userInfo {
+              // do something with your image
+            }
+        }
+    }
+    
+    /// Send notification
+    /// - Parameter info: additionally infos
+    private func sendNotificationCenter(_ info: [String: Any] = [:]) -&gt; Void {
+        NotificationCenter.default.post(name: .counterPayFinish, object: nil, userInfo: info)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C35B9DD6-DD2E-4167-8B35-71F481A8217E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add and remove notification center seperate in two functions</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

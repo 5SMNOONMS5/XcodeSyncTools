@@ -11,25 +11,25 @@
 	<key>IDECodeSnippetContents</key>
 	<string>import WebKit
 
-func setupWKWebView(){
+private let wkView: WKWebView = {
+    let config = WKWebViewConfiguration()
+    let v = WKWebView(frame: .zero, configuration: config)
+    v.uiDelegate = self
     
-    let frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-    let &lt;#name#&gt; = WKWebView(frame: frame, configuration: &lt;#T##WKWebViewConfiguration#&gt;)
-    &lt;#name#&gt;.uiDelegate = self
-    view.addSubview(&lt;#name#&gt;)
-    
-    let &lt;#url#&gt; = URL(string: &lt;#string#&gt;)
-    
-    guard let &lt;#newURL#&gt; = &lt;#url#&gt; else {
-        print(&lt;#not get url#&gt;)
+    guard let aURL = URL(string: &lt;#string#&gt;) else {
+        return
     }
-    let &lt;#request#&gt; = URLRequest(url: &lt;#newURL#&gt;)
-    &lt;#name#&gt;.load(&lt;#request#&gt;)
+    
+    v.load(URLRequest(url: aURL))
+    return v
+}()
 
-}
-
-
-extension &lt;#UIViewController#&gt; : WKUIDelegate{
+// ******************************************
+//
+// MARK: - WKUIDelegate
+//
+// ******************************************
+extension LLCheckOutViewController : WKUIDelegate {
     
     
 }</string>
@@ -40,7 +40,7 @@ extension &lt;#UIViewController#&gt; : WKUIDelegate{
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A WKWebView</string>
+	<string>Create a WKWebView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

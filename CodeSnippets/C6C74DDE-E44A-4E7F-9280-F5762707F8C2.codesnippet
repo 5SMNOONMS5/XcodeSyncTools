@@ -6,15 +6,17 @@
 	<string>II - UIBarButtonItem</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>All</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#barButtonItem#&gt; = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(&lt;#ViewController#&gt;.barButtonItemAction))
-        self.navigationItem.leftBarButtonItem = &lt;#barButtonItem#&gt;
-     
-        func barButtonItemAction(){
-            
-        }</string>
+	<string>let &lt;#barButtonItem#&gt; = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(&lt;#ViewController#&gt;.action))
+self.navigationItem.leftBarButtonItem = &lt;#barButtonItem#&gt;
+
+private func action() {
+    
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C6C74DDE-E44A-4E7F-9280-F5762707F8C2</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -22,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UIBarButtonItem</string>
+	<string>Create a UIBarButtonItem</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -9,14 +9,17 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        let &lt;#switch#&gt; = UISwitch(frame: CGRect(x: &lt;# x #&gt;, y: &lt;# y #&gt;, width: &lt;# width #&gt;, height: &lt;# height #&gt;))
-        &lt;#switch#&gt;.thumbTintColor = &lt;#.color#&gt;
-        &lt;#switch#&gt;.onTintColor = &lt;#.color#&gt;
-        &lt;#switch#&gt;.tintColor = &lt;#.color#&gt;
-        &lt;#switch#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.switchAction(sender:)), for: .valueChanged)
-        view.addSubview(&lt;#switch#&gt;)
+	<string>        // Switch control
+        private let aSwitch: UISwitch = {
+            let s = UISwitch(frame: .zero)
+            s.thumbTintColor = &lt;#.color#&gt;
+            s.onTintColor = &lt;#.color#&gt;
+            s.tintColor = &lt;#.color#&gt;
+            s.addTarget(self, action: #selector(&lt;#ViewController#&gt;.switchAction(sender:)), for: .valueChanged)
+            return s
+        }()
         
-        func switchAction(sender: UISwitch){
+        private func actionSwitch(sender: UISwitch) {
             // sender.isOn
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -26,7 +29,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UISwitch</string>
+	<string>Create a UISwitch</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

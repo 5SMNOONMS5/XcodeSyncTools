@@ -3,28 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - Playground</string>
+	<string>II - Timer</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>import UIKit
-import PlaygroundSupport
-
-let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-view.backgroundColor = UIColor.blue
-
-PlaygroundPage.current.liveView = view
-PlaygroundPage.current.needsIndefiniteExecution = true</string>
+	<string>    /// Timer
+    private var timer: Timer {
+        let context = ["user": "@twostraws"]
+        let t = Timer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: context, repeats: true)
+        RunLoop.current.add(t, forMode: .commonModes)
+        return t
+    }
+    
+    @objc func fireTimer() {
+        print("Timer fired!")
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7D6CAC9D-A85A-44D8-9323-5C3F8C6CB566</string>
+	<string>A8C9BF72-3F1C-46DB-B234-CB75588D4765</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A Playground Live Render</string>
+	<string>Create a timer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

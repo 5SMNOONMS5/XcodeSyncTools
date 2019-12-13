@@ -3,24 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - Closure</string>
+	<string>II - Decodable</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var didClick: ((_ sender: &lt;#Object#&gt;) -&gt; ())?</string>
+	<string>public struct Class: Decodable {
+    
+    private enum CodingKeys: String, CodingKey {
+        case name
+    }
+    
+    var name: String
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = try values.decode(String.self, forKey: .name)
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1A2CEE2E-3A40-4944-B302-A7B6F23E339E</string>
+	<string>698DEFF4-0550-43E4-995F-8F82AB59EE31</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Closure</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init a closure</string>
+	<string>Struct type confirms to decodable</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

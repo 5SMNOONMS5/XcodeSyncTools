@@ -9,9 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#textView#&gt; = UITextView(frame: CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;))
-        &lt;#textView#&gt;.text = &lt;#content#&gt;
-        view.addSubview(&lt;#textView#&gt;)</string>
+	<string>/// UIText view
+private let tv: UITextView = {
+    let v = UITextView(frame: .zero)
+    v.text = "AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA"
+    return v
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A1CB5EB1-C3B4-4569-AA60-B56194EA7167</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -19,7 +22,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UITextView</string>
+	<string>Create a UITextView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

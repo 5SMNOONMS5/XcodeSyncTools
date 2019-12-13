@@ -10,17 +10,20 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>        /// Gradient layer
-        let gradient: CAGradientLayer = CAGradientLayer()
-        
-        let colors = [UIColor(red:0.18, green:0.38, blue:0.76, alpha:1.0).cgColor,
-                      UIColor(red:0.02, green:0.05, blue:0.15, alpha:1.0).cgColor]
-        gradient.colors = colors
-        
-        gradient.locations = [0.0, 1.0]
-        gradient.startPoint = CGPoint(x: &lt;# x #&gt;, y: &lt;# y #&gt;)
-        gradient.endPoint = CGPoint(x: &lt;# x #&gt;, y: &lt;# y #&gt;)
-        gradient.frame = CGRect(x: &lt;# x #&gt; , y: &lt;# y #&gt;, width: &lt;# width #&gt;, height: &lt;# height #&gt;)
-        gradient.opacity = &lt;# opacity #&gt;</string>
+        private let gradient: CAGradientLayer = {
+            let g = CAGradientLayer()
+            g.colors = [
+                UIColor(red:0.18, green:0.38, blue:0.76, alpha:1.0).cgColor,
+                UIColor(red:0.02, green:0.05, blue:0.15, alpha:1.0).cgColor
+            ]
+            g.locations = [0.0, 1.0]
+            g.startPoint = CGPoint(x: &lt;# x #&gt;, y: &lt;# y #&gt;)
+            g.endPoint = CGPoint(x: &lt;# x #&gt;, y: &lt;# y #&gt;)
+            g.frame = CGRect(x: &lt;# x #&gt; , y: &lt;# y #&gt;, width: &lt;# width #&gt;, height: &lt;# height #&gt;)
+            g.opacity = &lt;# opacity #&gt;
+            return g
+        }()
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F53C91E2-F9BA-4414-8702-81FCCB7B36B8</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -28,7 +31,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A CAGradientLayer</string>
+	<string>CAGradientLayer computed property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

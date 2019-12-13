@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>II - Enum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    enum AppleDevice&lt;T&gt; {
+        
+        case iPad(T)
+        case iPhone
+        case AppleTv
+        case AppleWatch
+        
+        var `description`: String {
+            switch self {
+            case .iPad(_):
+                return "\(self) was introduced 2006"
+            case .iPhone:
+                return "\(self) was introduced 2007"
+            case .AppleTv:
+                return "\(self) was introduced 2010"
+            case .AppleWatch:
+                return "\(self) was introduced 2014"
+            }
+        }
+        
+        var object: T? {
+            switch self {
+            case .iPad(let some):
+                return some
+            default:
+                return nil
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D32680AA-81EC-482C-BB5D-8D4769FA4737</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Init a enum</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create a enum with func and comupted property</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

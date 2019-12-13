@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - UIProgressView</string>
+	<string>II - Switch Case</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// Progress view
-private let viewProgress: UIProgressView() = {
-    let v = UIProgressView(frame: .zero)
-    v.progress = &lt;#Float#&gt;
-    v.trackTintColor = &lt;# UIColor#&gt;
-    v.progressTintColor = &lt;# UIColor#&gt;
-    v.progressViewStyle = &lt;# UIProgressViewStyle#&gt;
-    return v
-}()</string>
+	<string>            switch &lt;# Some #&gt; {
+            case &lt;# Case1 #&gt;
+                break
+            case &lt;# Case2 #&gt;
+                break
+            default:
+                break
+            }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AFAA13AE-832D-4ED5-ADE5-ACB22DD340E1</string>
+	<string>7AB5C98E-019E-4809-9B20-60D0A8002E19</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create a UIProgressView</string>
+	<string>Switch case easy way</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

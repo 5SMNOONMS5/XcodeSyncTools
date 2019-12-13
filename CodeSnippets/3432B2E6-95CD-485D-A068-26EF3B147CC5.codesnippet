@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>II - UISegmentedControl</string>
+	<string>II - SegmentedControl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#segment#&gt; = UISegmentedControl(items: &lt;#T##[Any]?#&gt;)
-        &lt;#segment#&gt;.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
-        &lt;#segment#&gt;.addTarget(self, action: #selector(&lt;#ViewController#&gt;.segmentTouch(sender:)), for: .valueChanged)
-        view.addSubview(&lt;#segment#&gt;)
+	<string>private let segmented: UISegmentedControl = {
+    let v = UISegmentedControl(items: &lt;#T##[Any]?#&gt;)
+    v.frame = CGRect(x: &lt;#T##Double#&gt;, y: &lt;#T##Double#&gt;, width: &lt;#T##Double#&gt;, height: &lt;#T##Double#&gt;)
+    v.addTarget(self, action: #selector(&lt;#ViewController#&gt;.actionSegmented(sender:)), for: .valueChanged)
+    return v
+}()
     
-        
-        func segmentTouch(sender: UISegmentedControl){
-            // sender.titleForSegment(at: sender.selectedSegmentIndex)
-        }</string>
+private func actionSegmented(sender: UISegmentedControl) {
+     sender.titleForSegment(at: sender.selectedSegmentIndex)
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3432B2E6-95CD-485D-A068-26EF3B147CC5</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -25,7 +26,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init A UISegmentedControl</string>
+	<string>Create a UISegmentedControl</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
